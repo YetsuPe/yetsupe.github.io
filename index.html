@@ -8,6 +8,9 @@
 	<link rel="stylesheet" href="styl/font-awesone.css">
 </head>
 <body>
+	<!--[if lt IE 9]>
+		<script src="js/lib/html5shiv.js"></script>
+	<![endif]-->
 	<nav data-yetsu="menu" id="menu">
 		<a href="#"><span class="icon-home icon-2x"></span>inicio</a>
 		<a href="#">Nosotros</a>
@@ -26,7 +29,7 @@
 		</div>
 	</header>
 	<section data-yetsu="slider">
-		<figcaption>
+		<figcaption role="banner">
 			<img src="images/portada-yetsu.jpg" alt="Portada Yetsu S.A.C" />
 		</figcaption>
 	</section>
@@ -157,6 +160,10 @@
 		</div>
 
 	</section>
+	<section class="bck contact">
+		<h2>Contactanos</h2>
+
+	</section>
 	<footer>
 		<h2>YETSU S.A.C</h2>
 		<h3>@YetsuPe</h3>
@@ -177,6 +184,8 @@
 		</aside>
 	</footer>
 	<script src="js/lib/zepto.js"></script>
+	<script src="js/lib/underscore.js"></script>
+	<script src="js/lib/backbone.js"></script>
 	<script src="js/yetsu.js"></script>
 </body>
 </html>
