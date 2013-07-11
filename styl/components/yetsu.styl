@@ -57,7 +57,33 @@ header
 		float left
 		text-align center
 		color white
-
+.cources
+	>div
+		background-color:#E3BC4D
+		overflow hidden
+		width 95%
+		margin .2rem auto
+		border-radius .4rem
+		& h3
+			margin 0
+			display block
+			text-align center
+			background-color  lighten(#E3BC4D,30%) 
+			padding .2rem 0
+			border-radius .4rem
+		& img
+			margin-top .2rem
+			margin-bottom .2rem
+			width 17%
+			margin-left 3%
+			float left
+			border-radius .2rem
+			&:nth-child(2)
+				margin-left 1.5%
+		&>a
+			padding :2rem
+			border-radius .5rem
+			background-color COLOR_THEME
 .services
 	overflow hidden
 	.item
@@ -115,10 +141,11 @@ header
 	width 30%
 	margin 0 auto
 	border-radius:50%
-	border 4px solid #fff
+	border 4px solid COLOR_DARK
+	background-color COLOR_WHITE
 
 footer
-	background-color: #424242
+	background-color: COLOR_DARK
 	padding: 10px 0
 
 .us
