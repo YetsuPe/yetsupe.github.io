@@ -113,9 +113,6 @@ header em {
   display: block;
   text-align: center;
 }
-.row {
-  width: 100%;
-}
 aside.row {
   overflow: hidden;
 }
@@ -172,21 +169,6 @@ aside.row [class*=" icon-"] {
   -o-border-radius: 0.5rem;
   border-radius: 0.5rem;
   background-color: #058;
-}
-.row {
-  overflow: hidden;
-/*for item in 1 2 3
-		.item:nth-child({item})
-			>figcaption,>div
-				float left
-				min-height 50px
-			>figcaption
-				color white
-				width: 20%
-				background-color:bck*item
-			>div
-				width: 80%
-				background-color:bck*2*item*/
 }
 .row .item {
   text-align: center;
@@ -256,9 +238,6 @@ footer {
   color: #fff;
   margin: 0;
 }
-.row {
-  overflow: hidden;
-}
 .row .yetMenber {
   float: left;
   position: relative;
@@ -278,24 +257,24 @@ footer {
   display: block;
   color: #fff;
 }
-.row .yetMenber:nth-child(1),
-.row .yetMenber:nth-child(2),
-.row .yetMenber:nth-child(3),
-.row .yetMenber:nth-child(4),
-.row .yetMenber:nth-child(6),
-.row .yetMenber:nth-child(7),
-.row .yetMenber:nth-child(8),
-.row .yetMenber:nth-child(9) {
+.row .yetMenber:nth-of-type(1),
+.row .yetMenber:nth-of-type(2),
+.row .yetMenber:nth-of-type(3),
+.row .yetMenber:nth-of-type(4),
+.row .yetMenber:nth-of-type(5),
+.row .yetMenber:nth-of-type(6),
+.row .yetMenber:nth-of-type(7),
+.row .yetMenber:nth-of-type(8) {
   width: 25%;
 }
-.row .yetMenber:nth-child(1) img,
-.row .yetMenber:nth-child(2) img,
-.row .yetMenber:nth-child(3) img,
-.row .yetMenber:nth-child(4) img,
-.row .yetMenber:nth-child(6) img,
-.row .yetMenber:nth-child(7) img,
-.row .yetMenber:nth-child(8) img,
-.row .yetMenber:nth-child(9) img {
+.row .yetMenber:nth-of-type(1) img,
+.row .yetMenber:nth-of-type(2) img,
+.row .yetMenber:nth-of-type(3) img,
+.row .yetMenber:nth-of-type(4) img,
+.row .yetMenber:nth-of-type(5) img,
+.row .yetMenber:nth-of-type(6) img,
+.row .yetMenber:nth-of-type(7) img,
+.row .yetMenber:nth-of-type(8) img {
   width: 50%;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
@@ -303,23 +282,27 @@ footer {
   -o-border-radius: 50%;
   border-radius: 50%;
 }
-.row .yetMenber:nth-child(1),
-.row .yetMenber:nth-child(4) {
+.row .yetMenber:nth-of-type(1),
+.row .yetMenber:nth-of-type(4) {
   top: 3rem;
 }
-.row .yetMenber:nth-child(6),
-.row .yetMenber:nth-child(9) {
+.row .yetMenber:nth-of-type(5),
+.row .yetMenber:nth-of-type(8) {
   top: -3rem;
 }
-.row .yetMenber:nth-child(1),
-.row .yetMenber:nth-child(6) {
+.row .yetMenber:nth-of-type(1),
+.row .yetMenber:nth-of-type(5) {
   right: -3rem;
 }
-.row .yetMenber:nth-child(4),
-.row .yetMenber:nth-child(9) {
+.row .yetMenber:nth-of-type(4),
+.row .yetMenber:nth-of-type(8) {
   left: -3rem;
 }
-[data-yetsu="menu"] {
+.row {
+  width: 100%;
+  overflow: hidden;
+}
+[role="menu"] {
   z-index: 2;
   position: fixed;
   height: 100%;
@@ -333,47 +316,47 @@ footer {
   transition: left 0.4s ease-in-out;
   overflow-y: scroll;
 }
-[data-yetsu="menu"] > a {
+[role="menu"] > a {
   color: #fff;
   display: block;
   padding: 0.8em;
   text-decoration: none;
   border-bottom: 1px solid #009bf8;
 }
-[data-yetsu="menu"] > a:first-child {
+[role="menu"] > a:first-child {
   line-height: 0.4rem;
   padding: 0.2rem;
   text-align: center;
   background-color: #002236;
   padding-bottom: 0.2rem;
 }
-[data-yetsu="menu"] > a:first-child img {
+[role="menu"] > a:first-child img {
   width: 2.5rem;
   display: inline-block;
 }
-[data-yetsu="menu"] > a:first-child span {
+[role="menu"] > a:first-child span {
   display: inline-block;
   font-size: 1.3rem;
   padding-top: 1rem;
   vertical-align: top;
 }
-[data-yetsu="menu"] > a:first-child small {
+[role="menu"] > a:first-child small {
   display: block;
   margin-bottom: 0.4rem;
 }
-[data-yetsu="slider"] {
+[role="slider"] {
   margin: 0;
 }
-[data-yetsu="slider"] figcaption {
+[role="slider"] figcaption {
   margin: 0;
 }
-[data-yetsu="slider"] figcaption img {
+[role="slider"] figcaption img {
   width: 100%;
 }
-[data-yetsu="services"] {
+[role="services"] {
   background-color: #f00;
 }
-[data-yetsu="ico-menu"] {
+[role="ico-menu"] {
   position: absolute;
   margin-left: 12px;
   left: 0;
@@ -385,7 +368,7 @@ footer {
   -o-border-radius: 3px;
   border-radius: 3px;
 }
-[data-yetsu="logo"] {
+[role="logo"] {
   position: absolute;
   margin-right: 12px;
   right: 0;
@@ -416,6 +399,8 @@ html {
 }
 h1 {
   margin: 0;
+  font-size: 50px;
+/*IE*/
   font-size: 1.3rem;
 }
 h2 {
@@ -450,20 +435,20 @@ h3 {
     margin-left: 1%;
     width: 84%;
   }
-  .row .yetMenber:nth-child(1),
-  .row .yetMenber:nth-child(4) {
+  .row .yetMenber:nth-of-type(1),
+  .row .yetMenber:nth-of-type(4) {
     top: 4.5rem;
   }
-  .row .yetMenber:nth-child(6),
-  .row .yetMenber:nth-child(9) {
+  .row .yetMenber:nth-of-type(5),
+  .row .yetMenber:nth-of-type(8) {
     top: -4.5rem;
   }
-  .row .yetMenber:nth-child(1),
-  .row .yetMenber:nth-child(6) {
+  .row .yetMenber:nth-of-type(1),
+  .row .yetMenber:nth-of-type(5) {
     right: -4.5rem;
   }
-  .row .yetMenber:nth-child(4),
-  .row .yetMenber:nth-child(9) {
+  .row .yetMenber:nth-of-type(4),
+  .row .yetMenber:nth-of-type(8) {
     left: -4.5rem;
   }
 }
@@ -550,7 +535,7 @@ h3 {
     margin: 0 auto;
     width: 960px;
   }
-  [data-yetsu="ico-menu"] {
+  [role="ico-menu"] {
     z-index: -1;
   }
   header {
@@ -569,7 +554,7 @@ h3 {
     top: -3rem;
     color: #fff;
   }
-  [data-yetsu="menu"] {
+  [role="menu"] {
     left: 0;
     width: 100%;
     position: relative;
@@ -577,20 +562,20 @@ h3 {
     padding-left: 7rem;
     text-align: right;
   }
-  [data-yetsu="menu"] > a {
+  [role="menu"] > a {
     display: inline-block;
     border-bottom: 0;
   }
-  [data-yetsu="menu"] > a:first-child {
+  [role="menu"] > a:first-child {
     display: none;
   }
-  [data-yetsu="logo"] {
+  [role="logo"] {
     margin-right: 2.5rem;
   }
-  [data-yetsu="slider"] {
+  [role="slider"] {
     background-color: #fff;
   }
-  [data-yetsu="slider"] figcaption {
+  [role="slider"] figcaption {
     margin: 0 auto;
     width: 960px;
   }
@@ -599,7 +584,7 @@ h3 {
   .row {
     width: 1200px;
   }
-  [data-yetsu="slider"] figcaption {
+  [role="slider"] figcaption {
     width: 1200px;
   }
 }

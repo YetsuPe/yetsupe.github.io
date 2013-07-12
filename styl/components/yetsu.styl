@@ -49,8 +49,7 @@ header
 
 
 
-.row
-	width 100%
+
 aside.row
 	overflow hidden
 	& [class^="icon-"],[class*=" icon-"]
@@ -86,7 +85,6 @@ aside.row
 			border-radius .5rem
 			background-color COLOR_THEME
 .row
-	overflow hidden
 	.item
 		text-align center
 		//line-height 1.8rem
@@ -157,7 +155,6 @@ footer
 		color white	
 		margin 0
 .row
-	overflow hidden
 	& .yetMenber
 		float:left
 		position: relative
@@ -168,19 +165,19 @@ footer
 			display block
 			color white
 		
-		&:nth-child(1),&:nth-child(2),&:nth-child(3),&:nth-child(4),&:nth-child(6),&:nth-child(7),&:nth-child(8),&:nth-child(9)
+		&:nth-of-type(1),&:nth-of-type(2),&:nth-of-type(3),&:nth-of-type(4),&:nth-of-type(5),&:nth-of-type(6),&:nth-of-type(7),&:nth-of-type(8)
 			//top -100px
 			width 25%
 			& img
 				width:50%
 				border-radius 50%
-		&:nth-child(1),&:nth-child(4)
+		&:nth-of-type(1),&:nth-of-type(4)
 			top 3rem
-		&:nth-child(6),&:nth-child(9)
+		&:nth-of-type(5),&:nth-of-type(8)
 			top -3rem
-		&:nth-child(1),&:nth-child(6)
+		&:nth-of-type(1),&:nth-of-type(5)
 			right -3rem
-		&:nth-child(4),&:nth-child(9)
+		&:nth-of-type(4),&:nth-of-type(8)
 			left -3rem
 		/*&:nth-child(6),&:nth-child(7)
 			top:-9px

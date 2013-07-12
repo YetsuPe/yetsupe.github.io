@@ -5,6 +5,7 @@ html
 
 h1
 	margin : 0
+	font-size: 50px /*IE*/
 	font-size:1.3rem 
 h2
 	font-size:1rem
@@ -31,13 +32,13 @@ h3
 			width 84%
 	.row
 		& .yetMenber
-			&:nth-child(1),&:nth-child(4)
+			&:nth-of-type(1),&:nth-of-type(4)
 				top 4.5rem
-			&:nth-child(6),&:nth-child(9)
+			&:nth-of-type(5),&:nth-of-type(8)
 				top -4.5rem
-			&:nth-child(1),&:nth-child(6)
+			&:nth-of-type(1),&:nth-of-type(5)
 				right -4.5rem
-			&:nth-child(4),&:nth-child(9)
+			&:nth-of-type(4),&:nth-of-type(8)
 				left -4.5rem
 @media only screen and (min-width: 768px) 
 	html 
@@ -101,7 +102,7 @@ h3
 		margin 0 auto
 		width 960px
 
-	[data-yetsu="ico-menu"]
+	[role="ico-menu"]
 		z-index -1
 	header
 		position absolute
@@ -118,7 +119,7 @@ h3
 				font-size 2rem
 				top -3rem
 				color white 
-	[data-yetsu="menu"]
+	[role="menu"]
 		left: 0
 		width: 100%
 		position: relative
@@ -130,9 +131,9 @@ h3
 			border-bottom: 0 
 			&:first-child
 				display none
-	[data-yetsu="logo"]
+	[role="logo"]
 		margin-right 2.5rem 
-	[data-yetsu="slider"]
+	[role="slider"]
 		background-color white
 		& figcaption 
 			margin 0 auto
@@ -143,7 +144,7 @@ h3
 @media only screen and (min-width: 1200px) 
 	.row
 		width 1200px
-	[data-yetsu="slider"]
+	[role="slider"]
 		& figcaption 
 			width 1200px
 		
