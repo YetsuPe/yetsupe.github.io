@@ -4,7 +4,7 @@ body
 	//overflow: hidden
 header,section,footer
 	position: relative
-	overflow hidden
+	//overflow hidden
 	background-color #005588
 	left: 0
 	transition(left 0.4s ease-in-out)
@@ -51,7 +51,8 @@ header
 
 .row
 	width 100%
-.row
+aside.row
+	overflow hidden
 	& [class^="icon-"],[class*=" icon-"]
 		width 12.5%
 		float left
@@ -84,7 +85,7 @@ header
 			padding :2rem
 			border-radius .5rem
 			background-color COLOR_THEME
-.services
+.row
 	overflow hidden
 	.item
 		text-align center
@@ -155,14 +156,14 @@ footer
 		background-color #181860
 		color white	
 		margin 0
-.fix
+.row
 	overflow hidden
 	& .yetMenber
 		float:left
 		position: relative
 		text-align center
 		&>img 
-			border 2px solid white
+			border .2rem solid COLOR_WHITE
 		& a 
 			display block
 			color white

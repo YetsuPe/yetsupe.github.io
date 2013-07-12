@@ -4,7 +4,7 @@
 	height : 100%
 	width: 220px
 	left:-220px
-	background: darken(COLOR_THEME,30% )
+	background-color: darken(COLOR_THEME,30% )
 	transition(left 0.4s ease-in-out)
 	overflow-y:scroll
 	& > a
@@ -13,7 +13,24 @@
 		padding:  AIR
 		text-decoration : none
 		border-bottom: 1px solid lighten(COLOR_THEME,30%)
-		
+		&:first-child
+			line-height 0.4rem
+			padding .2rem
+			text-align center
+			background-color: darken(COLOR_THEME,60% )
+			padding-bottom .2rem
+
+			& img
+				width 2.5rem
+				display inline-block
+			& span
+				display  inline-block
+				font-size  1.3rem
+				padding-top  1rem
+				vertical-align  top
+			& small
+				display block
+				margin-bottom .4rem
 
 [data-yetsu="slider"]
 	margin 0
@@ -21,23 +38,25 @@
 		margin 0
 		& img
 			width 100%
-		
+[data-yetsu="services"]
+	background-color red
 
 [data-yetsu="ico-menu"]
 	position: absolute
 	margin-left: 12px
 	//top 40px
 	left: 0
-	background:darken(COLOR_THEME,40%)
-	padding: 0 0.4em
+	background-color:darken(COLOR_THEME,40%)
+	padding: .2rem .5rem
 	border-radius(3px)
 // Logo en canvas
 [data-yetsu="logo"]
 	position: absolute
 	margin-right: 12px
 	right: 0
-	width:12%
+	width:2.8rem
 	border-radius 50%
+	background-color:darken(COLOR_THEME,40%)
 	z-index 2
 .open-menu
 	left:0px

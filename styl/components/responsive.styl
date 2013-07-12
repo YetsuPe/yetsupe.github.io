@@ -19,60 +19,39 @@ h3
 @media only screen and (min-width: 480px) 
 	html 
 		font-size: 87.5%  /* 14px */
+	.us
+		overflow hidden
+		padding 0 1rem
+		&>img, blockquote
+			float right
+		&>img
+			width 15%
+		& blockquote
+			margin-left 1%
+			width 84%
+	.row
+		& .yetMenber
+			&:nth-child(1),&:nth-child(4)
+				top 4.5rem
+			&:nth-child(6),&:nth-child(9)
+				top -4.5rem
+			&:nth-child(1),&:nth-child(6)
+				right -4.5rem
+			&:nth-child(4),&:nth-child(9)
+				left -4.5rem
 @media only screen and (min-width: 768px) 
 	html 
 		font-size: 92%   
-	[data-yetsu="menu"]
-		left: 0
-		width: 100%
-		position: relative
-		overflow-y: hidden
-		padding-left:7rem
-		text-align right
-		& > a
-			display: inline-block
-			border-bottom: 0 
-
-
-	[data-yetsu="ico-menu"]
-		z-index -1
-
-	header
-		position absolute
-		width 100%
-		height 8rem
-		overflow: visible
-		& div
-			& h1
-				padding-left 1rem
-				color #003B5F
-				position absolute
-				z-index 3
-				left 0
-				font-size 2rem
-				top -3rem
-				color white 
-	[data-yetsu="logo"]
-		padding 0
-		border-radius: 0
-		margin-right 15px 
-		border-radius 50%
-		border 4px solid COLOR_DARK
-		background-color COLOR_WHITE
-		
-@media only screen and (min-width: 960px) 
-	html 
-		font-size: 100%
-	.services
+	.row
 		margin 0 auto
-		width 90%
+		width 100%
 		text-align center
 		.item
 			width 20%
 			float left
 			>figcaption,>div
 				float none
-				block-center(.5rem,0)
+				block-center(.2rem,0)
 			>figcaption
 				color white
 				padding .5rem
@@ -114,5 +93,58 @@ h3
 			>div
 				background-color:transparent
 
+		
+@media only screen and (min-width: 960px) 
+	html 
+		font-size: 100%
+	.row
+		margin 0 auto
+		width 960px
 
+	[data-yetsu="ico-menu"]
+		z-index -1
+	header
+		position absolute
+		width 100%
+		height 8rem
+		overflow: visible
+		& div
+			& h1
+				padding-left 1rem
+				color #003B5F
+				position absolute
+				z-index 3
+				left 0
+				font-size 2rem
+				top -3rem
+				color white 
+	[data-yetsu="menu"]
+		left: 0
+		width: 100%
+		position: relative
+		overflow-y: hidden
+		padding-left:7rem
+		text-align right
+		& > a
+			display: inline-block
+			border-bottom: 0 
+			&:first-child
+				display none
+	[data-yetsu="logo"]
+		margin-right 2.5rem 
+	[data-yetsu="slider"]
+		background-color white
+		& figcaption 
+			margin 0 auto
+			width 960px
+	
+	
+
+@media only screen and (min-width: 1200px) 
+	.row
+		width 1200px
+	[data-yetsu="slider"]
+		& figcaption 
+			width 1200px
+		
 	
