@@ -4,6 +4,7 @@ aside,
 footer,
 article,
 nav,
+figure,
 figcaption {
   display: block;
 }
@@ -31,13 +32,16 @@ a {
   background-color: #058;
 }
 .bck.us {
-  background-color: #06424f;
+  background-color: #dc471a;
 }
 .bck.white {
   background-color: #fff;
 }
 .bck.team {
   background-color: #0b2de5;
+}
+.bck.cources {
+  background-color: #b9b906;
 }
 h1 {
   display: inline-block;
@@ -66,7 +70,9 @@ section h2,
 footer h2 {
   text-align: center;
   padding: 0.5rem 0;
+  color: #fff;
   margin: 0;
+  background-color: rgba(0,0,0,0.5);
 }
 section blockquote,
 footer blockquote {
@@ -173,47 +179,55 @@ aside.row [class*=" icon-"] {
 .row .item {
   text-align: center;
 }
-.row .item >figcaption,
+.row .item >figure,
 .row .item >div {
   float: left;
   min-height: 2.7rem;
 }
-.row .item >figcaption {
+.row .item >figure {
   color: #fff;
   width: 20%;
+  margin: 0;
 }
 .row .item >div {
   width: 80%;
+  color: #fff;
 }
-.row .item:nth-child(1) >figcaption {
-  background-color: #b8901d;
+.row .item:nth-child(1) >figure {
+  background-color: #ab2d5f;
 }
 .row .item:nth-child(1) >div {
-  background-color: #d2a421;
+  background-color: #be326a;
 }
-.row .item:nth-child(2) >figcaption {
-  background-color: #be1b22;
+.row .item:nth-child(2) >figure {
+  background-color: #2d820d;
 }
 .row .item:nth-child(2) >div {
-  background-color: #d91f26;
+  background-color: #32900e;
 }
-.row .item:nth-child(3) >figcaption {
-  background-color: #1d867a;
+.row .item:nth-child(3) >figure {
+  background-color: #b83c00;
 }
 .row .item:nth-child(3) >div {
-  background-color: #219a8b;
+  background-color: #cc4300;
 }
-.row .item:nth-child(4) >figcaption {
-  background-color: #374781;
+.row .item:nth-child(4) >figure {
+  background-color: #1774a4;
 }
 .row .item:nth-child(4) >div {
-  background-color: #3f5193;
+  background-color: #1a81b6;
 }
-.row .item:nth-child(5) >figcaption {
-  background-color: #71358a;
+.row .item:nth-child(5) >figure {
+  background-color: #b8a000;
 }
 .row .item:nth-child(5) >div {
-  background-color: #813d9e;
+  background-color: #ccb200;
+}
+.row .item:nth-child(6) >figure {
+  background-color: #283848;
+}
+.row .item:nth-child(6) >div {
+  background-color: #2c3e50;
 }
 .logo-circle {
   display: block;
@@ -230,13 +244,6 @@ aside.row [class*=" icon-"] {
 footer {
   background-color: #424242;
   padding: 10px 0;
-}
-.us h2 {
-  text-align: center;
-  padding: 2% 0;
-  background-color: #181860;
-  color: #fff;
-  margin: 0;
 }
 .row .yetMenber {
   float: left;
@@ -298,6 +305,35 @@ footer {
 .row .yetMenber:nth-of-type(8) {
   left: -3rem;
 }
+.contact form {
+  width: 95%;
+  margin: 1rem auto;
+}
+.contact form fieldset {
+  border: none;
+  margin: 0;
+}
+.contact form fieldset label {
+  display: block;
+  width: 25%;
+  float: left;
+  text-align: right;
+  padding-right: 0.5rem;
+  margin-top: 0.5rem;
+}
+.contact form fieldset input,
+.contact form fieldset textarea {
+  display: block;
+  width: 75%;
+  background-color: #f00;
+  margin-bottom: 1rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
+  border-radius: 1rem;
+  padding: 0.25rem;
+}
 .row {
   width: 100%;
   overflow: hidden;
@@ -347,10 +383,10 @@ footer {
 [role="slider"] {
   margin: 0;
 }
-[role="slider"] figcaption {
+[role="slider"] figure {
   margin: 0;
 }
-[role="slider"] figcaption img {
+[role="slider"] figure img {
   width: 100%;
 }
 [role="services"] {
@@ -465,12 +501,12 @@ h3 {
     width: 20%;
     float: left;
   }
-  .row .item >figcaption,
+  .row .item >figure,
   .row .item >div {
     float: none;
     margin: 0.2rem auto 0 auto;
   }
-  .row .item >figcaption {
+  .row .item >figure {
     color: #fff;
     padding: 0.5rem;
     -webkit-border-radius: 50%;
@@ -484,7 +520,7 @@ h3 {
   .row .item:nth-child(1) {
     background-color: #d2a421;
   }
-  .row .item:nth-child(1) >figcaption {
+  .row .item:nth-child(1) >figure {
     background-color: #836715;
   }
   .row .item:nth-child(1) >div {
@@ -493,7 +529,7 @@ h3 {
   .row .item:nth-child(2) {
     background-color: #d91f26;
   }
-  .row .item:nth-child(2) >figcaption {
+  .row .item:nth-child(2) >figure {
     background-color: #881318;
   }
   .row .item:nth-child(2) >div {
@@ -502,7 +538,7 @@ h3 {
   .row .item:nth-child(3) {
     background-color: #219a8b;
   }
-  .row .item:nth-child(3) >figcaption {
+  .row .item:nth-child(3) >figure {
     background-color: #146057;
   }
   .row .item:nth-child(3) >div {
@@ -511,7 +547,7 @@ h3 {
   .row .item:nth-child(4) {
     background-color: #3f5193;
   }
-  .row .item:nth-child(4) >figcaption {
+  .row .item:nth-child(4) >figure {
     background-color: #27335c;
   }
   .row .item:nth-child(4) >div {
@@ -520,7 +556,7 @@ h3 {
   .row .item:nth-child(5) {
     background-color: #813d9e;
   }
-  .row .item:nth-child(5) >figcaption {
+  .row .item:nth-child(5) >figure {
     background-color: #512662;
   }
   .row .item:nth-child(5) >div {
@@ -575,7 +611,7 @@ h3 {
   [role="slider"] {
     background-color: #fff;
   }
-  [role="slider"] figcaption {
+  [role="slider"] figure {
     margin: 0 auto;
     width: 960px;
   }
@@ -584,7 +620,7 @@ h3 {
   .row {
     width: 1200px;
   }
-  [role="slider"] figcaption {
+  [role="slider"] figure {
     width: 1200px;
   }
 }

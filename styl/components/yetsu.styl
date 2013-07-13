@@ -16,8 +16,11 @@ footer
 section,footer 
 	& h2
 		text-align center
-		padding .5rem 0
+		padding (SPACE/2) 0
+		color white
 		margin 0
+		background-color rgba(0, 0, 0, .5)
+
 	& blockquote
 		width 90%
 		margin .5rem auto 0 auto
@@ -88,46 +91,54 @@ aside.row
 	.item
 		text-align center
 		//line-height 1.8rem
-		>figcaption,>div
+		>figure,>div
 			float left
 			min-height 2.7rem
-		>figcaption
+		>figure
 			color white
 			width: 20%
+			margin 0
 		>div
 			width: 80%
+			color white
 	.item:nth-child(1)
-		>figcaption
-			background-color:darken(#E3BC4D,30%)
+		>figure
+			background-color:darken(COLOR_SERVICE_DW,10%)
 		>div
-			background-color:darken(#E3BC4D,20%)
+			background-color:COLOR_SERVICE_DW
 	.item:nth-child(2)
-		>figcaption
-			background-color:darken(#E65056,30%)
+		>figure
+			background-color:darken(COLOR_SERVICE_PW,10%)
 		>div
-			background-color:darken(#E65056,20%)
+			background-color:COLOR_SERVICE_PW
 	.item:nth-child(3)
-		>figcaption
-			background-color:darken(#29C0AE,30%)
+		>figure
+			background-color:darken(COLOR_SERVICE_AM,10%)
 		>div
-			background-color:darken(#29C0AE,20%)
+			background-color:COLOR_SERVICE_AM
 	.item:nth-child(4)
-		>figcaption
-			background-color:darken(#5267B5,30%)
+		>figure
+			background-color:darken(COLOR_SERVICE_CT,10%)
 		>div
-			background-color:darken(#5267B5,20%)
+			background-color:COLOR_SERVICE_CT
+		
 	.item:nth-child(5)
-		>figcaption
-			background-color:darken(#9E54BD,30%)
+		>figure
+			background-color:darken(COLOR_SERVICE_CO,10%)
 		>div
-			background-color:darken(#9E54BD,20%)
+			background-color:COLOR_SERVICE_CO
+	.item:nth-child(6)
+		>figure
+			background-color:darken(COLOR_SERVICE_EM,10%)
+		>div
+			background-color:COLOR_SERVICE_EM
 
 	/*for item in 1 2 3
 		.item:nth-child({item})
-			>figcaption,>div
+			>figure,>div
 				float left
 				min-height 50px
-			>figcaption
+			>figure
 				color white
 				width: 20%
 				background-color:bck*item
@@ -147,13 +158,6 @@ footer
 	background-color: COLOR_DARK
 	padding: 10px 0
 
-.us
-	& h2
-		text-align center
-		padding 2% 0
-		background-color #181860
-		color white	
-		margin 0
 .row
 	& .yetMenber
 		float:left
@@ -186,4 +190,24 @@ footer
 		&:nth-child(7)
 			right:-7px
 */
-
+.contact
+	& form 
+		width 95%
+		margin SPACE auto
+		& fieldset
+			border none
+			margin 0
+			& label 
+				display block
+				width 25%
+				float left
+				text-align right
+				padding-right (SPACE/2)
+				margin-top (SPACE/2)
+			& input, textarea
+				display block
+				width 75%
+				background-color red
+				margin-bottom SPACE
+				border-radius SPACE
+				padding (SPACE/4)

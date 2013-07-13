@@ -38,48 +38,56 @@
 		</div>
 	</header>
 	<section role="slider">
-		<figcaption role="banner">
+		<figure role="banner">
 			<img src="images/portada-yetsu.jpg" alt="Portada Yetsu S.A.C" />
-		</figcaption>
+		</figure>
 	</section>
 	<section role="services">
 		<div class="row">
 			<article class="item">
-				<figcaption>
-					<span class="icon-home icon-2x"></span>
-				</figcaption>
+				<figure>
+					<span class="icon-bar-chart icon-2x"></span>
+				</figure>
 				<div>
 					<h3>Desarrollo de Sistemas Informáticos</h3>
 				</div>	
 			</article>
 			<article class="item">
-				<figcaption>
-					<span class="icon-home icon-2x"></span>
-				</figcaption>
+				<figure>
+					<span class="icon-globe icon-2x"></span>
+				</figure>
 				<div>
 					<h3>Páginas Web</h3>
 				</div>	
 			</article>
 			<article class="item">
-				<figcaption>
-					<span class="icon-home icon-2x"></span>
-				</figcaption>
+				<figure>
+					<span class="icon-tablet icon-2x"></span>
+				</figure>
 				<div>
 					<h3>Aplicaciones Móbiles</h3>
 				</div>	
 			</article>
 			<article class="item">
-				<figcaption>
-					<span class="icon-home icon-2x"></span>
-				</figcaption>
+				<figure>
+					<span class="icon-user icon-2x"></span>
+				</figure>
 				<div>
 					<h3>Consultoria en TI</h3>
 				</div>	
 			</article>
 			<article class="item">
-				<figcaption>
-					<span class="icon-home icon-2x"></span>
-				</figcaption>
+				<figure>
+					<span class="icon-code icon-2x"></span>
+				</figure>
+				<div>
+					<h3>Cursos</h3>
+				</div>	
+			</article>
+			<article class="item">
+				<figure>
+					<span class="icon-tags icon-2x"></span>
+				</figure>
 				<div>
 					<h3>E-Marketing</h3>
 				</div>	
@@ -168,12 +176,22 @@
 	<section class="bck briefcase">
 		<h2><span class="icon-briefcase icon-2x"></span>Portafolio</h2>
 	</section>
-	<section class="bck team">
-		<h2>YETSU Team</h2>
-	</section>
 	<section class="bck contact">
 		<h2>Contactanos</h2>
-
+		<div class="row">
+			<form action="#">
+				<fieldset>
+					<label for="nombre">Nombre: </label>
+					<input type="text" id="nombre" required  />
+					<label for="email">Email: </label>
+					<input type="email" id="email" required title="Debe ingresar un email válido" />
+					<label for="mensaje" required >Mensaje: </label>
+					<textarea name="mensaje" id="mensaje" required ></textarea>
+					<button>Enviar</button>
+				</fieldset>
+				
+			</form>
+		</div>
 	</section>
 	<footer>
 		<h2>YETSU S.A.C</h2>
