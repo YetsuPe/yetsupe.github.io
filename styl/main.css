@@ -77,6 +77,30 @@ footer h2 {
   margin: 0;
   background-color: rgba(0,0,0,0.5);
 }
+section h2 span,
+footer h2 span {
+  -webkit-border-radius: 50% 50% 0 0;
+  -moz-border-radius: 50% 50% 0 0;
+  -ms-border-radius: 50% 50% 0 0;
+  -o-border-radius: 50% 50% 0 0;
+  border-radius: 50% 50% 0 0;
+  padding: 0.8rem 1rem 0 1rem;
+  position: absolute;
+  right: 1rem;
+  top: -0.7rem;
+}
+section.briefcase h2 span,
+footer.briefcase h2 span {
+  background: #982438;
+}
+section.contact h2 span,
+footer.contact h2 span {
+  background: #00ab38;
+}
+section.us h2 span,
+footer.us h2 span {
+  background: #058;
+}
 section blockquote,
 footer blockquote {
   width: 90%;
