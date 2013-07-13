@@ -190,6 +190,13 @@ footer
 		&:nth-child(7)
 			right:-7px
 */
+.briefcase
+	& .row
+		& figure
+			& h3
+				text-align center
+			& img
+				width 100%;
 .contact
 	& form 
 		width 95%
@@ -207,7 +214,16 @@ footer
 			& input, textarea
 				display block
 				width 75%
-				background-color red
-				margin-bottom SPACE
+				margin-bottom (SPACE/2)
 				border-radius SPACE
 				padding (SPACE/4)
+				border none
+
+			& button
+				padding (SPACE/4) SPACE
+				display block
+				border-radius SPACE
+				block-center()
+				background-color COLOR_THEME
+				color white
+				border none

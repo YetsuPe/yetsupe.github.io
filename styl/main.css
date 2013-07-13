@@ -31,9 +31,6 @@ a {
 .bck.header {
   background-color: #058;
 }
-.bck.us {
-  background-color: #dc471a;
-}
 .bck.white {
   background-color: #fff;
 }
@@ -41,7 +38,13 @@ a {
   background-color: #0b2de5;
 }
 .bck.cources {
-  background-color: #b9b906;
+  background-color: #ccb200;
+}
+.bck.briefcase {
+  background-color: #982438;
+}
+.bck.contact {
+  background-color: #00ab38;
 }
 h1 {
   display: inline-block;
@@ -305,6 +308,12 @@ footer {
 .row .yetMenber:nth-of-type(8) {
   left: -3rem;
 }
+.briefcase .row figure h3 {
+  text-align: center;
+}
+.briefcase .row figure img {
+  width: 100%;
+}
 .contact form {
   width: 95%;
   margin: 1rem auto;
@@ -325,14 +334,27 @@ footer {
 .contact form fieldset textarea {
   display: block;
   width: 75%;
-  background-color: #f00;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
   -webkit-border-radius: 1rem;
   -moz-border-radius: 1rem;
   -ms-border-radius: 1rem;
   -o-border-radius: 1rem;
   border-radius: 1rem;
   padding: 0.25rem;
+  border: none;
+}
+.contact form fieldset button {
+  padding: 0.25rem 1rem;
+  display: block;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
+  border-radius: 1rem;
+  margin: 0 auto 0 auto;
+  background-color: #058;
+  color: #fff;
+  border: none;
 }
 .row {
   width: 100%;
