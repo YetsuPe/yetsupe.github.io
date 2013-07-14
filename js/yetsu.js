@@ -7,8 +7,13 @@ Zepto(function($){
 		$('#menu').toggleClass('open-menu');
 	});
 	yetMap(); //load yetLocal map
-	
+	new App();
 });
+
+
+	
+
+
 
 var yetMap=function(){
 	google.maps.event.addDomListener(window,'load',function(){
