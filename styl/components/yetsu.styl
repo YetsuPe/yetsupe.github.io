@@ -13,7 +13,7 @@ footer
 	color white
 	h2,h3
 		margin 0
-section,footer 
+section
 	& h2
 		text-align center
 		padding (SPACE/2) 0
@@ -35,6 +35,9 @@ section,footer
 	&.us
 		& h2 span 
 			background: COLOR_US
+	&.ubication
+		& h2 span 
+			background: COLOR_UBICATION
 
 	& blockquote
 		width 90%
@@ -239,6 +242,14 @@ footer
 				display block
 				border-radius SPACE
 				block-center()
-				background-color COLOR_THEME
+				background-color rgba(0, 0, 0, .5)
 				color white
 				border none
+.ubication	
+	&>div
+		& div#yetLocal
+			width:95%
+			height: 13rem
+			block-center()
+			border-radius SPACE
+			border .5rem solid #705210

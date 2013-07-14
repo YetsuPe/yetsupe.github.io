@@ -195,15 +195,25 @@
 					<textarea name="mensaje" id="mensaje" required ></textarea>
 					<button>Enviar</button>
 				</fieldset>
-				
 			</form>
+		</div>
+	</section>
+	<section class="bck ubication">
+		<h2><span class="icon-map-marker icon-2x"></span>YetLocal</h2>
+		<div class="row">
+			<div>
+				<h3>Ubicanos en:</h3>
+				<address>
+					Av. Pedro Vilchez Buendía #303
+				</address>
+				<div id="yetLocal"></div>	
+			</div>
 		</div>
 	</section>
 	<footer>
 		<h2>YETSU S.A.C</h2>
 		<h3>@YetsuPe</h3>
 		<address>
-			Av. Pedro Vilchez Buendía #303<br/>
 			Lambayeque-Perú
 		</address>
 		<aside class="row">
@@ -221,6 +231,7 @@
 	<script>
 	document.write('<script src="js/lib/' +('__proto__' in {} ? 'zepto' : 'jquery-1.10.2') +'.js"><\/script>');
 	</script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBP3ZaMYVz0M19TaHkskzCYq-dncj2TxjI&sensor=true"></script>
 	<script src="js/lib/underscore.js"></script>
 	<script src="js/lib/backbone.js"></script>
 	<script>

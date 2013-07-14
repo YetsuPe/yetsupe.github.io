@@ -7,4 +7,11 @@ Zepto(function($){
   		$('header,section,footer').toggleClass('move-blocks');
 		$('#menu').toggleClass('open-menu');
 	});
+	var yetMapOptions={
+		center: new google.maps.LatLng(-6.704756,-79.901062) ,
+		zoom:17,
+		mapTypeId : google.maps.MapTypeId.ROADMAP
+	}; 
+	var yetLocal = new google.maps.Map(document.getElementById('yetLocal'),yetMapOptions);
+
 });

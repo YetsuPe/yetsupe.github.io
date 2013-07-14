@@ -46,6 +46,9 @@ a {
 .bck.contact {
   background-color: #00ab38;
 }
+.bck.ubication {
+  background-color: #e0a421;
+}
 h1 {
   display: inline-block;
 }
@@ -69,16 +72,14 @@ footer h2,
 footer h3 {
   margin: 0;
 }
-section h2,
-footer h2 {
+section h2 {
   text-align: center;
   padding: 0.5rem 0;
   color: #fff;
   margin: 0;
   background-color: rgba(0,0,0,0.5);
 }
-section h2 span,
-footer h2 span {
+section h2 span {
   -webkit-border-radius: 50% 50% 0 0;
   -moz-border-radius: 50% 50% 0 0;
   -ms-border-radius: 50% 50% 0 0;
@@ -89,20 +90,19 @@ footer h2 span {
   right: 1rem;
   top: -0.7rem;
 }
-section.briefcase h2 span,
-footer.briefcase h2 span {
+section.briefcase h2 span {
   background: #982438;
 }
-section.contact h2 span,
-footer.contact h2 span {
+section.contact h2 span {
   background: #00ab38;
 }
-section.us h2 span,
-footer.us h2 span {
+section.us h2 span {
   background: #058;
 }
-section blockquote,
-footer blockquote {
+section.ubication h2 span {
+  background: #e0a421;
+}
+section blockquote {
   width: 90%;
   margin: 0.5rem auto 0 auto;
   background-color: #fff;
@@ -116,23 +116,18 @@ footer blockquote {
   text-align: center;
 }
 section blockquote:before,
-footer blockquote:before,
-section blockquote:after,
-footer blockquote:after {
+section blockquote:after {
   font-family: "FontAwesome";
   font-size: 1rem;
   color: #058;
 }
-section blockquote:before,
-footer blockquote:before {
+section blockquote:before {
   content: "\f10d";
 }
-section blockquote:after,
-footer blockquote:after {
+section blockquote:after {
   content: "\f10e";
 }
-section img,
-footer img {
+section img {
   display: block;
   margin: 0 auto;
 }
@@ -376,9 +371,20 @@ footer {
   -o-border-radius: 1rem;
   border-radius: 1rem;
   margin: 0 auto 0 auto;
-  background-color: #058;
+  background-color: rgba(0,0,0,0.5);
   color: #fff;
   border: none;
+}
+.ubication>div div#yetLocal {
+  width: 95%;
+  height: 13rem;
+  margin: 0 auto 0 auto;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
+  border-radius: 1rem;
+  border: 0.5rem solid #705210;
 }
 .row {
   width: 100%;
@@ -501,10 +507,6 @@ h3 {
   html {
     font-size: 87.5%;
 /* 14px */
-  }
-  .us {
-    overflow: hidden;
-    padding: 0 1rem;
   }
   .us>img,
   .us blockquote {
