@@ -386,6 +386,9 @@ footer {
   border-radius: 1rem;
   border: 0.5rem solid #705210;
 }
+.ubication>div address {
+  text-align: center;
+}
 .row {
   width: 100%;
   overflow: hidden;
