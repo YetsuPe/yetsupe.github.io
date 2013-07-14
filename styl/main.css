@@ -220,6 +220,10 @@ aside.row [class*=" icon-"] {
   width: 80%;
   color: #fff;
 }
+.row .item >div span {
+  position: absolute;
+  right: 1rem;
+}
 .row .item:nth-child(1) >figure {
   background-color: #ab2d5f;
 }
