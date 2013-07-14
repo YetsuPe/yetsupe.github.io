@@ -7,9 +7,9 @@ var YetMenber=Backbone.Model.extend({
 			description : 'Yetsu S.A.C '
 		},
 		showYetMenber:function(){
-			//alert("seleccionado : "+this.get("name"));
-			$('#yetLogo').attr('src',''+this.get("image")+'' ) );
+			$('#yetLogo').attr('src',''+this.get("image")+'' );
 		}
-	});
+});
+
 	
 	

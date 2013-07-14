@@ -4,8 +4,8 @@ Zepto(function($){
   		//alert(window.innerWidth+" | viewport "+$(window).width()+" | width html document "+$(document).width() );
   		$('body').css({'overflow-x':'hidden'});
   		$('header,section,footer').toggleClass('move-blocks');
-		$('#menu').toggleClass('open-menu');
-	});
+			$('#menu').toggleClass('open-menu');
+		});
 	yetMap(); //load yetLocal map
 	new yetTeam_View(); // Load YetTeam 
 });
