@@ -2,15 +2,15 @@
 	z-index:2
 	position : fixed
 	height : 100%
-	width: 220px
-	left:-220px
+	width: NAV_WIDTH
+	left:-200px
 	background-color: darken(COLOR_THEME,30% )
 	transition(left 0.4s ease-in-out)
 	overflow-y:scroll
 	& > a
 		color: white
 		display: block
-		padding:  AIR
+		padding:  (SPACE/2)
 		text-decoration : none
 		border-bottom: 1px solid lighten(COLOR_THEME,30%)
 		&:first-child
@@ -61,4 +61,4 @@
 .open-menu
 	left:0px
 .move-blocks
-	left:220px
+	left:NAV_WIDTH

@@ -397,8 +397,8 @@ footer {
   z-index: 2;
   position: fixed;
   height: 100%;
-  width: 220px;
-  left: -220px;
+  width: 200px;
+  left: -200px;
   background-color: #003b5f;
   -webkit-transition: left 0.4s ease-in-out;
   -moz-transition: left 0.4s ease-in-out;
@@ -410,7 +410,7 @@ footer {
 [role="menu"] > a {
   color: #fff;
   display: block;
-  padding: 0.8em;
+  padding: 0.5rem;
   text-decoration: none;
   border-bottom: 1px solid #009bf8;
 }
@@ -476,7 +476,7 @@ footer {
   left: 0px;
 }
 .move-blocks {
-  left: 220px;
+  left: 200px;
 }
 * {
   -webkit-transition: all 0.4s ease-in-out;
