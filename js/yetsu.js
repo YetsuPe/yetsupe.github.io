@@ -7,7 +7,7 @@ Zepto(function($){
 		$('#menu').toggleClass('open-menu');
 	});
 	yetMap(); //load yetLocal map
-	new App();
+	new yetTeam_View(); // Load YetTeam 
 });
 
 
