@@ -1,6 +1,7 @@
-#-*-coding:utf-8-*-
+#encoding:utf-8
 import os
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+MAIN_DIR = os.path.dirname(os.path.realpath(__file__))
 
 DEBUG = True
 TEMPLATE_DEBUG = DEBUG
@@ -23,7 +24,6 @@ DATABASES = {
     }
 }
 #Heroku
-
 # Parse database configuration from $DATABASE_URL
 import dj_database_url
 DATABASES['default'] =  dj_database_url.config()
@@ -42,10 +42,7 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, 'static'),
 )
-
 #/heroku
-
-
 
 # Hosts/domain names that are valid for this site; required if DEBUG is False
 # See https://docs.djangoproject.com/en/1.5/ref/settings/#allowed-hosts
@@ -134,6 +131,7 @@ ROOT_URLCONF = 'Yetsu.urls'
 WSGI_APPLICATION = 'Yetsu.wsgi.application'
 
 TEMPLATE_DIRS = (
+    os.path.join(MAIN_DIR,'../Templates') ,
     # Put strings here, like "/home/html/django_templates" or "C:/www/django/templates".
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.
@@ -147,9 +145,7 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django_admin_bootstrapped',
     'django.contrib.staticfiles',
-    # Uncomment the next line to enable the admin:
     'django.contrib.admin',
-    # Uncomment the next line to enable admin documentation:
     'django.contrib.admindocs',
 )
 
