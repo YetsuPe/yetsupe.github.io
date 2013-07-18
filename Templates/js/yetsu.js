@@ -1,13 +1,13 @@
 /*Zepto js*/
 Zepto(function($){
-  	$('#ico-menu').on('click',function(){
+  	$('#ico-menu').on('tap',function(){
   		//alert(window.innerWidth+" | viewport "+$(window).width()+" | width html document "+$(document).width() );
   		$('body').css({'overflow-x':'hidden'});
   		$('header,section,footer').toggleClass('move-blocks');
 			$('#menu').toggleClass('open-menu');
 		});
 	yetMap(); //load yetLocal map
-	new yetTeam_View(); // Load YetTeam 
+	//new yetTeam_View(); // Load YetTeam 
 });
 
 

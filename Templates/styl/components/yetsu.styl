@@ -1,3 +1,5 @@
+/*
+	//transition(all 0.4s ease-in-out)*/
 h1
 	display:inline-block
 body
@@ -165,19 +167,17 @@ aside.row
 				width: 80%
 				background-color:bck*2*item*/
 
-.logo-circle
-	display block
-	width 30%
-	margin 0 auto
-	border-radius:50%
-	border .3rem solid COLOR_DARK
-	background-color COLOR_WHITE
 
 footer
 	background-color: COLOR_DARK
 	padding: 10px 0
 
 .row
+	& img.logo-circle
+		width 50%;
+		border-radius 50%
+		background-color COLOR_WHITE
+		border (SPACE/4) solid COLOR_DARK
 	& .yetMenber
 		float:left
 		position: relative
@@ -187,25 +187,22 @@ footer
 		& a 
 			display block
 			color white
-		&:hover
-			animation-name: magic
-			animation-duration: 1s
-			animation-fill-mode: both
 
 		&:nth-of-type(1),&:nth-of-type(2),&:nth-of-type(3),&:nth-of-type(4),&:nth-of-type(5),&:nth-of-type(6),&:nth-of-type(7),&:nth-of-type(8)
 			//top -100px
-			width 25%
+			width (100/4)%
 			& img
-				width:50%
+				width:70%
 				border-radius 50%
 		&:nth-of-type(1),&:nth-of-type(4)
-			top 3rem
+			top 5rem
 		&:nth-of-type(5),&:nth-of-type(8)
-			top -3rem
+			top -5rem
 		&:nth-of-type(1),&:nth-of-type(5)
-			right -3rem
+			right -1rem
 		&:nth-of-type(4),&:nth-of-type(8)
-			left -3rem
+			left -1rem
+
 			
 .briefcase
 	& .row
@@ -235,6 +232,8 @@ footer
 				border-radius SPACE
 				padding (SPACE/4)
 				border none
+			& textarea
+				height SPACE*5
 
 			& button
 				padding (SPACE/4) SPACE

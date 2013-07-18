@@ -23,6 +23,13 @@ animation-duration()
 	vendor('animation-duration',arguments)
 animation-fill-mode()
 	vendor('animation-fill-mode',arguments)
-
+animation-timing-function()
+	vendor('animation-timing-function',arguments)
+//http://caniuse.com/#feat=css-filters
+filter() //This css property is only supported in -webkit- engine for now
+	-webkit-filter : arguments
+backface-visibility() // only Opera not supported
+	vendor('backface-visibility',arguments)
+	
 block-center($top=0,$bottom=0)
 	margin $top auto $bottom auto
