@@ -1,6 +1,6 @@
 /*Zepto js*/
 Zepto(function($){
-  	$('#ico-menu').on('swipeRight',function(){
+  	$('body').on('swipeRight',function(){
   		//alert(window.innerWidth+" | viewport "+$(window).width()+" | width html document "+$(document).width() );
   		$('body').css({'overflow-x':'hidden'});
   		$('header,section,footer').toggleClass('move-blocks');
