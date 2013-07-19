@@ -210,6 +210,10 @@ aside.row [class*=" icon-"] {
   color: #fff;
   width: 20%;
   margin: 0;
+  padding-top: 0.4rem;
+}
+.row .item >figure>a {
+  color: #fff;
 }
 .row .item >div {
   width: 80%;
@@ -273,7 +277,8 @@ footer {
 .row .yetMenber>img {
   border: 0.2rem solid #fff;
 }
-.row .yetMenber a {
+.row .yetMenber a,
+.row .yetMenber span {
   display: block;
   color: #fff;
 }

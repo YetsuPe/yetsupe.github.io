@@ -1,6 +1,6 @@
 /*Zepto js*/
 Zepto(function($){
-  	$('body').on('swipeRight',function(){
+  	$('#ico-menu').on('click',function(){
   		//alert(window.innerWidth+" | viewport "+$(window).width()+" | width html document "+$(document).width() );
   		$('body').css({'overflow-x':'hidden'});
   		$('header,section,footer').toggleClass('move-blocks');
@@ -8,6 +8,7 @@ Zepto(function($){
 		});
 	yetMap(); //load yetLocal map
 	//new yetTeam_View(); // Load YetTeam 
+	new yetMenber_View();
 });
 
 
