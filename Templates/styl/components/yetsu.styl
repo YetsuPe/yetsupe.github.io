@@ -90,58 +90,54 @@ aside.row
 .row
 	& .item
 		text-align center
-		//line-height 1.8rem
+		float left
+		width 50%
 		& a
+			display block
+
 			>figure,>div
-				float left
 				min-height 2.7rem
 			>figure
 				color white
-				width: 20%
-				margin 0
-				padding-top 0.2rem
+				margin .2rem auto
+				padding-top .2rem
+				width 3rem 
+				border-radius 50%
 			>div
-				width: 80%
 				color white
 		& section
 			z-index -1
-	.item:nth-child(1)
-		& a
-			>figure
-				background-color:darken(COLOR_SERVICE_DW,10%)
-			>div
-				background-color:COLOR_SERVICE_DW
-	.item:nth-child(2)
-		& a
-			>figure
-				background-color:darken(COLOR_SERVICE_PW,10%)
-			>div
-				background-color:COLOR_SERVICE_PW
-	.item:nth-child(3)
-		& a
-			>figure
-				background-color:darken(COLOR_SERVICE_AM,10%)
-			>div
-				background-color:COLOR_SERVICE_AM
-	.item:nth-child(4)
-		& a
-			>figure
-				background-color:darken(COLOR_SERVICE_CT,10%)
-			>div
-				background-color:COLOR_SERVICE_CT
-		
-	.item:nth-child(5)
-		& a
-			>figure
-				background-color:darken(COLOR_SERVICE_CO,10%)
-			>div
-				background-color:COLOR_SERVICE_CO
-	.item:nth-child(6)
-		& a
-			>figure
-				background-color:darken(COLOR_SERVICE_EM,10%)
-			>div
-				background-color:COLOR_SERVICE_EM
+		&:nth-child(1)
+			& a
+				>figure
+					background-color:darken(COLOR_SERVICE_DW,10%)
+			background-color:COLOR_SERVICE_DW
+		&:nth-child(2)
+			& a
+				>figure
+					background-color:darken(COLOR_SERVICE_PW,10%)
+			background-color:COLOR_SERVICE_PW
+		&:nth-child(3)
+			& a
+				>figure
+					background-color:darken(COLOR_SERVICE_AM,10%)
+			background-color:COLOR_SERVICE_AM
+		&:nth-child(4)
+			& a
+				>figure
+					background-color:darken(COLOR_SERVICE_CT,10%)
+			background-color:COLOR_SERVICE_CT
+			
+		&:nth-child(5)
+			& a
+				>figure
+					background-color:darken(COLOR_SERVICE_CO,10%)
+			background-color:COLOR_SERVICE_CO
+		&:nth-child(6)
+			& a
+				>figure
+					background-color:darken(COLOR_SERVICE_EM,10%)
+			background-color:COLOR_SERVICE_EM
 
 	/*for item in 1 2 3
 		.item:nth-child({item})
