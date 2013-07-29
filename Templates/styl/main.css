@@ -183,7 +183,7 @@ aside.row [class*=" icon-"] {
 }
 .row .item a >figure,
 .row .item a >div {
-  min-height: 2.7rem;
+  min-height: 1.2rem;
 }
 .row .item a >figure {
   color: #fff;
