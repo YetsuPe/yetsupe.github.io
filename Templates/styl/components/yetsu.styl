@@ -41,27 +41,6 @@ section
 		& h2 span 
 			background: COLOR_UBICATION
 
-	& blockquote
-		width 90%
-		margin .5rem auto 0 auto
-		background-color white
-		padding .5rem
-		border-radius .8rem
-		border 2px solid #2E2D38
-		text-align center
-		&:before
-		&:after
-			font-family "FontAwesome"
-			font-size 1rem
-			color COLOR_THEME
-		&:before
-			content: "\f10d"
-		&:after
-			content: "\f10e"
-
-	& img
-		display block
-		margin 0 auto
 header
 	&>div 
 		padding: .2em 0
@@ -109,53 +88,60 @@ aside.row
 			border-radius .5rem
 			background-color COLOR_THEME
 .row
-	.item
+	& .item
 		text-align center
 		//line-height 1.8rem
-		>figure,>div
-			float left
-			min-height 2.7rem
-		>figure
-			color white
-			width: 20%
-			margin 0
-			padding-top 0.4rem
-			&>a
+		& a
+			>figure,>div
+				float left
+				min-height 2.7rem
+			>figure
 				color white
-		>div
-			width: 80%
-			color white
+				width: 20%
+				margin 0
+				padding-top 0.2rem
+			>div
+				width: 80%
+				color white
+		& section
+			z-index -1
 	.item:nth-child(1)
-		>figure
-			background-color:darken(COLOR_SERVICE_DW,10%)
-		>div
-			background-color:COLOR_SERVICE_DW
+		& a
+			>figure
+				background-color:darken(COLOR_SERVICE_DW,10%)
+			>div
+				background-color:COLOR_SERVICE_DW
 	.item:nth-child(2)
-		>figure
-			background-color:darken(COLOR_SERVICE_PW,10%)
-		>div
-			background-color:COLOR_SERVICE_PW
+		& a
+			>figure
+				background-color:darken(COLOR_SERVICE_PW,10%)
+			>div
+				background-color:COLOR_SERVICE_PW
 	.item:nth-child(3)
-		>figure
-			background-color:darken(COLOR_SERVICE_AM,10%)
-		>div
-			background-color:COLOR_SERVICE_AM
+		& a
+			>figure
+				background-color:darken(COLOR_SERVICE_AM,10%)
+			>div
+				background-color:COLOR_SERVICE_AM
 	.item:nth-child(4)
-		>figure
-			background-color:darken(COLOR_SERVICE_CT,10%)
-		>div
-			background-color:COLOR_SERVICE_CT
+		& a
+			>figure
+				background-color:darken(COLOR_SERVICE_CT,10%)
+			>div
+				background-color:COLOR_SERVICE_CT
 		
 	.item:nth-child(5)
-		>figure
-			background-color:darken(COLOR_SERVICE_CO,10%)
-		>div
-			background-color:COLOR_SERVICE_CO
+		& a
+			>figure
+				background-color:darken(COLOR_SERVICE_CO,10%)
+			>div
+				background-color:COLOR_SERVICE_CO
 	.item:nth-child(6)
-		>figure
-			background-color:darken(COLOR_SERVICE_EM,10%)
-		>div
-			background-color:COLOR_SERVICE_EM
+		& a
+			>figure
+				background-color:darken(COLOR_SERVICE_EM,10%)
+			>div
+				background-color:COLOR_SERVICE_EM
 
 	/*for item in 1 2 3
 		.item:nth-child({item})
@@ -176,6 +162,28 @@ footer
 	padding: 10px 0
 
 .row
+	& blockquote
+		width 90%
+		margin .5rem auto 0 auto
+		background-color white
+		padding .5rem
+		border-radius .8rem
+		border 2px solid #2E2D38
+		text-align center
+		&:before
+		&:after
+			font-family "FontAwesome"
+			font-size 1rem
+			color COLOR_THEME
+		&:before
+			content: "\f10d"
+		&:after
+			content: "\f10e"
+
+	& img
+		display block
+		margin 0 auto
+
 	& img.logo-circle
 		width 50%;
 		border-radius 50%
