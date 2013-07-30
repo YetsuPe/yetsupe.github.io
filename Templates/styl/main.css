@@ -628,10 +628,39 @@ h3 {
   }
   [role="menu"] > a {
     display: inline-block;
-    border-bottom: 0;
+    text-align: center;
+    padding: 0.1rem 0.4rem;
   }
   [role="menu"] > a:first-child {
     display: none;
+  }
+  [role="menu"] > a:nth-child(2) {
+    color: #32900e;
+    background-color: #87ef5f;
+    border-bottom: 0.4rem solid #32900e;
+  }
+  [role="menu"] > a:nth-child(3) {
+    color: #cc4300;
+    background-color: #ff9866;
+    border-bottom: 0.4rem solid #cc4300;
+  }
+  [role="menu"] > a:nth-child(4) {
+    color: #1a81b6;
+    background-color: #7bc6ec;
+    border-bottom: 0.4rem solid #1a81b6;
+  }
+  [role="menu"] > a:nth-child(5) {
+    color: #ccb200;
+    background-color: #ffeb66;
+    border-bottom: 0.4rem solid #ccb200;
+  }
+  [role="menu"] > a:nth-child(6) {
+    color: #2c3e50;
+    background-color: #829ebb;
+    border-bottom: 0.4rem solid #2c3e50;
+  }
+  [role="menu"] > a span {
+    display: block !important;
   }
   [role="logo"] {
     margin-right: 2.5rem;

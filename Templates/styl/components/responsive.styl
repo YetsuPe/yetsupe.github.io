@@ -94,9 +94,34 @@ h3
 		text-align right
 		& > a
 			display: inline-block
-			border-bottom: 0 
+			text-align center 
+			padding .1rem .4rem
 			&:first-child
 				display none
+			&:nth-child(2)
+				color COLOR_SERVICE_PW
+				background-color lighten(COLOR_SERVICE_PW,50%)
+				border-bottom: 0.4rem solid COLOR_SERVICE_PW
+			&:nth-child(3)
+				color COLOR_SERVICE_AM
+				background-color lighten(COLOR_SERVICE_AM,50%)
+				border-bottom: 0.4rem solid COLOR_SERVICE_AM
+			&:nth-child(4)
+				color COLOR_SERVICE_CT
+				background-color lighten(COLOR_SERVICE_CT,50%)
+				border-bottom: 0.4rem solid COLOR_SERVICE_CT
+			&:nth-child(5)
+				color COLOR_SERVICE_CO
+				background-color lighten(COLOR_SERVICE_CO,50%)
+				border-bottom: 0.4rem solid COLOR_SERVICE_CO
+			&:nth-child(6)
+				color COLOR_SERVICE_EM
+				background-color lighten(COLOR_SERVICE_EM,50%)
+				border-bottom: 0.4rem solid COLOR_SERVICE_EM
+
+			& span
+				display block !important
+
 	[role="logo"]
 		margin-right 2.5rem 
 	[role="slider"]
