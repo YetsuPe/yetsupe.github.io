@@ -23,23 +23,43 @@ section
 		margin 0
 		background-color rgba(0, 0, 0, .5)
 		& span
-			border-radius 50% 50% 0 0
-			padding: 0.8rem 1rem 0 1rem
+			border-radius 50%
+			border 0.4 solid black
+			padding: 0.4rem 0
 			position: absolute
-			right: SPACE
-			top: -0.7rem
-	&.briefcase
-		& h2 span 
-			background: COLOR_BRIEFCASE
-	&.contact
-		& h2 span 
-			background: COLOR_CONTACT
+			top: -0.9rem
+			background-color COLOR_WHITE
+			display block !important
+			width 4rem !important
+			height 4rem !important
 	&.us
-		& h2 span 
-			background: COLOR_US
+		& h2 
+			background: darken(COLOR_US,50%)
+			& span
+				border .4rem solid darken(COLOR_US,50%)
+				color COLOR_US
+				right: SPACE
+	&.briefcase
+		& h2 
+			background: darken(COLOR_BRIEFCASE,50%)
+			& span
+				border .4rem solid darken(COLOR_BRIEFCASE,50%)
+				color COLOR_BRIEFCASE
+				left: SPACE
 	&.ubication
-		& h2 span 
-			background: COLOR_UBICATION
+		& h2 
+			background: darken(COLOR_UBICATION,50%)
+			& span
+				border .4rem solid darken(COLOR_UBICATION,50%)
+				color COLOR_UBICATION
+				right: SPACE
+	&.contact
+		& h2 
+			background: darken(COLOR_CONTACT,50%)
+			& span
+				border .4rem solid darken(COLOR_CONTACT,50%)
+				color COLOR_CONTACT
+				left: SPACE
 
 header
 	&>div 
@@ -91,7 +111,7 @@ aside.row
 	& .item
 		text-align center
 		float left
-		width 50%
+		width (100/3)%
 		padding 0.2rem 
 		& a
 			display block
@@ -101,11 +121,12 @@ aside.row
 			>figure
 				color white
 				margin .2rem auto
-				padding-top .4rem
+				padding-top .1rem
 				width 4rem 
 				height 4rem
 				border-radius 50%
 				font-size 2.7rem
+				border 0.4rem solid #003352
 			>div
 				color white
 		& section

@@ -84,27 +84,51 @@ section h2 {
   background-color: rgba(0,0,0,0.5);
 }
 section h2 span {
-  -webkit-border-radius: 50% 50% 0 0;
-  -moz-border-radius: 50% 50% 0 0;
-  -ms-border-radius: 50% 50% 0 0;
-  -o-border-radius: 50% 50% 0 0;
-  border-radius: 50% 50% 0 0;
-  padding: 0.8rem 1rem 0 1rem;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  border: 0.4 solid #000;
+  padding: 0.4rem 0;
   position: absolute;
-  right: 1rem;
-  top: -0.7rem;
+  top: -0.9rem;
+  background-color: #fff;
+  display: block !important;
+  width: 4rem !important;
+  height: 4rem !important;
 }
-section.briefcase h2 span {
-  background: #982438;
-}
-section.contact h2 span {
-  background: #00ab38;
+section.us h2 {
+  background: #002a44;
 }
 section.us h2 span {
-  background: #058;
+  border: 0.4rem solid #002a44;
+  color: #058;
+  right: 1rem;
+}
+section.briefcase h2 {
+  background: #4c121c;
+}
+section.briefcase h2 span {
+  border: 0.4rem solid #4c121c;
+  color: #982438;
+  left: 1rem;
+}
+section.ubication h2 {
+  background: #715210;
 }
 section.ubication h2 span {
-  background: #e0a421;
+  border: 0.4rem solid #715210;
+  color: #e0a421;
+  right: 1rem;
+}
+section.contact h2 {
+  background: #00551c;
+}
+section.contact h2 span {
+  border: 0.4rem solid #00551c;
+  color: #00ab38;
+  left: 1rem;
 }
 header>div {
   padding: 0.2em 0;
@@ -176,8 +200,8 @@ aside.row [class*=" icon-"] {
 .row .item {
   text-align: center;
   float: left;
-  width: 50%;
-  padding: 0.2rem 1rem;
+  width: 33.333333333333336%;
+  padding: 0.2rem;
 }
 .row .item a {
   display: block;
@@ -189,7 +213,7 @@ aside.row [class*=" icon-"] {
 .row .item a >figure {
   color: #fff;
   margin: 0.2rem auto;
-  padding-top: 0.4rem;
+  padding-top: 0.1rem;
   width: 4rem;
   height: 4rem;
   -webkit-border-radius: 50%;
@@ -198,6 +222,7 @@ aside.row [class*=" icon-"] {
   -o-border-radius: 50%;
   border-radius: 50%;
   font-size: 2.7rem;
+  border: 0.4rem solid #003352;
 }
 .row .item a >div {
   color: #fff;
