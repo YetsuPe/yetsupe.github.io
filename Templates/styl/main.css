@@ -33,7 +33,7 @@ h3 {
   color: #fff;
 }
 .bck.header {
-  background-color: #058;
+  background-color: #009bde;
 }
 .bck.white {
   background-color: #fff;
@@ -60,7 +60,6 @@ header,
 section,
 footer {
   position: relative;
-  background-color: #058;
   left: 0;
   -webkit-transition: left 0.4s ease-in-out;
   -moz-transition: left 0.4s ease-in-out;
@@ -130,15 +129,15 @@ section.contact h2 span {
   color: #00ab38;
   left: 1rem;
 }
-header>div {
-  padding: 0.2em 0;
+header {
+  height: 3rem;
+  background-color: #009bde;
 }
 header * {
   color: #f2f2f2;
 }
-header em {
-  display: block;
-  text-align: center;
+header h1 {
+  line-height: 3rem;
 }
 aside.row {
   overflow: hidden;
@@ -195,7 +194,7 @@ aside.row [class*=" icon-"] {
   -ms-border-radius: 0.5rem;
   -o-border-radius: 0.5rem;
   border-radius: 0.5rem;
-  background-color: #058;
+  background-color: #009bde;
 }
 .row .item {
   text-align: center;
@@ -211,7 +210,7 @@ aside.row [class*=" icon-"] {
   min-height: 1.2rem;
 }
 .row .item a >figure {
-  color: #fff;
+  color: #009bde;
   margin: 0.2rem auto;
   padding-top: 0.1rem;
   width: 4rem;
@@ -222,31 +221,39 @@ aside.row [class*=" icon-"] {
   -o-border-radius: 50%;
   border-radius: 50%;
   font-size: 2.7rem;
-  border: 0.4rem solid #003352;
+  border: 0.4rem solid #009bde;
 }
 .row .item a >div {
   color: #fff;
 }
 .row .item section {
   z-index: -1;
-}
-.row .item:nth-child(1) a >figure {
-  background-color: #be326a;
-}
-.row .item:nth-child(2) a >figure {
-  background-color: #32900e;
-}
-.row .item:nth-child(3) a >figure {
-  background-color: #cc4300;
-}
-.row .item:nth-child(4) a >figure {
-  background-color: #1a81b6;
-}
-.row .item:nth-child(5) a >figure {
-  background-color: #ccb200;
-}
-.row .item:nth-child(6) a >figure {
-  background-color: #2c3e50;
+/*
+		&:nth-child(1)
+			& a
+				>figure
+					background-color:COLOR_SERVICE_DW
+		&:nth-child(2)
+			& a
+				>figure
+					background-color:COLOR_SERVICE_PW
+		&:nth-child(3)
+			& a
+				>figure
+					background-color:COLOR_SERVICE_AM
+		&:nth-child(4)
+			& a
+				>figure
+					background-color:COLOR_SERVICE_CT
+			
+		&:nth-child(5)
+			& a
+				>figure
+					background-color:COLOR_SERVICE_CO
+		&:nth-child(6)
+			& a
+				>figure
+					background-color:COLOR_SERVICE_EM   */
 }
 footer {
   background-color: #424242;
@@ -269,7 +276,7 @@ footer {
 .row blockquote:after {
   font-family: "FontAwesome";
   font-size: 1rem;
-  color: #058;
+  color: #009bde;
 }
 .row blockquote:before {
   content: "\f10d";
@@ -425,7 +432,7 @@ footer {
   height: 100%;
   width: 200px;
   left: -200px;
-  background-color: #003b5f;
+  background-color: #006c9b;
   -webkit-transition: left 0.4s ease-in-out;
   -moz-transition: left 0.4s ease-in-out;
   -ms-transition: left 0.4s ease-in-out;
@@ -438,13 +445,13 @@ footer {
   display: block;
   padding: 0.5rem;
   text-decoration: none;
-  border-bottom: 1px solid #009bf8;
+  border-bottom: 1px solid #35c2ff;
 }
 [role="menu"] > a:first-child {
   line-height: 0.4rem;
   padding: 0.2rem;
   text-align: center;
-  background-color: #002236;
+  background-color: #003e59;
   padding-bottom: 0.2rem;
 }
 [role="menu"] > a:first-child img {
@@ -463,39 +470,38 @@ footer {
 }
 [role="slider"] {
   margin: 0;
+  background-color: #009bde;
+  padding-bottom: 0.5rem;
 }
 [role="slider"] figure {
   margin: 0;
 }
 [role="slider"] figure img {
-  width: 100%;
-}
-[role="services"] {
-  background-color: #058;
-}
-[role="ico-menu"] {
-  position: absolute;
-  margin-left: 12px;
-  left: 0;
-  background-color: #003352;
-  padding: 0.2rem 0.5rem;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  -ms-border-radius: 3px;
-  -o-border-radius: 3px;
-  border-radius: 3px;
-}
-[role="logo"] {
-  position: absolute;
-  margin-right: 12px;
-  right: 0;
-  width: 2.8rem;
+  width: 30%;
+  display: block;
+  margin: 0 auto;
+  background-color: #c5c9cd;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
   border-radius: 50%;
-  background-color: #003352;
+}
+[role="services"] {
+  background: #fff;
+}
+[role="ico-menu"] {
+  position: absolute;
+  left: 0;
+  padding: 0.3rem 0.4rem;
+  width: 3rem;
+  height: 3rem;
+}
+[role="logo"] {
+  position: absolute;
+  right: 0;
+  width: 3rem;
+  height: 3rem;
   z-index: 2;
 }
 .open-menu {
@@ -514,7 +520,7 @@ h1 {
   margin: 0;
   font-size: 50px;
 /*IE*/
-  font-size: 1.3rem;
+  font-size: 1.4rem;
 }
 h2 {
   font-size: 1rem;

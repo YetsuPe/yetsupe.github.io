@@ -7,7 +7,7 @@ body
 header,section,footer
 	position: relative
 	//overflow hidden
-	background-color #005588
+	//background-color #005588
 	left: 0
 	transition(left 0.4s ease-in-out)
 footer
@@ -62,15 +62,12 @@ section
 				left: SPACE
 
 header
-	&>div 
-		padding: .2em 0
+	height HEIGHT_HEADER
+	background-color #009BDE
 	& *
 		color: #F2F2F2 
-	& em
-		display:block;
-		text-align:center	
-
-
+	h1
+		line-height 3rem
 
 
 aside.row
@@ -119,18 +116,18 @@ aside.row
 			>figure,>div
 				min-height 1.2rem
 			>figure
-				color white
+				color #009BDE
 				margin .2rem auto
 				padding-top .1rem
 				width 4rem 
 				height 4rem
 				border-radius 50%
 				font-size 2.7rem
-				border 0.4rem solid #003352
+				border 0.4rem solid #009BDE
 			>div
 				color white
 		& section
-			z-index -1
+			z-index -1/*
 		&:nth-child(1)
 			& a
 				>figure
@@ -155,7 +152,7 @@ aside.row
 		&:nth-child(6)
 			& a
 				>figure
-					background-color:COLOR_SERVICE_EM
+					background-color:COLOR_SERVICE_EM   */
 
 	/*for item in 1 2 3
 		.item:nth-child({item})

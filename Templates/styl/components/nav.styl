@@ -34,29 +34,40 @@
 
 [role="slider"]
 	margin 0
+	background-color #009BDE
+	padding-bottom .5rem 
 	& figure 
 		margin 0
 		& img
-			width 100%
+			width 30%
+			display block 
+			margin 0 auto 
+			background-color #C5C9CD
+			border-radius 50%
 [role="services"]
-	background-color COLOR_THEME
+	//background-color COLOR_THEME
+	background: white
 
 [role="ico-menu"]
 	position: absolute
-	margin-left: 12px
+	//margin-left: 12px
 	//top 40px
 	left: 0
-	background-color:darken(COLOR_THEME,40%)
-	padding: .2rem .5rem
-	border-radius(3px)
+	//background-color:darken(COLOR_THEME,40%)
+	padding: .3rem .4rem
+	width:HEIGHT_HEADER
+	height HEIGHT_HEADER
+	//border-radius(3px)
 // Logo en canvas
 [role="logo"]
 	position: absolute
-	margin-right: 12px
+	//margin-right: 12px
 	right: 0
-	width:2.8rem
-	border-radius 50%
-	background-color:darken(COLOR_THEME,40%)
+	//padding: .3rem .4rem
+	width:HEIGHT_HEADER
+	height HEIGHT_HEADER
+	//border-radius 50%
+	//background-color:darken(COLOR_THEME,40%)
 	z-index 2
 
 .open-menu
