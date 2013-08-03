@@ -222,6 +222,7 @@ aside.row [class*=" icon-"] {
   min-height: 1.2rem;
 }
 .row .item a >figure {
+  background-color: #fff;
   margin: 0.2rem auto;
   padding-top: 0.1rem;
   width: 4rem;
