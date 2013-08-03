@@ -488,6 +488,7 @@ footer {
 }
 [role="services"] {
   background: #fff;
+  padding: 0.5rem 0 1rem 0;
 }
 [role="ico-menu"] {
   position: absolute;
