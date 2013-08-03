@@ -23,8 +23,20 @@ body * {
 a {
   text-decoration: none;
 }
-h3,
+h1 {
+  display: inline-block;
+  font-weight: 700;
+}
 h2 {
+  font-weight: 400;
+}
+p,
+blockquote {
+  font-weight: 300;
+}
+h3,
+h2,
+h1 {
   margin: 0;
 }
 .text.center {
@@ -54,11 +66,8 @@ h2 {
 .bck.ubication {
   background-color: #e0a421;
 }
-h1 {
-  display: inline-block;
-}
 body {
-  font-family: Diavlo, sans-serif;
+  font-family: 'Nunito', sans-serif;
 }
 header,
 section,
