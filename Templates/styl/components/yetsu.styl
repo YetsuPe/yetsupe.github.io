@@ -15,51 +15,75 @@ footer
 	color white
 	h2,h3
 		margin 0
-section
+.service
+	padding-bottom 0.2rem
 	& h2
-		/*text-align center
+		text-align center
 		padding (SPACE/2) 0
-		color white
 		margin 0
-		background-color rgba(0, 0, 0, .5)*/
 		& span
 			border-radius 50%
-			border 0.4 solid black
-			padding: 0.4rem 0
+			padding: 0.2rem 0
 			position: absolute
+			font-size 2.7rem
 			top: -0.9rem
 			background-color COLOR_WHITE
 			display block !important
 			width 4rem !important
 			height 4rem !important
-	&.us
+	&.PW
 		& h2 
-			background: darken(COLOR_US,50%)
+			background: COLOR_SERVICE_PW
+			color lighten(COLOR_SERVICE_PW,90%)
 			& span
-				border .4rem solid darken(COLOR_US,50%)
-				color COLOR_US
+				border .4rem solid COLOR_SERVICE_PW
+				color COLOR_SERVICE_PW
 				right: SPACE
-	&.briefcase
+	&.CO
 		& h2 
-			background: darken(COLOR_BRIEFCASE,50%)
+			background: COLOR_SERVICE_CO
+			color lighten(COLOR_SERVICE_CO,90%)
 			& span
-				border .4rem solid darken(COLOR_BRIEFCASE,50%)
-				color COLOR_BRIEFCASE
+				border .4rem solid COLOR_SERVICE_CO
+				color COLOR_SERVICE_CO
 				left: SPACE
-	&.ubication
+	&.EM
 		& h2 
-			background: darken(COLOR_UBICATION,50%)
+			background: COLOR_SERVICE_EM
+			color lighten(COLOR_SERVICE_EM,90%)
 			& span
-				border .4rem solid darken(COLOR_UBICATION,50%)
-				color COLOR_UBICATION
+				border .4rem solid COLOR_SERVICE_EM
+				font-size 2.2rem
+				padding .5rem 0
+				color COLOR_SERVICE_EM
 				right: SPACE
-	&.contact
+	&.AM
 		& h2 
-			background: darken(COLOR_CONTACT,50%)
+			background: COLOR_SERVICE_AM
+			color lighten(COLOR_SERVICE_AM,90%)
 			& span
-				border .4rem solid darken(COLOR_CONTACT,50%)
-				color COLOR_CONTACT
+				border .4rem solid COLOR_SERVICE_AM
+				color COLOR_SERVICE_AM
 				left: SPACE
+	&.CT
+		& h2 
+			background: COLOR_SERVICE_CT
+			color lighten(COLOR_SERVICE_CT,90%)
+			& span
+				border .4rem solid COLOR_SERVICE_CT
+				color COLOR_SERVICE_CT
+				right: SPACE
+	&.DW
+		& h2 
+			background: COLOR_SERVICE_DW
+			color lighten(COLOR_SERVICE_DW,90%)
+			& span
+				border .4rem solid COLOR_SERVICE_DW
+				color COLOR_SERVICE_DW
+				font-size 2.2rem
+				padding .5rem 0
+				left: SPACE
+
 
 header
 	height HEIGHT_HEADER

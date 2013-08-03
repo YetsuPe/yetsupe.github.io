@@ -55,6 +55,24 @@ h1 {
 .bck.green {
   background-color: #00ab5d;
 }
+.bck.PW {
+  background-color: #334960;
+}
+.bck.CO {
+  background-color: #32900e;
+}
+.bck.EM {
+  background-color: #8f3fb0;
+}
+.bck.AM {
+  background-color: #982438;
+}
+.bck.CT {
+  background-color: #c33825;
+}
+.bck.DW {
+  background-color: #d65400;
+}
 .bck.white {
   background-color: #fff;
 }
@@ -95,51 +113,85 @@ footer h2,
 footer h3 {
   margin: 0;
 }
-section h2 span {
+.service {
+  padding-bottom: 0.2rem;
+}
+.service h2 {
+  text-align: center;
+  padding: 0.5rem 0;
+  margin: 0;
+}
+.service h2 span {
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
   border-radius: 50%;
-  border: 0.4 solid #000;
-  padding: 0.4rem 0;
+  padding: 0.2rem 0;
   position: absolute;
+  font-size: 2.7rem;
   top: -0.9rem;
   background-color: #fff;
   display: block !important;
   width: 4rem !important;
   height: 4rem !important;
 }
-section.us h2 {
-  background: #002a44;
+.service.PW h2 {
+  background: #334960;
+  color: #e7edf2;
 }
-section.us h2 span {
-  border: 0.4rem solid #002a44;
-  color: #058;
+.service.PW h2 span {
+  border: 0.4rem solid #334960;
+  color: #334960;
   right: 1rem;
 }
-section.briefcase h2 {
-  background: #4c121c;
+.service.CO h2 {
+  background: #32900e;
+  color: #e7fcdf;
 }
-section.briefcase h2 span {
-  border: 0.4rem solid #4c121c;
+.service.CO h2 span {
+  border: 0.4rem solid #32900e;
+  color: #32900e;
+  left: 1rem;
+}
+.service.EM h2 {
+  background: #8f3fb0;
+  color: #f4ebf8;
+}
+.service.EM h2 span {
+  border: 0.4rem solid #8f3fb0;
+  font-size: 2.2rem;
+  padding: 0.5rem 0;
+  color: #8f3fb0;
+  right: 1rem;
+}
+.service.AM h2 {
+  background: #982438;
+  color: #f9e5e8;
+}
+.service.AM h2 span {
+  border: 0.4rem solid #982438;
   color: #982438;
   left: 1rem;
 }
-section.ubication h2 {
-  background: #715210;
+.service.CT h2 {
+  background: #c33825;
+  color: #fbeae8;
 }
-section.ubication h2 span {
-  border: 0.4rem solid #715210;
-  color: #e0a421;
+.service.CT h2 span {
+  border: 0.4rem solid #c33825;
+  color: #c33825;
   right: 1rem;
 }
-section.contact h2 {
-  background: #00551c;
+.service.DW h2 {
+  background: #d65400;
+  color: #ffede1;
 }
-section.contact h2 span {
-  border: 0.4rem solid #00551c;
-  color: #00ab38;
+.service.DW h2 span {
+  border: 0.4rem solid #d65400;
+  color: #d65400;
+  font-size: 2.2rem;
+  padding: 0.5rem 0;
   left: 1rem;
 }
 header {
