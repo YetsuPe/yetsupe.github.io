@@ -23,7 +23,8 @@ body * {
 a {
   text-decoration: none;
 }
-h3 {
+h3,
+h2 {
   margin: 0;
 }
 .text.center {
@@ -56,6 +57,9 @@ h3 {
 h1 {
   display: inline-block;
 }
+body {
+  font-family: Diavlo, sans-serif;
+}
 header,
 section,
 footer {
@@ -74,13 +78,6 @@ footer {
 footer h2,
 footer h3 {
   margin: 0;
-}
-section h2 {
-  text-align: center;
-  padding: 0.5rem 0;
-  color: #fff;
-  margin: 0;
-  background-color: rgba(0,0,0,0.5);
 }
 section h2 span {
   -webkit-border-radius: 50%;
@@ -224,7 +221,7 @@ aside.row [class*=" icon-"] {
   border: 0.4rem solid #009bde;
 }
 .row .item a >div {
-  color: #fff;
+  color: #009bde;
 }
 .row .item section {
   z-index: -1;
@@ -472,6 +469,8 @@ footer {
   margin: 0;
   background-color: #009bde;
   padding-bottom: 0.5rem;
+  text-align: center;
+  color: #fff;
 }
 [role="slider"] figure {
   margin: 0;
@@ -480,7 +479,7 @@ footer {
   width: 30%;
   display: block;
   margin: 0 auto;
-  background-color: #c5c9cd;
+  background-color: #fff;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
