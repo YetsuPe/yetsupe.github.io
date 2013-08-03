@@ -48,6 +48,12 @@ h1 {
 .bck.header {
   background-color: #009bde;
 }
+.bck.orange {
+  background-color: #c83c23;
+}
+.bck.green {
+  background-color: #00ab5d;
+}
 .bck.white {
   background-color: #fff;
 }
@@ -216,7 +222,6 @@ aside.row [class*=" icon-"] {
   min-height: 1.2rem;
 }
 .row .item a >figure {
-  color: #009bde;
   margin: 0.2rem auto;
   padding-top: 0.1rem;
   width: 4rem;
@@ -227,39 +232,36 @@ aside.row [class*=" icon-"] {
   -o-border-radius: 50%;
   border-radius: 50%;
   font-size: 2.7rem;
-  border: 0.4rem solid #009bde;
 }
 .row .item a >div {
-  color: #009bde;
+  color: #fff;
 }
 .row .item section {
   z-index: -1;
-/*
-		&:nth-child(1)
-			& a
-				>figure
-					background-color:COLOR_SERVICE_DW
-		&:nth-child(2)
-			& a
-				>figure
-					background-color:COLOR_SERVICE_PW
-		&:nth-child(3)
-			& a
-				>figure
-					background-color:COLOR_SERVICE_AM
-		&:nth-child(4)
-			& a
-				>figure
-					background-color:COLOR_SERVICE_CT
-			
-		&:nth-child(5)
-			& a
-				>figure
-					background-color:COLOR_SERVICE_CO
-		&:nth-child(6)
-			& a
-				>figure
-					background-color:COLOR_SERVICE_EM   */
+}
+.row .item:nth-child(1) a >figure {
+  color: #be326a;
+  border: 0.2rem solid #be326a;
+}
+.row .item:nth-child(2) a >figure {
+  color: #32900e;
+  border: 0.2rem solid #32900e;
+}
+.row .item:nth-child(3) a >figure {
+  color: #cc4300;
+  border: 0.2rem solid #cc4300;
+}
+.row .item:nth-child(4) a >figure {
+  color: #1a81b6;
+  border: 0.2rem solid #1a81b6;
+}
+.row .item:nth-child(5) a >figure {
+  color: #ccb200;
+  border: 0.2rem solid #ccb200;
+}
+.row .item:nth-child(6) a >figure {
+  color: #2c3e50;
+  border: 0.2rem solid #2c3e50;
 }
 footer {
   background-color: #424242;
@@ -496,7 +498,7 @@ footer {
   border-radius: 50%;
 }
 [role="services"] {
-  background: #fff;
+  background-color: #009bde;
   padding: 0.5rem 0 1rem 0;
 }
 [role="ico-menu"] {
