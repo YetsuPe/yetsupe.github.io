@@ -1,3 +1,14 @@
+var YetService_view=Backbone.View.extend({
+	el:$('#services'),
+	events:{
+		'click .row .item a':'showService'
+	},
+	showService:function(){
+		$('#YetService').toggleClass('show-content magictime swashin');
+		$('#yetServices').toggleClass('tansition-down');
+	}
+});
+
 var YetMenberView= Backbone.View.extend({
 		tagName:'div',
 		className : 'yetMenber' ,

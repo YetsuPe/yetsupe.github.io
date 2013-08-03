@@ -131,34 +131,34 @@ aside.row
 		&:nth-child(1)
 			& a
 				>figure
-					color:COLOR_SERVICE_DW
-					border 0.2rem solid COLOR_SERVICE_DW
-		&:nth-child(2)
-			& a
-				>figure
 					color:COLOR_SERVICE_PW
 					border 0.2rem solid COLOR_SERVICE_PW
-		&:nth-child(3)
-			& a
-				>figure
-					color:COLOR_SERVICE_AM
-					border 0.2rem solid COLOR_SERVICE_AM
-		&:nth-child(4)
-			& a
-				>figure
-					color:COLOR_SERVICE_CT
-					border 0.2rem solid COLOR_SERVICE_CT
-			
-		&:nth-child(5)
+		&:nth-child(2)
 			& a
 				>figure
 					color:COLOR_SERVICE_CO
 					border 0.2rem solid COLOR_SERVICE_CO
-		&:nth-child(6)
+		&:nth-child(3)
 			& a
 				>figure
 					color:COLOR_SERVICE_EM
-					border 0.2rem solid COLOR_SERVICE_EM  
+					border 0.2rem solid COLOR_SERVICE_EM
+		&:nth-child(4)
+			& a
+				>figure
+					color:COLOR_SERVICE_AM
+					border 0.2rem solid COLOR_SERVICE_AM
+			
+		&:nth-child(5)
+			& a
+				>figure
+					color:COLOR_SERVICE_CT
+					border 0.2rem solid COLOR_SERVICE_CT
+		&:nth-child(6)
+			& a
+				>figure
+					color:COLOR_SERVICE_DW
+					border 0.2rem solid COLOR_SERVICE_DW  
 
 	/*for item in 1 2 3
 		.item:nth-child({item})
@@ -182,11 +182,12 @@ footer
 	& blockquote
 		width 90%
 		margin .5rem auto 0 auto
-		background-color white
+		background-color #334960
 		padding .5rem
 		border-radius .8rem
 		border 2px solid #2E2D38
 		text-align center
+		color COLOR_WHITE
 		&:before
 		&:after
 			font-family "FontAwesome"
@@ -281,3 +282,12 @@ footer
 			border .5rem solid #705210
 		& address
 			text-align center
+
+.hidden-content
+	z-index -1
+	position absolute
+.show-content
+	z-index 1 !important
+	position relative !important
+.tansition-down
+	transition all 0.4s ease-in-out 		

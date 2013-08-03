@@ -8,7 +8,7 @@ Zepto(function($){
 		});
 	yetMap(); //load yetLocal map
 	//new yetTeam_View(); // Load YetTeam 
-	new yetMenber_View();
+	//new YetService_view();
 });
 
 
