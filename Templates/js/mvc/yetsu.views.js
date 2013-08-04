@@ -15,7 +15,7 @@ var yetSocial_view=Backbone.View.extend({
 var yetMenu_view=Backbone.View.extend({
 	el:$('#ico-menu'),
 	events:{
-		'click':'showMenu'
+		'click':'showMenu',
 		'swipeRight':'showMenu'
 	},
 	showMenu:function(){
