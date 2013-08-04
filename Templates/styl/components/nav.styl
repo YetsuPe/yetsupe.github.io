@@ -13,16 +13,13 @@
 		padding:  (SPACE/2)
 		text-decoration : none
 		border-bottom: 1px solid lighten(COLOR_THEME,30%)
-		/*&:first-child
+		&:first-child
 			line-height 0.4rem
 			padding .2rem
 			text-align center
 			background-color: COLOR_THEME
 			padding-bottom .2rem
 
-			& img
-				width 2.5rem
-				display inline-block
 			& span
 				display  inline-block
 				font-size  1.3rem
@@ -30,7 +27,7 @@
 				vertical-align  top
 			& small
 				display block
-				margin-bottom .4rem*/
+				margin-bottom .4rem
 
 [role="slider"]
 	margin 0
@@ -52,16 +49,16 @@
 	background-color: #009BDE
 	padding .5rem 0 1rem 0
 
-[role="ico-menu"]
+[role="ico-menu"],[role="ico-user"]
 	position: absolute
-	//margin-left: 12px
-	//top 40px
-	left: 0
-	//background-color:darken(COLOR_THEME,40%)
 	padding: .3rem .4rem
 	width:HEIGHT_HEADER
 	height HEIGHT_HEADER
-	//border-radius(3px)
+[role="ico-menu"]
+	left 0
+[role="ico-user"]
+	right 0
+
 // Logo en canvas
 [role="logo"]
 	position: absolute
@@ -79,13 +76,16 @@
 	background-color white
 	bottom 0
 	z-index 2
+	height 4rem
 	width 100%
+	transition(bottom 0.4s ease-in-out)
 	>div >span
 		display block
 		width (100/3)%
+		height 2rem
 		float left
 		text-align center
-		padding 1rem
+		//padding 1rem
 	>a 
 		background-color white
 		color COLOR_THEME
@@ -102,5 +102,7 @@
 .move-blocks
 	left:NAV_WIDTH
 
+.showSocial
+	bottom 0  !important
 .overflow-x
 	overflow-x hidden
