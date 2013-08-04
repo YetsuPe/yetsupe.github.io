@@ -391,6 +391,9 @@ footer {
 .row .yetMenber ul li {
   display: inline-block;
 }
+.row .yetMenber ul li:first-child span {
+  margin-left: 0;
+}
 .row .yetMenber ul li span {
   width: 2rem;
   height: 2rem;
@@ -400,6 +403,19 @@ footer {
   -o-border-radius: 50%;
   border-radius: 50%;
   padding: 0.5rem;
+  margin-left: 0.3rem;
+}
+.row .yetMenber ul li span.facebook {
+  background-color: #45619d;
+}
+.row .yetMenber ul li span.twitter {
+  background-color: #29c;
+}
+.row .yetMenber ul li span.linkedin {
+  background-color: #1582bb;
+}
+.row .yetMenber ul li span.github {
+  background-color: #333;
 }
 .briefcase .row figure h3 {
   text-align: center;
@@ -763,22 +779,6 @@ h3 {
   .us blockquote {
     margin-left: 1%;
     width: 84%;
-  }
-  .row .yetMenber:nth-of-type(1),
-  .row .yetMenber:nth-of-type(4) {
-    top: 4.5rem;
-  }
-  .row .yetMenber:nth-of-type(5),
-  .row .yetMenber:nth-of-type(8) {
-    top: -4.5rem;
-  }
-  .row .yetMenber:nth-of-type(1),
-  .row .yetMenber:nth-of-type(5) {
-    right: -4.5rem;
-  }
-  .row .yetMenber:nth-of-type(4),
-  .row .yetMenber:nth-of-type(8) {
-    left: -4.5rem;
   }
 }
 @media only screen and (min-width: 768px) {
