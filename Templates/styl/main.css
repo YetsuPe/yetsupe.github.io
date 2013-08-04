@@ -106,12 +106,11 @@ section,
 footer,
 aside {
   position: relative;
-  left: 0;
-  -webkit-transition: left 0.4s ease-in-out;
-  -moz-transition: left 0.4s ease-in-out;
-  -ms-transition: left 0.4s ease-in-out;
-  -o-transition: left 0.4s ease-in-out;
-  transition: left 0.4s ease-in-out;
+  -webkit-transition: left right 0.4s ease-in-out;
+  -moz-transition: left right 0.4s ease-in-out;
+  -ms-transition: left right 0.4s ease-in-out;
+  -o-transition: left right 0.4s ease-in-out;
+  transition: left right 0.4s ease-in-out;
 }
 footer {
   text-align: center;
@@ -502,6 +501,20 @@ footer {
   width: auto;
   display: inline-block;
 }
+[role="user"] {
+  z-index: 2;
+  position: fixed;
+  height: 100%;
+  width: 220px;
+  right: -220px;
+  background-color: #fff;
+  -webkit-transition: right 0.4s ease-in-out;
+  -moz-transition: right 0.4s ease-in-out;
+  -ms-transition: right 0.4s ease-in-out;
+  -o-transition: right 0.4s ease-in-out;
+  transition: right 0.4s ease-in-out;
+  overflow-y: scroll;
+}
 [role="menu"] {
   z-index: 2;
   position: fixed;
@@ -639,6 +652,12 @@ footer {
 }
 .move-blocks {
   left: 170px;
+}
+.open-user {
+  right: 0px;
+}
+.move-blocks-user {
+  right: 220px;
 }
 .showSocial {
   bottom: 0 !important;

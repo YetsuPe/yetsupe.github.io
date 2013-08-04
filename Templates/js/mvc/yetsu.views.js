@@ -23,6 +23,18 @@ var yetMenu_view=Backbone.View.extend({
 		$('#menu').toggleClass('open-menu');
 	}
 });
+var yetUser_view=Backbone.View.extend({
+	el:$('#ico-user'),
+	events:{
+		'click':'showUser'
+	},
+	showUser:function(){
+		$('body').css({'overflow-x':'hidden'});
+  		$('header,section,footer,aside').toggleClass('move-blocks-user');
+		$('#section-user').toggleClass('open-user');
+	}
+});
+
 /*********** yetlocal ************/
 var yetMap_view=Backbone.View.extend({
 	el:$('#yetLocal'),

@@ -1,3 +1,12 @@
+[role="user"]
+	z-index:2
+	position : fixed
+	height : 100%
+	width: NAV_WIDTH_USER
+	right:-(NAV_WIDTH_USER)
+	background-color: COLOR_WHITE
+	transition(right 0.4s ease-in-out)
+	overflow-y:scroll
 [role="menu"]
 	z-index:2
 	position : fixed
@@ -109,6 +118,11 @@
 	left:0px
 .move-blocks
 	left:NAV_WIDTH
+	
+.open-user
+	right:0px
+.move-blocks-user
+	right:NAV_WIDTH_USER
 
 .showSocial
 	bottom 0  !important
