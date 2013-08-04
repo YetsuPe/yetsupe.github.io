@@ -217,37 +217,33 @@ footer
 		display block
 		margin 0 auto
 
-	& img.logo-circle
-		width 50%;
-		border-radius 50%
-		background-color COLOR_WHITE
-		border (SPACE/4) solid COLOR_DARK
 	& .yetMenber
 		float:left
 		position: relative
 		text-align center
+		padding 1rem 0
+		width 30%
+		margin-left (10/4)%
+		border-radius 1rem 
+		background-color rgba(0, 0, 0, .75)
 		&>img 
 			border .2rem solid COLOR_WHITE
+			border-radius 50%
+			width 5rem
+			height 5rem
 		& a,span
 			display block
 			color white
+		& ul
+			list-style: none
+			& li
+				display inline-block
+				& span
+					width 2rem
+					height 2rem 
+					border-radius 50%
+					padding .5rem
 
-		&:nth-of-type(1),&:nth-of-type(2),&:nth-of-type(3),&:nth-of-type(4),&:nth-of-type(5),&:nth-of-type(6),&:nth-of-type(7),&:nth-of-type(8)
-			//top -100px
-			width (100/4)%
-			& img
-				width:70%
-				border-radius 50%
-		&:nth-of-type(1),&:nth-of-type(4)
-			top 5rem
-		&:nth-of-type(5),&:nth-of-type(8)
-			top -5rem
-		&:nth-of-type(1),&:nth-of-type(5)
-			right -1rem
-		&:nth-of-type(4),&:nth-of-type(8)
-			left -1rem
-
-			
 .briefcase
 	& .row
 		& figure
@@ -275,6 +271,19 @@ form
 			border-radius SPACE
 			padding (SPACE/4)
 			border .2rem solid COLOR_THEME
+			&::-webkit-input-placeholder 
+				color: COLOR_THEME
+				text-align center
+			&:-moz-placeholder  /* Firefox 18- */
+				color: COLOR_THEME
+				text-align center  
+			&::-moz-placeholder   /* Firefox 19+ */
+				color: COLOR_THEME
+				text-align center  
+			&:-ms-input-placeholder   
+				color: COLOR_THEME
+				text-align center  
+			
 		& textarea
 			height SPACE*5
 

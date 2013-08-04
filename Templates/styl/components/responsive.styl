@@ -1,4 +1,3 @@
-
 html 
 	font-size:75%
 
@@ -10,7 +9,6 @@ h2
 	font-size:1rem
 h3
 	font-size:.8rem
-
 
 //******************** MEDIA QUERIES *******************************/
 /*@media only screen and (min-width: 320px) 
@@ -77,59 +75,85 @@ h3
 		overflow: visible
 		& div
 			& h1
-				padding-left 1rem
-				color #003B5F
+				padding .1rem 1rem 
+				color COLOR_WHITE
 				position absolute
 				z-index 3
 				left 0
 				font-size 2rem
-				top -3rem
-				color white 
+				top -4rem
+				background-color COLOR_THEME
+				margin-left 2rem
+				border-radius 0 0 1rem 1rem  
 	[role="menu"]
 		left: 0
 		width: 100%
 		position: relative
 		overflow-y: hidden
 		padding-left:7rem
+		padding-top 2rem
 		text-align right
+		border-top .3rem solid COLOR_THEME
 		& > a
 			display: inline-block
 			text-align center 
 			padding .1rem .4rem
+			color COLOR_WHITE
+			width 12%
+			& span
+				display none
+				width 100%
+				text-align center 
 			&:first-child
 				display none
-			&:nth-child(2)
-				color COLOR_SERVICE_PW
-				background-color lighten(COLOR_SERVICE_PW,50%)
-				border-bottom: 0.4rem solid COLOR_SERVICE_PW
-			&:nth-child(3)
-				color COLOR_SERVICE_AM
-				background-color lighten(COLOR_SERVICE_AM,50%)
-				border-bottom: 0.4rem solid COLOR_SERVICE_AM
-			&:nth-child(4)
-				color COLOR_SERVICE_CT
-				background-color lighten(COLOR_SERVICE_CT,50%)
-				border-bottom: 0.4rem solid COLOR_SERVICE_CT
-			&:nth-child(5)
-				color COLOR_SERVICE_CO
-				background-color lighten(COLOR_SERVICE_CO,50%)
-				border-bottom: 0.4rem solid COLOR_SERVICE_CO
-			&:nth-child(6)
-				color COLOR_SERVICE_EM
-				background-color lighten(COLOR_SERVICE_EM,50%)
-				border-bottom: 0.4rem solid COLOR_SERVICE_EM
-
-			& span
-				display block !important
+			&:nth-child(2) 
+				border-bottom: .3rem solid COLOR_THEME
+				background-color COLOR_THEME
+				& span
+					color COLOR_WHITE
+			&:nth-child(3) 
+				border-bottom: .3rem solid COLOR_US
+				background-color COLOR_US
+				& span
+					color COLOR_WHITE
+			&:nth-child(4) 
+				border-bottom: .3rem solid COLOR_BRIEFCASE
+				background-color COLOR_BRIEFCASE
+				& span
+					color COLOR_WHITE
+			&:nth-child(5) 
+				border-bottom: .3rem solid COLOR_UBICATION
+				background-color : COLOR_UBICATION
+				& span
+					color COLOR_WHITE
+			&:nth-child(6) 
+				border-bottom: .3rem solid COLOR_COURCES 
+				background-color COLOR_COURCES 
+				& span
+					color COLOR_WHITE
+			&:nth-child(7) 
+				border-bottom: .3rem solid COLOR_BLOG
+				background-color COLOR_BLOG
+				& span
+					color COLOR_WHITE
+			&:nth-child(8) 
+				border-bottom: .3rem solid COLOR_CONTACT
+				background-color : COLOR_CONTACT
+				& span
+					color COLOR_WHITE
+			&:nth-child(9) 
+				border-bottom: .3rem solid COLOR_CONTACT
+				background-color : COLOR_CONTACT
+				& span
+					color COLOR_WHITE
 
 	[role="logo"]
 		margin-right 2.5rem 
 	[role="slider"]
-		background-color white
+		//background-color white
 		& figure 
 			margin 0 auto
 			width 960px
-	
 	
 
 @media only screen and (min-width: 1200px) 
