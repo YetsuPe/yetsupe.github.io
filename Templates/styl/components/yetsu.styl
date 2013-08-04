@@ -255,38 +255,37 @@ footer
 				text-align center
 			& img
 				width 100%;
-.contact
-	& form 
-		width 95%
-		margin SPACE auto
-		& fieldset
-			border none
-			margin 0
-			& label 
-				display block
-				width 25%
-				float left
-				text-align right
-				padding-right (SPACE/2)
-				margin-top (SPACE/2)
-			& input, textarea
-				display block
-				width 75%
-				margin-bottom (SPACE/2)
-				border-radius SPACE
-				padding (SPACE/4)
-				border none
-			& textarea
-				height SPACE*5
+form 
+	width 95%
+	margin SPACE auto
+	& fieldset
+		border none
+		margin 0
+		& label 
+			display block
+			width 25%
+			float left
+			text-align right
+			padding-right (SPACE/2)
+			margin-top (SPACE/2)
+		& input, textarea
+			display block
+			width 100%
+			margin-bottom (SPACE/2)
+			border-radius SPACE
+			padding (SPACE/4)
+			border .2rem solid COLOR_THEME
+		& textarea
+			height SPACE*5
 
-			& button
-				padding (SPACE/4) SPACE
-				display block
-				border-radius SPACE
-				block-center()
-				background-color rgba(0, 0, 0, .5)
-				color white
-				border none
+		& button
+			padding (SPACE/4) SPACE
+			display block
+			border-radius SPACE
+			block-center()
+			background-color COLOR_THEME
+			color white
+			border none
 .ubication	
 	&>div
 		& div#yetLocal
@@ -306,3 +305,8 @@ footer
 	position relative !important
 .tansition-down
 	transition all 0.4s ease-in-out 		
+
+.head
+	height 3rem
+	line-height 3rem
+	color COLOR_WHITE

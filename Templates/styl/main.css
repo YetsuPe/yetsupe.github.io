@@ -49,6 +49,9 @@ h1 {
 .bck.header {
   background-color: #009bde;
 }
+.bck.theme {
+  background-color: #009bde;
+}
 .bck.orange {
   background-color: #c83c23;
 }
@@ -73,6 +76,9 @@ h1 {
 .bck.DW {
   background-color: #d65400;
 }
+.bck.us {
+  background-color: #ae7ac4;
+}
 .bck.white {
   background-color: #fff;
 }
@@ -83,13 +89,13 @@ h1 {
   background-color: #32900e;
 }
 .bck.briefcase {
-  background-color: #982438;
+  background-color: #d03d43;
 }
 .bck.contact {
-  background-color: #00ab38;
+  background-color: #99cd00;
 }
 .bck.ubication {
-  background-color: #e0a421;
+  background-color: #2dcc70;
 }
 * {
   -webkit-transition: all 0.4s ease-in-out;
@@ -418,15 +424,15 @@ footer {
 .briefcase .row figure img {
   width: 100%;
 }
-.contact form {
+form {
   width: 95%;
   margin: 1rem auto;
 }
-.contact form fieldset {
+form fieldset {
   border: none;
   margin: 0;
 }
-.contact form fieldset label {
+form fieldset label {
   display: block;
   width: 25%;
   float: left;
@@ -434,10 +440,10 @@ footer {
   padding-right: 0.5rem;
   margin-top: 0.5rem;
 }
-.contact form fieldset input,
-.contact form fieldset textarea {
+form fieldset input,
+form fieldset textarea {
   display: block;
-  width: 75%;
+  width: 100%;
   margin-bottom: 0.5rem;
   -webkit-border-radius: 1rem;
   -moz-border-radius: 1rem;
@@ -445,12 +451,12 @@ footer {
   -o-border-radius: 1rem;
   border-radius: 1rem;
   padding: 0.25rem;
-  border: none;
+  border: 0.2rem solid #009bde;
 }
-.contact form fieldset textarea {
+form fieldset textarea {
   height: 5rem;
 }
-.contact form fieldset button {
+form fieldset button {
   padding: 0.25rem 1rem;
   display: block;
   -webkit-border-radius: 1rem;
@@ -459,7 +465,7 @@ footer {
   -o-border-radius: 1rem;
   border-radius: 1rem;
   margin: 0 auto 0 auto;
-  background-color: rgba(0,0,0,0.5);
+  background-color: #009bde;
   color: #fff;
   border: none;
 }
@@ -491,6 +497,11 @@ footer {
   -ms-transition: all 0.4s ease-in-out;
   -o-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
+}
+.head {
+  height: 3rem;
+  line-height: 3rem;
+  color: #fff;
 }
 .row {
   width: 100%;
@@ -530,15 +541,22 @@ footer {
   overflow-y: scroll;
 }
 [role="menu"] > a {
-  color: #000f16;
+  color: #333;
   display: block;
   padding: 0.5rem;
   text-decoration: none;
-  border-bottom: 1px solid #35c2ff;
+}
+[role="menu"] > a span {
+  display: inline-block;
+  width: 30%;
+  text-align: center;
+}
+[role="menu"] > a:not(span) {
+  vertical-align: top;
 }
 [role="menu"] > a:first-child {
-  line-height: 0.4rem;
-  padding: 0.2rem;
+  line-height: 0.2rem;
+  height: 3rem;
   text-align: center;
   background-color: #009bde;
   padding-bottom: 0.2rem;
@@ -546,12 +564,57 @@ footer {
 [role="menu"] > a:first-child span {
   display: inline-block;
   font-size: 1.3rem;
-  padding-top: 1rem;
+  padding: 1rem 0;
   vertical-align: top;
+  color: #fff;
 }
-[role="menu"] > a:first-child small {
-  display: block;
-  margin-bottom: 0.4rem;
+[role="menu"] > a:nth-child(2) {
+  border-bottom: 0.1rem solid #009bde;
+}
+[role="menu"] > a:nth-child(2) span {
+  color: #009bde;
+}
+[role="menu"] > a:nth-child(3) {
+  border-bottom: 0.1rem solid #ae7ac4;
+}
+[role="menu"] > a:nth-child(3) span {
+  color: #ae7ac4;
+}
+[role="menu"] > a:nth-child(4) {
+  border-bottom: 0.1rem solid #d03d43;
+}
+[role="menu"] > a:nth-child(4) span {
+  color: #d03d43;
+}
+[role="menu"] > a:nth-child(5) {
+  border-bottom: 0.1rem solid #2dcc70;
+}
+[role="menu"] > a:nth-child(5) span {
+  color: #2dcc70;
+}
+[role="menu"] > a:nth-child(6) {
+  border-bottom: 0.1rem solid #2fc1b4;
+}
+[role="menu"] > a:nth-child(6) span {
+  color: #2fc1b4;
+}
+[role="menu"] > a:nth-child(7) {
+  border-bottom: 0.1rem solid #e67f22;
+}
+[role="menu"] > a:nth-child(7) span {
+  color: #e67f22;
+}
+[role="menu"] > a:nth-child(8) {
+  border-bottom: 0.1rem solid #99cd00;
+}
+[role="menu"] > a:nth-child(8) span {
+  color: #99cd00;
+}
+[role="menu"] > a:nth-child(9) {
+  border-bottom: 0.1rem solid #99cd00;
+}
+[role="menu"] > a:nth-child(9) span {
+  color: #99cd00;
 }
 [role="slider"] {
   margin: 0;
@@ -632,7 +695,8 @@ footer {
   font-size: 2rem;
   padding: 0.5rem;
 }
-[role="aside"] >a {
+[role="aside"] >span {
+  display: block;
   background-color: #fff;
   color: #009bde;
   position: absolute;
@@ -646,6 +710,7 @@ footer {
   -o-border-radius: 1rem 1rem 0 0;
   border-radius: 1rem 1rem 0 0;
   right: 1rem;
+  cursor: pointer;
 }
 .open-menu {
   left: 0px;

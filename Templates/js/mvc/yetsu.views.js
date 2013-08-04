@@ -1,7 +1,7 @@
 var yetSocial_view=Backbone.View.extend({
 	el:$('#yetsuSocial'),
 	events:{
-		'click a':'showSocial'
+		'click #ico-social':'showSocial'
 	},
 	showSocial:function(){
 		this.$el.toggleClass('showSocial');
