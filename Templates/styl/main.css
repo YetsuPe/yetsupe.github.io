@@ -91,12 +91,20 @@ h1 {
 .bck.ubication {
   background-color: #e0a421;
 }
+* {
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -ms-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
 body {
   font-family: 'Nunito', sans-serif;
 }
 header,
 section,
-footer {
+footer,
+aside {
   position: relative;
   left: 0;
   -webkit-transition: left 0.4s ease-in-out;
@@ -203,16 +211,6 @@ header * {
 }
 header h1 {
   line-height: 3rem;
-}
-aside.row {
-  overflow: hidden;
-}
-aside.row [class^="icon-"],
-aside.row [class*=" icon-"] {
-  width: 12.5%;
-  float: left;
-  text-align: center;
-  color: #fff;
 }
 .cources >div {
   background-color: #e3bc4d;
@@ -508,9 +506,9 @@ footer {
   z-index: 2;
   position: fixed;
   height: 100%;
-  width: 200px;
-  left: -200px;
-  background-color: #006c9b;
+  width: 170px;
+  left: -170px;
+  background-color: #fff;
   -webkit-transition: left 0.4s ease-in-out;
   -moz-transition: left 0.4s ease-in-out;
   -ms-transition: left 0.4s ease-in-out;
@@ -519,32 +517,29 @@ footer {
   overflow-y: scroll;
 }
 [role="menu"] > a {
-  color: #fff;
+  color: #000f16;
   display: block;
   padding: 0.5rem;
   text-decoration: none;
   border-bottom: 1px solid #35c2ff;
-}
-[role="menu"] > a:first-child {
-  line-height: 0.4rem;
-  padding: 0.2rem;
-  text-align: center;
-  background-color: #003e59;
-  padding-bottom: 0.2rem;
-}
-[role="menu"] > a:first-child img {
-  width: 2.5rem;
-  display: inline-block;
-}
-[role="menu"] > a:first-child span {
-  display: inline-block;
-  font-size: 1.3rem;
-  padding-top: 1rem;
-  vertical-align: top;
-}
-[role="menu"] > a:first-child small {
-  display: block;
-  margin-bottom: 0.4rem;
+/*&:first-child
+			line-height 0.4rem
+			padding .2rem
+			text-align center
+			background-color: COLOR_THEME
+			padding-bottom .2rem
+
+			& img
+				width 2.5rem
+				display inline-block
+			& span
+				display  inline-block
+				font-size  1.3rem
+				padding-top  1rem
+				vertical-align  top
+			& small
+				display block
+				margin-bottom .4rem*/
 }
 [role="slider"] {
   margin: 0;
@@ -585,11 +580,40 @@ footer {
   height: 3rem;
   z-index: 2;
 }
+[role="aside"] {
+  position: fixed;
+  background-color: #fff;
+  bottom: 0;
+  z-index: 2;
+  width: 100%;
+}
+[role="aside"] >div >span {
+  display: block;
+  width: 33.333333333333336%;
+  float: left;
+  text-align: center;
+  padding: 1rem;
+}
+[role="aside"] >a {
+  background-color: #fff;
+  color: #009bde;
+  position: absolute;
+  top: -2rem;
+  text-align: center;
+  width: 2rem;
+  height: 2rem;
+  -webkit-border-radius: 1rem 1rem 0 0;
+  -moz-border-radius: 1rem 1rem 0 0;
+  -ms-border-radius: 1rem 1rem 0 0;
+  -o-border-radius: 1rem 1rem 0 0;
+  border-radius: 1rem 1rem 0 0;
+  right: 1rem;
+}
 .open-menu {
   left: 0px;
 }
 .move-blocks {
-  left: 200px;
+  left: 170px;
 }
 .overflow-x {
   overflow-x: hidden;
@@ -767,13 +791,6 @@ h3 {
   [role="slider"] figure {
     width: 1200px;
   }
-}
-body {
-  -webkit-backface-visibility: hidden;
-  -moz-backface-visibility: hidden;
-  -ms-backface-visibility: hidden;
-  -o-backface-visibility: hidden;
-  backface-visibility: hidden;
 }
 .magictime {
   -webkit-animation-duration: 1s;
