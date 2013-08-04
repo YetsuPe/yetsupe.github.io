@@ -1,11 +1,45 @@
-var YetService_view=Backbone.View.extend({
-	el:$('#services'),
+var yetSocial_view=Backbone.View.extend({
+	el:$('#yetsuSocial'),
 	events:{
-		'click .row .item a':'showService'
+		'click a':'showSocial'
 	},
-	showService:function(){
-		$('#YetService').toggleClass('show-content magictime swashin');
-		$('#yetServices').toggleClass('tansition-down');
+	showSocial:function(){
+		this.$el.toggleClass('showSocial');
+	},
+	initialize:function(){
+		var bottom=$('#ico-social').height();
+		var heightSocial=$('#yetsuSocial').height();
+		this.$el.css({'bottom':-( heightSocial )+'px' });
+	}
+});
+var yetMenu_view=Backbone.View.extend({
+	el:$('#ico-menu'),
+	events:{
+		'click':'showMenu'
+	},
+	showMenu:function(){
+		$('body').css({'overflow-x':'hidden'});
+  		$('header,section,footer,aside').toggleClass('move-blocks');
+		$('#menu').toggleClass('open-menu');
+	}
+});
+/*********** yetlocal ************/
+var yetMap_view=Backbone.View.extend({
+	el:$('#yetLocal'),
+	initialize:function(){
+		google.maps.event.addDomListener(window,'load',function(){
+			var yetMapOptions={
+				center: new google.maps.LatLng(-6.704695,-79.901065) ,
+				zoom:17,
+				mapTypeId : google.maps.MapTypeId.ROADMAP
+			}; 
+			var yetLocal = new google.maps.Map(document.getElementById('yetLocal'),yetMapOptions);
+			var marker = new google.maps.Marker({
+				map :yetLocal,
+				position : yetLocal.getCenter(),
+				title : 'YetLocal'
+			});
+		});
 	}
 });
 
