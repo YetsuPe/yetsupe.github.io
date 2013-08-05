@@ -151,6 +151,9 @@ footer h3 {
   width: 4rem !important;
   height: 4rem !important;
 }
+.service section article p {
+  color: #fff;
+}
 .service.PW h2 {
   background: #334960;
   color: #e7edf2;
