@@ -363,6 +363,7 @@ footer {
   padding: 1rem 0;
   width: 30%;
   margin-left: 2.5%;
+  margin-top: 2.5%;
   -webkit-border-radius: 1rem;
   -moz-border-radius: 1rem;
   -ms-border-radius: 1rem;
@@ -703,7 +704,7 @@ form fieldset button {
   text-align: center;
   padding: 1rem;
 }
-[role="aside"] >div >figure >span {
+[role="aside"] >div >figure span {
   color: #fff;
   background-color: #009bde;
   -webkit-border-radius: 1rem;
@@ -819,6 +820,17 @@ h3 {
     margin: 0 auto;
     width: 960px;
   }
+  .row .yetMenber {
+    width: 24%;
+    margin-left: 1%;
+    margin-top: 1%;
+  }
+  .row .yetMenber:first-child {
+    margin-left: 0.5%;
+  }
+  .row .yetMenber:last-child {
+    margin-left: 0.5%;
+  }
   [role="ico-menu"] {
     z-index: -1;
   }
@@ -872,7 +884,7 @@ h3 {
   [role="aside"] >div >figure {
     width: 4%;
   }
-  [role="aside"] >div >figure >span {
+  [role="aside"] >div >figure span {
     font-size: 1rem;
   }
   [role="aside"] >span {

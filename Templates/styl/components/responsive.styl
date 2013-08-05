@@ -55,6 +55,15 @@ h3
 	.row
 		margin 0 auto
 		width 960px
+		& .yetMenber
+			width 24%
+			margin-left 1%
+			margin-top 1%
+			&:first-child 
+				margin-left .5%
+			&:last-child 
+				margin-left .5%
+
 
 	[role="ico-menu"]
 		z-index -1
@@ -69,6 +78,7 @@ h3
 			padding-top 7rem
 			& img
 				width 12%
+
 	header
 		position absolute
 		width 100%
@@ -98,7 +108,7 @@ h3
 		bottom 0 !important
 		>div >figure
 			width 4%
-			>span 
+			& span 
 				font-size 1rem
 		>span
 			display none
