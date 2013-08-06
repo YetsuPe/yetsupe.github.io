@@ -910,6 +910,9 @@ h3 {
     width: 14.285714285714286%;
     border-bottom: 0.3rem solid rgba(0,0,0,0.5) !important;
   }
+  [role="menu"] a:hover {
+    border-bottom: 0 solid #009bde !important;
+  }
   [role="menu"] a span {
     display: none;
     width: 100%;
