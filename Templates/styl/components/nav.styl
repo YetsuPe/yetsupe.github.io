@@ -13,11 +13,11 @@
 	height : 100%
 	width: NAV_WIDTH
 	left:-(NAV_WIDTH)
-	background-color: COLOR_WHITE
+	background-color: COLOR_DARK
 	transition(left 0.4s ease-in-out)
 	overflow-y:scroll
 	& a
-		color: darken(COLOR_WHITE,80%)
+		color: COLOR_WHITE
 		display: block
 		padding:  (SPACE/2)
 		text-decoration : none
@@ -89,9 +89,17 @@
 			border-radius 50%
 			
 [role="services"]
-	//background-color COLOR_THEME
-	background-color: #009BDE
+	background-color: #2C2C2C
 	padding .5rem 0 1rem 0
+	& a
+		display inline-block
+		color white
+		text-align center
+		width (100/6)%
+		padding .1rem
+		& span
+			display block
+			font-size 1.5rem
 
 [role="ico-menu"],[role="ico-user"]
 	position: absolute
