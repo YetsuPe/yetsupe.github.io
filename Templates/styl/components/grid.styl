@@ -1,7 +1,11 @@
 .row
 	width 100%
-	overflow hidden
 	display block
+	&:after
+		content ''
+		clear both
+		display: table
+		*zoom 1
 	& .row
 		width auto
 		display inline-block

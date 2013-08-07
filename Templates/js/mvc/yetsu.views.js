@@ -9,7 +9,7 @@ var yetSocial_view=Backbone.View.extend({
 	initialize:function(){
 		var bottom=$('#ico-social').height();
 		var heightSocial=$('#yetsuSocial').height();
-		this.$el.css({'bottom':-8.2+'rem' });
+		this.$el.css({'bottom':-8.8+'rem' });
 	}
 });
 var yetMenu_view=Backbone.View.extend({
