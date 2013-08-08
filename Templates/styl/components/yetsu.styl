@@ -21,7 +21,7 @@ footer
 		text-align center
 		padding (SPACE/2) 0 0 0
 		margin 0
-	& span
+	& > span
 		border-radius 50%
 		padding: 0.2rem 0
 		position: relative
@@ -31,7 +31,25 @@ footer
 		display block 
 		margin 0 auto
 		width 4rem 
-		height 4rem 
+		height 4rem
+		z-index 2
+	.features
+		text-align center
+		position: absolute
+		top 3rem
+		width 100%
+		& span
+			color rgba(255, 255, 255, .4)
+			font-size 2rem
+			width 10%
+			&:nth-child(1),&:nth-child(2),&:nth-child(3),&:nth-child(4),&:nth-child(5)
+				float: left
+			&:nth-child(6),&:nth-child(7),&:nth-child(8),&:nth-child(9),&:nth-child(10)
+				float right
+			&:nth-child(5),&:nth-child(10)
+				opacity 0
+
+
 	& section article 
 		padding 0.3rem 0
 		& p 
@@ -68,21 +86,21 @@ footer
 		& h2 
 			background: COLOR_SERVICE_PW
 			color lighten(COLOR_SERVICE_PW,90%)
-		& span
+		& > span
 			border .4rem solid COLOR_SERVICE_PW
 			color COLOR_SERVICE_PW
 	&.CO
 		& h2 
 			background: COLOR_SERVICE_CO
 			color lighten(COLOR_SERVICE_CO,90%)
-		& span
+		& > span
 			border .4rem solid COLOR_SERVICE_CO
 			color COLOR_SERVICE_CO
 	&.EM
 		& h2 
 			background: COLOR_SERVICE_EM
 			color lighten(COLOR_SERVICE_EM,90%)
-		& span
+		& > span
 			border .4rem solid COLOR_SERVICE_EM
 			font-size 2.2rem
 			padding .5rem 0
@@ -91,21 +109,21 @@ footer
 		& h2 
 			background: COLOR_SERVICE_AM
 			color lighten(COLOR_SERVICE_AM,90%)
-		& span
+		& > span
 			border .4rem solid COLOR_SERVICE_AM
 			color COLOR_SERVICE_AM
 	&.CT
 		& h2 
 			background: COLOR_SERVICE_CT
 			color lighten(COLOR_SERVICE_CT,90%)
-		& span
+		& > span
 			border .4rem solid COLOR_SERVICE_CT
 			color COLOR_SERVICE_CT
 	&.DW
 		& h2 
 			background: COLOR_SERVICE_DW
 			color lighten(COLOR_SERVICE_DW,90%)
-		& span
+		& > span
 			border .4rem solid COLOR_SERVICE_DW
 			color COLOR_SERVICE_DW
 			font-size 2.2rem
