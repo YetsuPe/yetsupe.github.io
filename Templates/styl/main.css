@@ -115,11 +115,12 @@ section,
 footer,
 aside {
   position: relative;
-  -webkit-transition: left right 0.4s ease-in-out;
-  -moz-transition: left right 0.4s ease-in-out;
-  -ms-transition: left right 0.4s ease-in-out;
-  -o-transition: left right 0.4s ease-in-out;
-  transition: left right 0.4s ease-in-out;
+  left: auto;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -ms-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
 }
 footer {
   text-align: center;
@@ -593,6 +594,9 @@ form fieldset button {
   line-height: 3rem;
   color: #fff;
 }
+.fix-padding {
+  padding-top: 0.3rem;
+}
 .row {
   width: 100%;
   display: block;
@@ -786,7 +790,7 @@ form fieldset button {
 /*margin-left (10/3)%
 		margin-top (10/3)%
 		margin-bottom (10/3)%*/
-  height: 25%;
+  height: 4rem;
   float: left;
   text-align: center;
   padding: 1rem;
