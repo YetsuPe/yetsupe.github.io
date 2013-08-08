@@ -4,7 +4,5 @@ Zepto(function($){
 	var menu = new yetMenu_view(); //load yetMenu
 	new yetUser_view(); //load yetMenu
 	new yetSocial_view(); //load yetLocal map
-	$$('body').swipeRight( function(){
-		menu.showMenu();
-	});
+
 });

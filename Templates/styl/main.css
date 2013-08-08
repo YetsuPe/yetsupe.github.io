@@ -158,8 +158,8 @@ footer h3 {
 }
 .service .features {
   text-align: center;
-  position: absolute;
-  top: 3rem;
+  position: relative;
+  top: -3rem;
   width: 100%;
 }
 .service .features span {
