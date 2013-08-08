@@ -19,7 +19,7 @@ footer
 	padding-bottom  0.3rem
 	& h2
 		text-align center
-		padding (SPACE/2) 0
+		padding (SPACE/2) 0 0 0
 		margin 0
 	& span
 		border-radius 50%
@@ -29,9 +29,11 @@ footer
 		text-align center
 		background-color COLOR_WHITE
 		display block 
+		margin 0 auto
 		width 4rem 
 		height 4rem 
 	& section article 
+		padding 0.3rem 0
 		& p 
 			color COLOR_WHITE
 			text-align center
@@ -66,48 +68,48 @@ footer
 		& h2 
 			background: COLOR_SERVICE_PW
 			color lighten(COLOR_SERVICE_PW,90%)
-			& span
-				border .4rem solid COLOR_SERVICE_PW
-				color COLOR_SERVICE_PW
+		& span
+			border .4rem solid COLOR_SERVICE_PW
+			color COLOR_SERVICE_PW
 	&.CO
 		& h2 
 			background: COLOR_SERVICE_CO
 			color lighten(COLOR_SERVICE_CO,90%)
-			& span
-				border .4rem solid COLOR_SERVICE_CO
-				color COLOR_SERVICE_CO
+		& span
+			border .4rem solid COLOR_SERVICE_CO
+			color COLOR_SERVICE_CO
 	&.EM
 		& h2 
 			background: COLOR_SERVICE_EM
 			color lighten(COLOR_SERVICE_EM,90%)
-			& span
-				border .4rem solid COLOR_SERVICE_EM
-				font-size 2.2rem
-				padding .5rem 0
-				color COLOR_SERVICE_EM
+		& span
+			border .4rem solid COLOR_SERVICE_EM
+			font-size 2.2rem
+			padding .5rem 0
+			color COLOR_SERVICE_EM
 	&.AM
 		& h2 
 			background: COLOR_SERVICE_AM
 			color lighten(COLOR_SERVICE_AM,90%)
-			& span
-				border .4rem solid COLOR_SERVICE_AM
-				color COLOR_SERVICE_AM
+		& span
+			border .4rem solid COLOR_SERVICE_AM
+			color COLOR_SERVICE_AM
 	&.CT
 		& h2 
 			background: COLOR_SERVICE_CT
 			color lighten(COLOR_SERVICE_CT,90%)
-			& span
-				border .4rem solid COLOR_SERVICE_CT
-				color COLOR_SERVICE_CT
+		& span
+			border .4rem solid COLOR_SERVICE_CT
+			color COLOR_SERVICE_CT
 	&.DW
 		& h2 
 			background: COLOR_SERVICE_DW
 			color lighten(COLOR_SERVICE_DW,90%)
-			& span
-				border .4rem solid COLOR_SERVICE_DW
-				color COLOR_SERVICE_DW
-				font-size 2.2rem
-				padding .5rem 0
+		& span
+			border .4rem solid COLOR_SERVICE_DW
+			color COLOR_SERVICE_DW
+			font-size 2.2rem
+			padding .5rem 0
 
 
 header
@@ -233,11 +235,14 @@ footer
 .yetMenber
 	text-align center
 	padding .5rem 0
-	width 95%
-	margin-left 2.5%
-	margin-top 2.5%
+	width 45%
+	float left
+	margin-left (10/3)%
+	margin-top (10/3)%
 	border-radius 1rem 
 	background-color rgba(0, 0, 0, .75)
+	&:first-child
+		margin-left (10/3)%
 	&>img 
 		border .2rem solid COLOR_WHITE
 		border-radius 50%

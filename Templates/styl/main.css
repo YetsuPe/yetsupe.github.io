@@ -36,6 +36,7 @@ h2 {
 p,
 blockquote {
   font-weight: 300;
+  margin: 0;
 }
 h3,
 h2,
@@ -134,7 +135,7 @@ footer h3 {
 }
 .service h2 {
   text-align: center;
-  padding: 0.5rem 0;
+  padding: 0.5rem 0 0 0;
   margin: 0;
 }
 .service span {
@@ -149,8 +150,12 @@ footer h3 {
   text-align: center;
   background-color: #fff;
   display: block;
+  margin: 0 auto;
   width: 4rem;
   height: 4rem;
+}
+.service section article {
+  padding: 0.3rem 0;
 }
 .service section article p {
   color: #fff;
@@ -197,7 +202,7 @@ footer h3 {
   background: #334960;
   color: #e7edf2;
 }
-.service.PW h2 span {
+.service.PW span {
   border: 0.4rem solid #334960;
   color: #334960;
 }
@@ -205,7 +210,7 @@ footer h3 {
   background: #32900e;
   color: #e7fcdf;
 }
-.service.CO h2 span {
+.service.CO span {
   border: 0.4rem solid #32900e;
   color: #32900e;
 }
@@ -213,7 +218,7 @@ footer h3 {
   background: #8f3fb0;
   color: #f4ebf8;
 }
-.service.EM h2 span {
+.service.EM span {
   border: 0.4rem solid #8f3fb0;
   font-size: 2.2rem;
   padding: 0.5rem 0;
@@ -223,7 +228,7 @@ footer h3 {
   background: #982438;
   color: #f9e5e8;
 }
-.service.AM h2 span {
+.service.AM span {
   border: 0.4rem solid #982438;
   color: #982438;
 }
@@ -231,7 +236,7 @@ footer h3 {
   background: #c33825;
   color: #fbeae8;
 }
-.service.CT h2 span {
+.service.CT span {
   border: 0.4rem solid #c33825;
   color: #c33825;
 }
@@ -239,7 +244,7 @@ footer h3 {
   background: #d65400;
   color: #ffede1;
 }
-.service.DW h2 span {
+.service.DW span {
   border: 0.4rem solid #d65400;
   color: #d65400;
   font-size: 2.2rem;
@@ -395,15 +400,19 @@ footer {
 .yetMenber {
   text-align: center;
   padding: 0.5rem 0;
-  width: 95%;
-  margin-left: 2.5%;
-  margin-top: 2.5%;
+  width: 45%;
+  float: left;
+  margin-left: 3.3333333333333335%;
+  margin-top: 3.3333333333333335%;
   -webkit-border-radius: 1rem;
   -moz-border-radius: 1rem;
   -ms-border-radius: 1rem;
   -o-border-radius: 1rem;
   border-radius: 1rem;
   background-color: rgba(0,0,0,0.75);
+}
+.yetMenber:first-child {
+  margin-left: 3.3333333333333335%;
 }
 .yetMenber>img {
   border: 0.2rem solid #fff;
@@ -819,13 +828,12 @@ h3 {
 /* 13px */
   }
   .yetMenber {
-    width: 45%;
-    float: left;
-    margin-left: 3.3333333333333335%;
-    margin-top: 3.3333333333333335%;
+    width: 30%;
+    margin-left: 2.5%;
+    margin-top: 2.5%;
   }
   .yetMenber:first-child {
-    margin-left: 3.3333333333333335%;
+    margin-left: 2.5%;
   }
 }
 @media only screen and (min-width: 480px) {
@@ -834,12 +842,12 @@ h3 {
 /* 14px */
   }
   .yetMenber {
-    width: 30%;
-    margin-left: 2.5%;
-    margin-top: 2.5%;
+    width: 22.5%;
+    margin-left: 2%;
+    margin-top: 2%;
   }
   .yetMenber:first-child {
-    margin-left: 2.5%;
+    margin-left: 2%;
   }
   .us>img,
   .us blockquote {
@@ -858,12 +866,12 @@ h3 {
     font-size: 92%;
   }
   .yetMenber {
-    width: 22.5%;
-    margin-left: 2%;
-    margin-top: 2%;
+    width: 18%;
+    margin-left: 1.6666666666666667%;
+    margin-top: 1.6666666666666667%;
   }
   .yetMenber:first-child {
-    margin-left: 2%;
+    margin-left: 1.6666666666666667%;
   }
   [role="services"] a {
     width: 16.666666666666668%;
@@ -899,12 +907,12 @@ h3 {
     font-size: 100%;
   }
   .yetMenber {
-    width: 18%;
-    margin-left: 1.6666666666666667%;
-    margin-top: 1.6666666666666667%;
+    width: 15%;
+    margin-left: 1.4285714285714286%;
+    margin-top: 1.4285714285714286%;
   }
   .yetMenber:first-child {
-    margin-left: 1.6666666666666667%;
+    margin-left: 1.4285714285714286%;
   }
   [role="ico-menu"] {
     z-index: -1;
@@ -1068,12 +1076,12 @@ h3 {
     font-size: 112.5%;
   }
   .yetMenber {
-    width: 15%;
-    margin-left: 1.4285714285714286%;
-    margin-top: 1.4285714285714286%;
+    width: 12.857142857142858%;
+    margin-left: 1.25%;
+    margin-top: 1.25%;
   }
   .yetMenber:first-child {
-    margin-left: 1.4285714285714286%;
+    margin-left: 1.25%;
   }
   .row {
     width: 1200px;
