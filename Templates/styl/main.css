@@ -62,13 +62,13 @@ h1 {
   background-color: #c83c23;
 }
 .bck.green {
-  background-color: #32ac97;
+  background-color: #2dcc70;
 }
 .bck.PW {
   background-color: #334960;
 }
 .bck.CO {
-  background-color: #32ac97;
+  background-color: #32900e;
 }
 .bck.EM {
   background-color: #8f3fb0;
@@ -98,7 +98,7 @@ h1 {
   background-color: #d03d43;
 }
 .bck.contact {
-  background-color: #99cd00;
+  background-color: #b3d01e;
 }
 .bck.ubication {
   background-color: #2dcc70;
@@ -133,16 +133,28 @@ footer h2,
 footer h3 {
   margin: 0;
 }
-.service {
+.service,
+.briefcase,
+.ubication,
+.us,
+.contact {
   color: #fff;
   padding-bottom: 0.3rem;
 }
-.service h2 {
+.service h2,
+.briefcase h2,
+.ubication h2,
+.us h2,
+.contact h2 {
   text-align: center;
   padding: 0.5rem 0 0 0;
   margin: 0;
 }
-.service > span {
+.service > span,
+.briefcase > span,
+.ubication > span,
+.us > span,
+.contact > span {
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
@@ -197,7 +209,7 @@ footer h3 {
   padding: 0 1rem;
 }
 .service section article p strong {
-  color: #32ac97;
+  color: #2dcc70;
 }
 .service section article ul.list-inline {
   list-style: none;
@@ -300,11 +312,10 @@ footer h3 {
   color: #334960;
 }
 .service.PW section article ul li {
-  background-color: #88a4c0;
-  color: #334960;
+  background-color: #2dcc70;
 }
 .service.PW section article ul li:after {
-  color: #334960;
+  color: #2dcc70;
 }
 .service.CO h2 {
   background: #32900e;
@@ -318,17 +329,17 @@ footer h3 {
   background-color: #334960;
 }
 .service.CO section article ul.list-items > li > a {
-  background-color: #32ac97;
+  background-color: #2dcc70;
 }
 .service.CO section article ul.list-items > li > a:first-of-type:after {
   content: "\f02d";
   background-color: #fff;
-  color: #32ac97;
+  color: #2dcc70;
 }
 .service.CO section article ul.list-items > li > a:nth-of-type(2):after {
   content: "\f113";
   background-color: #fff;
-  color: #32ac97;
+  color: #2dcc70;
 }
 .service.EM h2 {
   background: #8f3fb0;
@@ -349,10 +360,10 @@ footer h3 {
   color: #982438;
 }
 .service.AM section article ul li {
-  background-color: #4c121c;
+  background-color: #009bde;
 }
 .service.AM section article ul li:after {
-  color: #4c121c;
+  color: #009bde;
 }
 .service.CT h2 {
   background: #c33825;
@@ -510,76 +521,23 @@ footer {
 .yetMenber ul li span.github {
   background-color: #333;
 }
+.briefcase {
+  padding-bottom: 1rem;
+}
+.briefcase >span {
+  color: #d03d43;
+}
 .briefcase .row figure h3 {
   text-align: center;
 }
 .briefcase .row figure img {
   width: 100%;
 }
-form {
-  width: 95%;
-  margin: 1rem auto;
+.ubication {
+  padding-bottom: 1rem;
 }
-form fieldset {
-  border: none;
-  margin: 0;
-}
-form fieldset label {
-  display: block;
-  width: 25%;
-  float: left;
-  text-align: right;
-  padding-right: 0.5rem;
-  margin-top: 0.5rem;
-}
-form fieldset input,
-form fieldset textarea {
-  display: block;
-  width: 100%;
-  margin-bottom: 0.5rem;
-  -webkit-border-radius: 1rem;
-  -moz-border-radius: 1rem;
-  -ms-border-radius: 1rem;
-  -o-border-radius: 1rem;
-  border-radius: 1rem;
-  padding: 0.25rem;
-  border: 0.2rem solid #009bde;
-}
-form fieldset input::-webkit-input-placeholder,
-form fieldset textarea::-webkit-input-placeholder {
-  color: #009bde;
-  text-align: center;
-}
-form fieldset input:-moz-placeholder /* Firefox 18- */,
-form fieldset textarea:-moz-placeholder /* Firefox 18- */ {
-  color: #009bde;
-  text-align: center;
-}
-form fieldset input::-moz-placeholder /* Firefox 19+ */,
-form fieldset textarea::-moz-placeholder /* Firefox 19+ */ {
-  color: #009bde;
-  text-align: center;
-}
-form fieldset input:-ms-input-placeholder,
-form fieldset textarea:-ms-input-placeholder {
-  color: #009bde;
-  text-align: center;
-}
-form fieldset textarea {
-  height: 5rem;
-}
-form fieldset button {
-  padding: 0.25rem 1rem;
-  display: block;
-  -webkit-border-radius: 1rem;
-  -moz-border-radius: 1rem;
-  -ms-border-radius: 1rem;
-  -o-border-radius: 1rem;
-  border-radius: 1rem;
-  margin: 0 auto 0 auto;
-  background-color: #009bde;
-  color: #fff;
-  border: none;
+.ubication >span {
+  color: #2dcc70;
 }
 .ubication>div div#yetLocal {
   width: 95%;
@@ -590,10 +548,16 @@ form fieldset button {
   -ms-border-radius: 1rem;
   -o-border-radius: 1rem;
   border-radius: 1rem;
-  border: 0.5rem solid #705210;
+  border: 0.4rem solid rgba(0,0,0,0.75);
 }
 .ubication>div address {
   text-align: center;
+}
+.contact >span {
+  color: #b3d01e;
+}
+.us >span {
+  color: #ae7ac4;
 }
 .hidden-content {
   z-index: -1;
@@ -676,10 +640,24 @@ form fieldset button {
 }
 [role="menu"] a:first-child {
   line-height: 0.2rem;
-  height: 3rem;
   text-align: center;
-  background-color: #009bde;
   padding-bottom: 0.2rem;
+}
+[role="menu"] a:first-child img {
+  display: block;
+  width: 40%;
+  background-color: #fff;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  border: 0.4rem solid rgba(0,0,0,0.75);
+  -webkit-box-shadow: 0 0 0.2rem 0.1rem rgba(255,255,255,0.5);
+  -moz-box-shadow: 0 0 0.2rem 0.1rem rgba(255,255,255,0.5);
+  -ms-box-shadow: 0 0 0.2rem 0.1rem rgba(255,255,255,0.5);
+  -o-box-shadow: 0 0 0.2rem 0.1rem rgba(255,255,255,0.5);
+  box-shadow: 0 0 0.2rem 0.1rem rgba(255,255,255,0.5);
 }
 [role="menu"] a:first-child span {
   display: inline-block;
@@ -902,12 +880,15 @@ h1 {
   margin: 0;
   font-size: 50px;
 /*IE*/
-  font-size: 1.4rem;
+  font-size: 1.5rem;
 }
 h2 {
-  font-size: 1rem;
+  font-size: 1.25rem;
 }
 h3 {
+  font-size: 0.1rem;
+}
+h4 {
   font-size: 0.8rem;
 }
 @media only screen and (min-width: 320px) {
@@ -1174,6 +1155,71 @@ h3 {
   .row {
     width: 1200px;
   }
+}
+form {
+  width: 95%;
+  margin: 0 auto;
+}
+form fieldset {
+  border: none;
+  margin: 0;
+}
+form fieldset label {
+  display: none;
+  width: 25%;
+  float: left;
+  text-align: right;
+  padding-right: 0.5rem;
+  margin-top: 0.5rem;
+}
+form fieldset input,
+form fieldset textarea {
+  display: block;
+  width: 100%;
+  margin-bottom: 0.5rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
+  border-radius: 1rem;
+  padding: 0.25rem;
+  border: 0.2rem solid rgba(0,0,0,0.4);
+}
+form fieldset input::-webkit-input-placeholder,
+form fieldset textarea::-webkit-input-placeholder {
+  color: #000;
+  text-align: center;
+}
+form fieldset input:-moz-placeholder /* Firefox 18- */,
+form fieldset textarea:-moz-placeholder /* Firefox 18- */ {
+  color: #000;
+  text-align: center;
+}
+form fieldset input::-moz-placeholder /* Firefox 19+ */,
+form fieldset textarea::-moz-placeholder /* Firefox 19+ */ {
+  color: #000;
+  text-align: center;
+}
+form fieldset input:-ms-input-placeholder,
+form fieldset textarea:-ms-input-placeholder {
+  color: #000;
+  text-align: center;
+}
+form fieldset textarea {
+  height: 5rem;
+}
+form fieldset button {
+  padding: 0.25rem 1rem;
+  display: block;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
+  border-radius: 1rem;
+  margin: 0 auto 0 auto;
+  background-color: #009bde;
+  color: #fff;
+  border: none;
 }
 .magictime {
   -webkit-animation-duration: 1s;

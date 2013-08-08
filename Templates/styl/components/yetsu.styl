@@ -12,7 +12,7 @@ footer
 	color white
 	h2,h3
 		margin 0
-.service
+.service, .briefcase, .ubication, .us, .contact
 	color COLOR_WHITE
 	padding-bottom  0.3rem
 	& h2
@@ -31,6 +31,7 @@ footer
 		width 4rem 
 		height 4rem
 		z-index 2
+.service
 	.features
 		text-align center
 		position: relative
@@ -122,10 +123,9 @@ footer
 			color COLOR_SERVICE_PW
 		& section article 
 			& ul li 
-				background-color lighten(COLOR_SERVICE_PW,50%)
-				color COLOR_SERVICE_PW
+				background-color COLOR_GREEN
 				&:after
-					color COLOR_SERVICE_PW
+					color COLOR_GREEN
 	&.CO
 		& h2 
 			background: COLOR_SERVICE_CO
@@ -168,9 +168,9 @@ footer
 			color COLOR_SERVICE_AM
 		& section article 
 			& ul li 
-				background-color darken(COLOR_SERVICE_AM,50%)
+				background-color COLOR_THEME
 				&:after
-					color darken(COLOR_SERVICE_AM,50%)
+					color COLOR_THEME
 	&.CT
 		& h2 
 			background: COLOR_SERVICE_CT
@@ -303,69 +303,40 @@ footer
 					background-color COLOR_LINKEDIN
 				&.github
 					background-color COLOR_GITHUB
-
-			
+	
 .briefcase
+	padding-bottom 1rem	
+	>span
+		color COLOR_BRIEFCASE
 	& .row
 		& figure
 			& h3
 				text-align center
 			& img
 				width 100%;
-form 
-	width 95%
-	margin SPACE auto
-	& fieldset
-		border none
-		margin 0
-		& label 
-			display block
-			width 25%
-			float left
-			text-align right
-			padding-right (SPACE/2)
-			margin-top (SPACE/2)
-		& input, textarea
-			display block
-			width 100%
-			margin-bottom (SPACE/2)
-			border-radius SPACE
-			padding (SPACE/4)
-			border .2rem solid COLOR_THEME
-			&::-webkit-input-placeholder 
-				color: COLOR_THEME
-				text-align center
-			&:-moz-placeholder  /* Firefox 18- */
-				color: COLOR_THEME
-				text-align center  
-			&::-moz-placeholder   /* Firefox 19+ */
-				color: COLOR_THEME
-				text-align center  
-			&:-ms-input-placeholder   
-				color: COLOR_THEME
-				text-align center  
-			
-		& textarea
-			height SPACE*5
 
-		& button
-			padding (SPACE/4) SPACE
-			display block
-			border-radius SPACE
-			block-center()
-			background-color COLOR_THEME
-			color white
-			border none
-.ubication	
+.ubication
+	padding-bottom 1rem	
+	>span
+		color COLOR_UBICATION
 	&>div
 		& div#yetLocal
 			width:95%
 			height: 13rem
 			block-center()
 			border-radius SPACE
-			border .5rem solid #705210
+			border .4rem solid rgba(0, 0, 0, .75)
 		& address
 			text-align center
+.contact
+	>span
+		color COLOR_GREEN_LIGHT
+.us
+	>span
+		color COLOR_US
+
+
+
 
 .hidden-content
 	z-index -1
