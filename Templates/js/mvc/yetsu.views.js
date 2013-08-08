@@ -19,7 +19,7 @@ var yetMenu_view=Backbone.View.extend({
 	},
 	showMenu:function(){
 		$('body').css({'overflow-x':'hidden'});
-  		$('header,section,footer,aside').toggleClass('move-blocks');
+  	$('header,section,footer,aside').toggleClass('move-blocks');
 		$('#menu').toggleClass('open-menu');
 	}
 });
