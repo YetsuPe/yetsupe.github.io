@@ -21,6 +21,16 @@ var yetMenu_view=Backbone.View.extend({
 		$('body').css({'overflow-x':'hidden'});
   	$('header,section,footer,aside').toggleClass('move-blocks');
 		$('#menu').toggleClass('open-menu');
+	},
+	touchOpenMenu:function(){
+		$('body').css({'overflow-x':'hidden'});
+  	$('header,section,footer,aside').addClass('move-blocks');
+		$('#menu').addClass('open-menu');
+	},
+	touchCloseMenu:function(){
+		$('body').css({'overflow-x':'hidden'});
+  	$('header,section,footer,aside').removeClass('move-blocks');
+		$('#menu').removeClass('open-menu');
 	}
 });
 var yetUser_view=Backbone.View.extend({

@@ -5,10 +5,10 @@ Zepto(function($){
 	var user = new yetUser_view(); //load yetMenu
 	new yetSocial_view(); //load yetLocal map
 	$$('body').swipeRight( function(){
-		menu.showMenu();
+		menu.touchOpenMenu();
 	});
 	$$('body').swipeLeft( function(){
-		menu.showMenu();
+		menu.touchCloseMenu();
 	});
 
 });
