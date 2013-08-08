@@ -59,13 +59,13 @@ h1 {
   background-color: #c83c23;
 }
 .bck.green {
-  background-color: #00ab5d;
+  background-color: #32ac97;
 }
 .bck.PW {
   background-color: #334960;
 }
 .bck.CO {
-  background-color: #00ab5d;
+  background-color: #32ac97;
 }
 .bck.EM {
   background-color: #8f3fb0;
@@ -194,14 +194,14 @@ footer h3 {
   padding: 0 1rem;
 }
 .service section article p strong {
-  color: #00ab5d;
+  color: #32ac97;
 }
 .service section article ul {
   list-style: none;
 }
 .service section article ul li {
   text-align: center;
-  width: 80%;
+  width: 90%;
   margin: 0.3rem auto;
   padding: 0.3rem;
   -webkit-border-radius: 0.5rem;
@@ -209,7 +209,6 @@ footer h3 {
   -ms-border-radius: 0.5rem;
   -o-border-radius: 0.5rem;
   border-radius: 0.5rem;
-  background-color: #00ab5d;
 }
 .service section article ul li:after {
   font-family: 'FontAwesome';
@@ -223,11 +222,10 @@ footer h3 {
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
   border-radius: 50%;
-  background-color: #fff;
-  color: #00ab5d;
   line-height: 1.5rem;
   position: relative;
   bottom: 0.1rem;
+  background-color: #fff;
 }
 .service.PW h2 {
   background: #334960;
@@ -237,6 +235,12 @@ footer h3 {
   border: 0.4rem solid #334960;
   color: #334960;
 }
+.service.PW section article ul li {
+  background-color: #32ac97;
+}
+.service.PW section article ul li:after {
+  color: #32ac97;
+}
 .service.CO h2 {
   background: #32900e;
   color: #e7fcdf;
@@ -244,6 +248,12 @@ footer h3 {
 .service.CO > span {
   border: 0.4rem solid #32900e;
   color: #32900e;
+}
+.service.CO section article ul li {
+  background-color: #334960;
+}
+.service.CO section article ul li:after {
+  color: #334960;
 }
 .service.EM h2 {
   background: #8f3fb0;

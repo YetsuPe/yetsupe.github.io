@@ -46,8 +46,6 @@ footer
 				float right
 			&:nth-child(5),&:nth-child(10)
 				opacity 0
-
-
 	& section article 
 		padding 0.3rem 0
 		& p 
@@ -60,11 +58,10 @@ footer
 			list-style none
 			& li 
 				text-align center
-				width 80%
+				width 90%
 				margin .3rem auto
 				padding .3rem
 				border-radius .5rem
-				background-color COLOR_GREEN
 				&:after 
 					font-family: 'FontAwesome'
 					content '\f00c'
@@ -73,11 +70,10 @@ footer
 					width 1.5rem
 					height 1.5rem
 					border-radius 50%
-					background-color COLOR_WHITE
-					color COLOR_GREEN
 					line-height 1.5rem
 					position: relative
 					bottom .1rem
+					background-color COLOR_WHITE
 	&.PW
 		& h2 
 			background: COLOR_SERVICE_PW
@@ -85,6 +81,11 @@ footer
 		& > span
 			border .4rem solid COLOR_SERVICE_PW
 			color COLOR_SERVICE_PW
+		& section article 
+			& ul li 
+				background-color COLOR_GREEN
+				&:after
+					color COLOR_GREEN
 	&.CO
 		& h2 
 			background: COLOR_SERVICE_CO
@@ -92,6 +93,11 @@ footer
 		& > span
 			border .4rem solid COLOR_SERVICE_CO
 			color COLOR_SERVICE_CO
+		& section article 
+			& ul li 
+				background-color COLOR_SERVICE_PW
+				&:after
+					color COLOR_SERVICE_PW
 	&.EM
 		& h2 
 			background: COLOR_SERVICE_EM
