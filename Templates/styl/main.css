@@ -129,30 +129,69 @@ footer h3 {
   margin: 0;
 }
 .service {
-  padding-bottom: 0.2rem;
+  color: #fff;
+  padding-bottom: 0.3rem;
 }
 .service h2 {
   text-align: center;
   padding: 0.5rem 0;
   margin: 0;
 }
-.service h2 span {
+.service span {
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
   border-radius: 50%;
   padding: 0.2rem 0;
-  position: absolute;
+  position: relative;
   font-size: 2.7rem;
-  top: -0.9rem;
+  text-align: center;
   background-color: #fff;
-  display: block !important;
-  width: 4rem !important;
-  height: 4rem !important;
+  display: block;
+  width: 4rem;
+  height: 4rem;
 }
 .service section article p {
   color: #fff;
+  text-align: center;
+  padding: 0 1rem;
+}
+.service section article p strong {
+  color: #00ab5d;
+}
+.service section article ul {
+  list-style: none;
+}
+.service section article ul li {
+  text-align: center;
+  width: 80%;
+  margin: 0.3rem auto;
+  padding: 0.3rem;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  -ms-border-radius: 0.5rem;
+  -o-border-radius: 0.5rem;
+  border-radius: 0.5rem;
+  background-color: #00ab5d;
+}
+.service section article ul li:after {
+  font-family: 'FontAwesome';
+  content: '\f00c';
+  float: right;
+  margin-right: 0.2rem;
+  width: 1.5rem;
+  height: 1.5rem;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  background-color: #fff;
+  color: #00ab5d;
+  line-height: 1.5rem;
+  position: relative;
+  bottom: 0.1rem;
 }
 .service.PW h2 {
   background: #334960;
@@ -161,7 +200,6 @@ footer h3 {
 .service.PW h2 span {
   border: 0.4rem solid #334960;
   color: #334960;
-  right: 1rem;
 }
 .service.CO h2 {
   background: #32900e;
@@ -170,7 +208,6 @@ footer h3 {
 .service.CO h2 span {
   border: 0.4rem solid #32900e;
   color: #32900e;
-  left: 1rem;
 }
 .service.EM h2 {
   background: #8f3fb0;
@@ -181,7 +218,6 @@ footer h3 {
   font-size: 2.2rem;
   padding: 0.5rem 0;
   color: #8f3fb0;
-  right: 1rem;
 }
 .service.AM h2 {
   background: #982438;
@@ -190,7 +226,6 @@ footer h3 {
 .service.AM h2 span {
   border: 0.4rem solid #982438;
   color: #982438;
-  left: 1rem;
 }
 .service.CT h2 {
   background: #c33825;
@@ -199,7 +234,6 @@ footer h3 {
 .service.CT h2 span {
   border: 0.4rem solid #c33825;
   color: #c33825;
-  right: 1rem;
 }
 .service.DW h2 {
   background: #d65400;
@@ -210,7 +244,6 @@ footer h3 {
   color: #d65400;
   font-size: 2.2rem;
   padding: 0.5rem 0;
-  left: 1rem;
 }
 header {
   height: 3rem;

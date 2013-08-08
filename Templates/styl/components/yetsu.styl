@@ -15,24 +15,53 @@ footer
 	h2,h3
 		margin 0
 .service
-	padding-bottom 0.2rem
+	color COLOR_WHITE
+	padding-bottom  0.3rem
 	& h2
 		text-align center
 		padding (SPACE/2) 0
 		margin 0
-		& span
-			border-radius 50%
-			padding: 0.2rem 0
-			position: absolute
-			font-size 2.7rem
-			top: -0.9rem
-			background-color COLOR_WHITE
-			display block !important
-			width 4rem !important
-			height 4rem !important
+	& span
+		border-radius 50%
+		padding: 0.2rem 0
+		position: relative
+		font-size 2.7rem
+		text-align center
+		background-color COLOR_WHITE
+		display block 
+		width 4rem 
+		height 4rem 
 	& section article 
 		& p 
 			color COLOR_WHITE
+			text-align center
+			padding 0 1rem
+			& strong
+				color COLOR_GREEN 
+		& ul 
+			list-style none
+			& li 
+				text-align center
+				width 80%
+				margin .3rem auto
+				padding .3rem
+				border-radius .5rem
+				background-color COLOR_GREEN
+				&:after 
+					font-family: 'FontAwesome'
+					content '\f00c'
+					float right
+					margin-right .2rem
+					width 1.5rem
+					height 1.5rem
+					border-radius 50%
+					background-color COLOR_WHITE
+					color COLOR_GREEN
+					line-height 1.5rem
+					position: relative
+					bottom .1rem
+
+
 	&.PW
 		& h2 
 			background: COLOR_SERVICE_PW
@@ -40,7 +69,6 @@ footer
 			& span
 				border .4rem solid COLOR_SERVICE_PW
 				color COLOR_SERVICE_PW
-				right: SPACE
 	&.CO
 		& h2 
 			background: COLOR_SERVICE_CO
@@ -48,7 +76,6 @@ footer
 			& span
 				border .4rem solid COLOR_SERVICE_CO
 				color COLOR_SERVICE_CO
-				left: SPACE
 	&.EM
 		& h2 
 			background: COLOR_SERVICE_EM
@@ -58,7 +85,6 @@ footer
 				font-size 2.2rem
 				padding .5rem 0
 				color COLOR_SERVICE_EM
-				right: SPACE
 	&.AM
 		& h2 
 			background: COLOR_SERVICE_AM
@@ -66,7 +92,6 @@ footer
 			& span
 				border .4rem solid COLOR_SERVICE_AM
 				color COLOR_SERVICE_AM
-				left: SPACE
 	&.CT
 		& h2 
 			background: COLOR_SERVICE_CT
@@ -74,7 +99,6 @@ footer
 			& span
 				border .4rem solid COLOR_SERVICE_CT
 				color COLOR_SERVICE_CT
-				right: SPACE
 	&.DW
 		& h2 
 			background: COLOR_SERVICE_DW
@@ -84,7 +108,6 @@ footer
 				color COLOR_SERVICE_DW
 				font-size 2.2rem
 				padding .5rem 0
-				left: SPACE
 
 
 header
