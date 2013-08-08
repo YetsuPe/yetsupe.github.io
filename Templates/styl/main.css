@@ -300,10 +300,11 @@ footer h3 {
   color: #334960;
 }
 .service.PW section article ul li {
-  background-color: #32ac97;
+  background-color: #88a4c0;
+  color: #334960;
 }
 .service.PW section article ul li:after {
-  color: #32ac97;
+  color: #334960;
 }
 .service.CO h2 {
   background: #32900e;
@@ -346,6 +347,12 @@ footer h3 {
 .service.AM > span {
   border: 0.4rem solid #982438;
   color: #982438;
+}
+.service.AM section article ul li {
+  background-color: #4c121c;
+}
+.service.AM section article ul li:after {
+  color: #4c121c;
 }
 .service.CT h2 {
   background: #c33825;

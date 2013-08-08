@@ -12,6 +12,20 @@ var yetSocial_view=Backbone.View.extend({
 		this.$el.css({'bottom':-8+'rem' });
 	}
 });
+var yetSlider_view= Backbone.View.extend({
+	el:$('#slide-pictures'),
+	/*events:{
+		'click' : 'slideLeft'
+	},*/
+	slideLeft: function(){
+		alert('izquierda');
+		//this.$el.css({'bacground':'red'});
+	},
+	slideRight: function(){
+		alert('derecha');
+		//this.$el.css({'bacground':'black'});
+	}
+});
 var yetMenu_view=Backbone.View.extend({
 	el:$('#ico-menu'),
 	events:{

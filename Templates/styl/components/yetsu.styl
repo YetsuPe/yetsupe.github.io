@@ -122,9 +122,10 @@ footer
 			color COLOR_SERVICE_PW
 		& section article 
 			& ul li 
-				background-color COLOR_GREEN
+				background-color lighten(COLOR_SERVICE_PW,50%)
+				color COLOR_SERVICE_PW
 				&:after
-					color COLOR_GREEN
+					color COLOR_SERVICE_PW
 	&.CO
 		& h2 
 			background: COLOR_SERVICE_CO
@@ -165,6 +166,11 @@ footer
 		& > span
 			border .4rem solid COLOR_SERVICE_AM
 			color COLOR_SERVICE_AM
+		& section article 
+			& ul li 
+				background-color darken(COLOR_SERVICE_AM,50%)
+				&:after
+					color darken(COLOR_SERVICE_AM,50%)
 	&.CT
 		& h2 
 			background: COLOR_SERVICE_CT
