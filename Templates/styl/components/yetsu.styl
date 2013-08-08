@@ -54,14 +54,23 @@ footer
 			padding 0 1rem
 			& strong
 				color COLOR_GREEN 
-		& ul 
+		& ul.list-inline
+			list-style none
+			& li 
+				vertical-align top
+				display inline-block
+				width 50%
+				& a
+					color COLOR_WHITE
+		& ul.list 
 			list-style none
 			& li 
 				text-align center
 				width 90%
-				margin .3rem auto
+				margin 0.3rem auto
 				padding .3rem
-				border-radius .5rem
+				border-radius (SPACE/2)
+				display block
 				&:after 
 					font-family: 'FontAwesome'
 					content '\f00c'
@@ -74,6 +83,36 @@ footer
 					position: relative
 					bottom .1rem
 					background-color COLOR_WHITE
+		& ul.list-items
+			list-style none
+			& >li 
+				display block
+				width 90%
+				margin 0.3rem auto
+				border-radius (SPACE/2)
+				padding-bottom 0.3rem
+				& h3 ,address, time, a 
+					text-align center
+					width 100%
+					display block
+				& > a
+					color COLOR_WHITE
+					padding 0.3rem 
+					width 90%
+					border-radius (SPACE/2)
+					margin 0.3rem auto
+					&:after
+						font-family 'FontAwesome'
+						content ""
+						float right
+						margin-right .2rem
+						width 1.5rem
+						height 1.5rem
+						border-radius 50%
+						line-height 1.5rem
+						position: relative
+						bottom .1rem
+
 	&.PW
 		& h2 
 			background: COLOR_SERVICE_PW
@@ -96,8 +135,20 @@ footer
 		& section article 
 			& ul li 
 				background-color COLOR_SERVICE_PW
-				&:after
-					color COLOR_SERVICE_PW
+			& ul.list-items > li 
+				& > a
+					background-color COLOR_GREEN
+					&:first-of-type
+						&:after
+							content "\f02d"
+							background-color COLOR_WHITE
+							color COLOR_GREEN
+					&:nth-of-type(2)
+						&:after
+							content "\f113"
+							background-color COLOR_WHITE
+							color COLOR_GREEN
+
 	&.EM
 		& h2 
 			background: COLOR_SERVICE_EM
@@ -140,33 +191,6 @@ header
 	h1
 		line-height 3rem
 
-.cources
-	>div
-		background-color:#E3BC4D
-		overflow hidden
-		width 95%
-		margin .2rem auto
-		border-radius .4rem
-		& h3
-			margin 0
-			display block
-			text-align center
-			background-color  lighten(#E3BC4D,30%) 
-			padding .2rem 0
-			border-radius .4rem
-		& img
-			margin-top .2rem
-			margin-bottom .2rem
-			width 17%
-			margin-left 3%
-			float left
-			border-radius .2rem
-			&:nth-child(2)
-				margin-left 1.5%
-		&>a
-			padding :2rem
-			border-radius .5rem
-			background-color COLOR_THEME
 .row
 	& .item
 		text-align center
@@ -175,22 +199,6 @@ header
 		padding 0.2rem 
 		& a
 			display block
-
-			>figure,>div
-				min-height 1.2rem
-			>figure
-				background-color COLOR_WHITE
-				margin .2rem auto
-				padding-top .1rem
-				width 4rem 
-				height 4rem
-				border-radius 50%
-				font-size 2.7rem
-				
-			>div
-				color COLOR_WHITE
-		& section
-			z-index -1
 		&:nth-child(1)
 			& a
 				>figure
