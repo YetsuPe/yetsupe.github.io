@@ -7,8 +7,8 @@ var yetSocial_view=Backbone.View.extend({
 		this.$el.toggleClass('showSocial');
 	},
 	initialize:function(){
-		var bottom=$('#ico-social').height();
-		var heightSocial=$('#yetsuSocial').height();
+		var bottom= $('#ico-social').height();
+		var heightSocial= $('#yetsuSocial').height();
 		this.$el.css({'bottom':-8+'rem' });
 	}
 });
@@ -32,17 +32,17 @@ var yetMenu_view=Backbone.View.extend({
 		'click':'showMenu'
 	},
 	showMenu:function(){
-		$('body').css({'overflow-x':'hidden'});
+		$('body').toggleClass('overflow-x');
   	$('header,section,footer,aside').toggleClass('move-blocks');
 		$('#menu').toggleClass('open-menu');
 	},
 	touchOpenMenu:function(){
-		$('body').css({'overflow-x':'hidden'});
+		$('body').addClass('overflow-x');
   	$('header,section,footer,aside').addClass('move-blocks');
 		$('#menu').addClass('open-menu');
 	},
 	touchCloseMenu:function(){
-		$('body').css({'overflow-x':'hidden'});
+		$('body').removeClass('overflow-x');
   	$('header,section,footer,aside').removeClass('move-blocks');
 		$('#menu').removeClass('open-menu');
 	}

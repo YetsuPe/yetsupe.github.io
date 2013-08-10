@@ -90,8 +90,6 @@ h4
 		&:first-child
 			margin-left (10/7)%
 	
-
-
 	[role="ico-menu"]
 		z-index -1
 	
@@ -139,6 +137,24 @@ h4
 				font-size 1rem
 		>span
 			display none
+
+	.csstransforms3d [role="menu"] a span:before
+		position: absolute
+		top: 100%
+		left: 0
+		width: 100%
+		height: 100%
+		background-color black
+		content: attr(data-hover)
+		transition: background 0.3s
+		transform: rotateX(-90deg)
+		transform-origin: 50% 0
+	.csstransforms3d [role="menu"] a:hover span:before,
+	.csstransforms3d [role="menu"] a:focus span:before 
+		background: COLOR_WHITE
+		color COLOR_THEME
+
+
 	[role="menu"]
 		left: 0
 		width: 100%
@@ -148,69 +164,91 @@ h4
 		top 4rem
 		margin 0 
 		&  a
+			/*********** efect **/
+			perspective 1000px
+			/********************/
+
 			display: inline-block
 			text-align center 
-			padding .3rem 0
+			padding 0
 			color COLOR_WHITE
 			width (100/7)%
-			border-bottom: .3rem solid rgba(0,0,0,.5) !important
-			&:hover
-				border-bottom: 0 solid COLOR_THEME !important
+			/*border-bottom: .3rem solid rgba(0,0,0,.5) !important*/
+			position relative
+			transition top .4s ease-in-out
+			&:hover span, :focus span 
+				transform: rotateX(90deg) translateY(-22px)
+			&:active
+				top .3rem
+				/*border-bottom: 0 solid COLOR_THEME !important*/
 			& span
-				display none
-				width 100%
-				text-align center 
+				&:nth-of-type(1)
+					display none
+					width 100%
+					text-align center 
+				&:nth-of-type(2)
+					display block
+					transition transform .4s
+					transform-origin 50% 0
+					transform-style preserve-3d
+					padding .3rem 0
+
 			&:first-child
 				display none
 			&:nth-child(2) 
 				border-radius 1rem 0 0 1rem
 
-				border-bottom: .3rem solid COLOR_THEME
+				/*border-bottom: .3rem solid COLOR_THEME*/
 				background-color COLOR_THEME
 				& span
 					color COLOR_WHITE
 			&:nth-child(3) 
-				border-bottom: .3rem solid COLOR_US
+				/*border-bottom: .3rem solid COLOR_US*/
 				background-color COLOR_US
 				& span
 					color COLOR_WHITE
 			&:nth-child(4) 
-				border-bottom: .3rem solid COLOR_BRIEFCASE
+				/*border-bottom: .3rem solid COLOR_BRIEFCASE*/
 				background-color COLOR_BRIEFCASE
 				& span
 					color COLOR_WHITE
 			&:nth-child(5) 
-				border-bottom: .3rem solid COLOR_UBICATION
+				/*border-bottom: .3rem solid COLOR_UBICATION*/
 				background-color : COLOR_UBICATION
 				& span
 					color COLOR_WHITE
 			&:nth-child(6) 
-				border-bottom: .3rem solid COLOR_COURCES 
+				/*border-bottom: .3rem solid COLOR_COURCES */
 				background-color COLOR_COURCES 
 				& span
 					color COLOR_WHITE
 			&:nth-child(7) 
-				border-bottom: .3rem solid COLOR_BLOG
+				/*border-bottom: .3rem solid COLOR_BLOG*/
 				background-color COLOR_BLOG
 				& span
 					color COLOR_WHITE
 			&:nth-child(8) 
 				border-radius 0 1rem 1rem 0
 
-				border-bottom: .3rem solid COLOR_CONTACT
+				/*border-bottom: .3rem solid COLOR_CONTACT*/
 				background-color : COLOR_CONTACT
 				& span
 					color COLOR_WHITE
 			&:nth-child(9) 
-				border-bottom: .3rem solid COLOR_CONTACT
+				/*border-bottom: .3rem solid COLOR_CONTACT*/
 				background-color : COLOR_CONTACT
 				& span
 					color COLOR_WHITE
 
 	[role="services"]
 		background-color #319028
-
 	
+	.open-menu
+		left:none !important
+	.move-blocks
+		left:none !important
+	.overflow-x
+		overflow-x visible !important
 
 @media only screen and (min-width: 1200px) 
 	html 
