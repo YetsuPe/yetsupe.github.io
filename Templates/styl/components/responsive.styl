@@ -144,16 +144,64 @@ h4
 		left: 0
 		width: 100%
 		height: 100%
-		background-color black
+		/*background-color black*/
 		content: attr(data-hover)
-		transition: background 0.3s
+		transition: background 0.4s ease-in
 		transform: rotateX(-90deg)
 		transform-origin: 50% 0
-	.csstransforms3d [role="menu"] a:hover span:before,
-	.csstransforms3d [role="menu"] a:focus span:before 
-		background: COLOR_WHITE
-		color COLOR_THEME
-
+		padding-top 0.3rem
+	.csstransforms3d [role="menu"] a 
+		&:nth-child(2):before
+			& span
+				background-color darken(COLOR_THEME,100%)
+		&:nth-child(3):before
+			& span
+				background-color darken(COLOR_US,100%)
+		&:nth-child(4):before
+			& span
+				background-color darken(COLOR_BRIEFCASE,100%)
+		&:nth-child(5):before
+			& span
+				background-color darken(COLOR_UBICATION,100%)
+		&:nth-child(6):before
+			& span
+				background-color darken(COLOR_COURCES,100%)
+		&:nth-child(7):before
+			& span
+				background-color darken(COLOR_BLOG,100%)
+		&:nth-child(8):before
+			& span
+				background-color darken(COLOR_CONTACT,100%)
+		
+	.csstransforms3d [role="menu"] a:nth-child(2):hover span:before,
+	.csstransforms3d [role="menu"] a:nth-child(2):focus span:before 
+		background: darken(COLOR_THEME,30%)
+		color COLOR_WHITE
+	.csstransforms3d [role="menu"] a:nth-child(3):hover span:before,
+	.csstransforms3d [role="menu"] a:nth-child(3):focus span:before 
+		background: darken(COLOR_US,30%)
+		color COLOR_WHITE
+	.csstransforms3d [role="menu"] a:nth-child(4):hover span:before,
+	.csstransforms3d [role="menu"] a:nth-child(4):focus span:before 
+		background: darken(COLOR_BRIEFCASE,30%)
+		color COLOR_WHITE
+	.csstransforms3d [role="menu"] a:nth-child(5):hover span:before,
+	.csstransforms3d [role="menu"] a:nth-child(5):focus span:before 
+		background: darken(COLOR_UBICATION,30%)
+		color COLOR_WHITE
+	.csstransforms3d [role="menu"] a:nth-child(6):hover span:before,
+	.csstransforms3d [role="menu"] a:nth-child(6):focus span:before 
+		background: darken(COLOR_COURCES,30%)
+		color COLOR_WHITE
+	.csstransforms3d [role="menu"] a:nth-child(7):hover span:before,
+	.csstransforms3d [role="menu"] a:nth-child(7):focus span:before 
+		background: darken(COLOR_BLOG,30%)
+		color COLOR_WHITE
+	.csstransforms3d [role="menu"] a:nth-child(8):hover span:before,
+	.csstransforms3d [role="menu"] a:nth-child(8):focus span:before 
+		background: darken(COLOR_CONTACT,30%)
+		color COLOR_WHITE
+	
 
 	[role="menu"]
 		left: 0
