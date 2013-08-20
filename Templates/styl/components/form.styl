@@ -11,12 +11,13 @@ form
 			text-align right
 			padding-right (SPACE/2)
 			margin-top (SPACE/2)
+		& input
+			height 3rem
 		& input, textarea
 			display block
 			width 100%
-			margin-bottom (SPACE/2)
+			margin-bottom SPACE
 			border-radius SPACE
-			padding (SPACE/4)
 			border .2rem solid rgba(0, 0, 0, .4)
 			&::-webkit-input-placeholder 
 				color: black
@@ -29,13 +30,13 @@ form
 				text-align center  
 			&:-ms-input-placeholder   
 				color: black
-				text-align center  
+				text-align center 
 			
 		& textarea
-			height SPACE*5
+			height SPACE*7
 
 		& button
-			padding (SPACE/4) SPACE
+			padding (SPACE/2) SPACE
 			display block
 			border-radius SPACE
 			block-center()

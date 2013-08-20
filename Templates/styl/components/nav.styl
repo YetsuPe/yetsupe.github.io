@@ -4,7 +4,7 @@
 	height : 100%
 	width: NAV_WIDTH_USER
 	right:-(NAV_WIDTH_USER)
-	background-color: COLOR_WHITE
+	background-color: COLOR_DARK
 	transition(right 0.4s ease-in-out)
 	overflow-y:scroll
 [role="menu"]
@@ -139,17 +139,29 @@
 				color COLOR_SERVICE_DW
 				border .2rem solid COLOR_SERVICE_DW
 		
-				
-
 [role="ico-menu"],[role="ico-user"]
+	padding: 2rem
+	background-color: COLOR_WHITE
+	z-index: 2
 	position: absolute
-	padding: .3rem .4rem
 	width:HEIGHT_HEADER
 	height HEIGHT_HEADER
+	& span
+		font-size: 2rem
+		position: relative
+		color: COLOR_THEME
+		top: -1.5rem
 [role="ico-menu"]
 	left 0
+	border-radius: 0 0 4rem 0
+	& span
+		left: -1.5rem
 [role="ico-user"]
 	right 0
+	border-radius: 0 0 0 4rem
+	& span
+		right: 0
+
 
 // Logo en canvas
 [role="logo"]
