@@ -934,14 +934,6 @@ h4 {
     font-size: 81.25%;
 /* 13px */
   }
-  .yetMenber {
-    width: 30%;
-    margin-left: 2.5%;
-    margin-top: 2.5%;
-  }
-  .yetMenber:first-child {
-    margin-left: 2.5%;
-  }
 }
 @media only screen and (min-width: 480px) {
   html {
@@ -949,12 +941,12 @@ h4 {
 /* 14px */
   }
   .yetMenber {
-    width: 22.5%;
-    margin-left: 2%;
-    margin-top: 2%;
+    width: 30%;
+    margin-left: 2.5%;
+    margin-top: 2.5%;
   }
   .yetMenber:first-child {
-    margin-left: 2%;
+    margin-left: 2.5%;
   }
   .us>img,
   .us blockquote {
@@ -973,12 +965,12 @@ h4 {
     font-size: 92%;
   }
   .yetMenber {
-    width: 18%;
-    margin-left: 1.6666666666666667%;
-    margin-top: 1.6666666666666667%;
+    width: 22.5%;
+    margin-left: 2%;
+    margin-top: 2%;
   }
   .yetMenber:first-child {
-    margin-left: 1.6666666666666667%;
+    margin-left: 2%;
   }
   [role="services"] a {
     width: 16.666666666666668%;
@@ -1014,12 +1006,12 @@ h4 {
     font-size: 100%;
   }
   .yetMenber {
-    width: 15%;
-    margin-left: 1.4285714285714286%;
-    margin-top: 1.4285714285714286%;
+    width: 18%;
+    margin-left: 1.6666666666666667%;
+    margin-top: 1.6666666666666667%;
   }
   .yetMenber:first-child {
-    margin-left: 1.4285714285714286%;
+    margin-left: 1.6666666666666667%;
   }
   [role="ico-menu"] {
     z-index: -1;
@@ -1307,12 +1299,12 @@ h4 {
     font-size: 112.5%;
   }
   .yetMenber {
-    width: 12.857142857142858%;
-    margin-left: 1.25%;
-    margin-top: 1.25%;
+    width: 15%;
+    margin-left: 1.4285714285714286%;
+    margin-top: 1.4285714285714286%;
   }
   .yetMenber:first-child {
-    margin-left: 1.25%;
+    margin-left: 1.4285714285714286%;
   }
   .row {
     width: 1200px;
