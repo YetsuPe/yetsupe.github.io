@@ -512,15 +512,15 @@ footer {
   display: inline-block;
 }
 .yetMenber ul li span {
-  width: 2rem;
-  height: 2rem;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
   border-radius: 50%;
-  padding: 0.5rem;
+  padding: 1.3rem;
   margin-left: 0.3rem;
+  line-height: 0;
+  margin-bottom: 0.3rem;
 }
 .yetMenber ul li span.facebook {
   background-color: #45619d;
