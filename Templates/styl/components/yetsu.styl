@@ -191,9 +191,9 @@ footer
 
 header
 	height HEIGHT_HEADER
-	background-color #009BDE
+	background-color COLOR_DARK
 	& *
-		color: #F2F2F2 
+		color: COLOR_WHITE
 	h1
 		line-height 3rem
 
@@ -244,19 +244,18 @@ footer
 
 .row
 	& blockquote
-		width 90%
-		margin .5rem auto 0 auto
-		background-color #334960
-		padding .5rem
-		border-radius .8rem
-		border 2px solid #2E2D38
+
+		//background-color #334960
+		padding SPACE
+		border-radius SPACE
+		border 2px solid COLOR_WHITE
 		text-align center
 		color COLOR_WHITE
 		&:before
 		&:after
 			font-family "FontAwesome"
 			font-size 1rem
-			color COLOR_THEME
+			color COLOR_WHITE
 		&:before
 			content: "\f10d"
 		&:after
@@ -268,33 +267,40 @@ footer
 
 .yetMenber
 	text-align center
-	padding .5rem 0
+	padding SPACE 0
 	width 45%
 	float left
-	margin-left (10/3)%
-	margin-top (10/3)%
-	border-radius 1rem 
+	margin-left SPACE
+	margin-top SPACE
+	border-radius SPACE
 	background-color rgba(0, 0, 0, .75)
 	&:first-child
 		margin-left (10/3)%
 	&>img 
 		border .2rem solid COLOR_WHITE
 		border-radius 50%
-		width 5rem
-		height 5rem
+		width SPACE*10
+		height SPACE*10
 	& a,span
 		display block
 		color white
 	& ul
+		margin-top SPACE
 		list-style: none
 		& li
 			display inline-block
 			text-align center
-			padding SPACE
+			margin-bottom SPACE
+			margin-left SPACE
+			font-size 0
+			width 4rem
+			height 2rem
 			& span
 				//border-radius 50%
-				font-size SPACE
-				padding (SPACE/2)
+				display block
+				font-size SPACE*2
+				padding SPACE
+				border-radius SPACE
 				//margin-left .3rem
 				//line-height 0
 				&.facebook
@@ -305,7 +311,10 @@ footer
 					background-color COLOR_LINKEDIN
 				&.github
 					background-color COLOR_GITHUB
-			
+			&:first-child
+			&:nth-child(3)
+				margin-left 0
+
 	
 .briefcase
 	padding-bottom 1rem	

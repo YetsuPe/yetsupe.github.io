@@ -82,10 +82,10 @@
 
 [role="slider"]
 	margin 0
-	background-color #009BDE
-	padding-bottom .5rem 
+	background-color COLOR_THEME
 	text-align center
 	color white
+	padding-top SPACE
 	& figure 
 		margin 0
 		& img
@@ -97,7 +97,7 @@
 			
 [role="services"]
 	background-color: COLOR_THEME
-	padding .5rem 0 1rem 0
+	padding .1rem SPACE SPACE SPACE
 	& a
 		display inline-block
 		color white
@@ -140,27 +140,18 @@
 				border .2rem solid COLOR_SERVICE_DW
 		
 [role="ico-menu"],[role="ico-user"]
-	padding: 2rem
-	background-color: COLOR_WHITE
 	z-index: 2
 	position: absolute
-	width:HEIGHT_HEADER
-	height HEIGHT_HEADER
+	top SPACE
 	& span
 		font-size: 2rem
-		position: relative
-		color: COLOR_THEME
-		top: -1.5rem
+		
 [role="ico-menu"]
 	left 0
-	border-radius: 0 0 4rem 0
-	& span
-		left: -1.5rem
+	margin-left SPACE
 [role="ico-user"]
 	right 0
-	border-radius: 0 0 0 4rem
-	& span
-		right: 0
+	margin-right SPACE
 
 
 // Logo en canvas
