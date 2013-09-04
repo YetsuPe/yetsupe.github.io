@@ -450,9 +450,10 @@ footer {
   -ms-border-radius: 0.5rem;
   -o-border-radius: 0.5rem;
   border-radius: 0.5rem;
-  border: 2px solid #fff;
+  border: 0.1rem dashed #fff;
   text-align: center;
   color: #fff;
+  margin: 0.5rem 0.5rem;
 }
 .row blockquote:before,
 .row blockquote:after {
@@ -601,6 +602,9 @@ footer {
 }
 .fix-padding {
   padding-top: 0.3rem;
+}
+.font-sizeO {
+  font-size: 0;
 }
 .row {
   width: 100%;
@@ -756,16 +760,17 @@ footer {
   border-radius: 50%;
 }
 [role="services"] {
-  background-color: #00aed7;
-  padding: 0.1rem 0.5rem 0.5rem 0.5rem;
+  background-color: #fff;
+  padding: 0.1rem 0;
 }
 [role="services"] a {
   display: inline-block;
-  color: #fff;
+  color: #2c2c2c;
   text-align: center;
   width: 33.333333333333336%;
   padding: 0.1rem;
   vertical-align: top;
+  font-size: 1rem;
 }
 [role="services"] a span {
   display: block;

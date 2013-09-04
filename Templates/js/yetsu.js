@@ -8,7 +8,7 @@ Zepto(function($){
 
 
 	/********* Touch events **************/
-	/*$$('body').swipeRight( function(){
+	$$('body').swipeRight( function(){
 		menu.touchOpenMenu();
 	});
 	$$('body').swipeLeft( function(){
