@@ -901,7 +901,7 @@ h4 {
 /* 13px */
   }
   [role="slider"] {
-    background: url("../images/portada-tablet-yetsu.jpg") no-repeat center center;
+    background: url("../images/portada-tablet-yetsu.jpg") no-repeat top;
   }
 }
 @media only screen and (min-width: 480px) {
@@ -929,7 +929,7 @@ h4 {
     width: 84%;
   }
   [role="slider"] {
-    background: url("../images/portada-laptop-yetsu.jpg") no-repeat center center;
+    background: url("../images/portada-laptop-yetsu.jpg") no-repeat top;
   }
 }
 @media only screen and (min-width: 768px) {
@@ -937,7 +937,7 @@ h4 {
     font-size: 92%;
   }
   [role="slider"] {
-    background: url("../images/portada-pc-yetsu.jpg") no-repeat center center;
+    background: url("../images/portada-pc-yetsu.jpg") no-repeat top;
   }
   .yetMenber {
     width: 22.5%;
