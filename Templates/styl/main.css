@@ -120,7 +120,7 @@ img.responsive {
   background-color: #eb5054;
 }
 .bck.contact {
-  background-color: #f5e753;
+  background-color: #e98257;
 }
 .bck.ubication {
   background-color: #68c49f;
@@ -757,13 +757,13 @@ footer {
   width: 100%;
 }
 [role="services"] {
-  background-color: #e98257;
+  background-color: #fff;
   padding: 0.1rem 0;
   overflow: hidden;
 }
 [role="services"] a {
   float: left;
-  color: #fff;
+  color: #449bb6;
   text-align: center;
   width: 33.333333333333336%;
   padding: 0.1rem;
@@ -1037,6 +1037,13 @@ h4 {
   }
   .row {
     text-align: inherit;
+  }
+  .yetMenber img {
+    width: 100%;
+    height: auto;
+  }
+  .yetMenber ul {
+    display: block;
   }
   [role="logo"] {
     position: relative;
