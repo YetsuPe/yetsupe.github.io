@@ -477,10 +477,8 @@ footer {
 }
 .yetMenber {
   text-align: center;
-  padding: 0.5rem 0;
-  width: 45%;
-  float: left;
-  margin-left: 0.5rem;
+  padding: 0;
+  width: 100%;
   margin-top: 0.5rem;
   -webkit-border-radius: 0.5rem;
   -moz-border-radius: 0.5rem;
@@ -488,19 +486,17 @@ footer {
   -o-border-radius: 0.5rem;
   border-radius: 0.5rem;
   background-color: rgba(0,0,0,0.75);
-}
-.yetMenber:first-child {
-  margin-left: 3.3333333333333335%;
+  overflow: hidden;
 }
 .yetMenber>img {
-  border: 0.2rem solid #fff;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
-  border-radius: 50%;
-  width: 5rem;
-  height: 5rem;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  -ms-border-radius: 0.5rem;
+  -o-border-radius: 0.5rem;
+  border-radius: 0.5rem;
+  width: 4rem;
+  height: 4rem;
+  float: left;
 }
 .yetMenber a,
 .yetMenber span {
@@ -508,6 +504,7 @@ footer {
   color: #fff;
 }
 .yetMenber ul {
+  display: none;
   margin-top: 0.5rem;
   list-style: none;
 }
@@ -542,10 +539,6 @@ footer {
 .yetMenber ul li span.github {
   background-color: #333;
 }
-.yetMenber ul li:first-child,
-.yetMenber ul li:nth-child(3) {
-  margin-left: 0;
-}
 .briefcase {
   padding-bottom: 1rem;
 }
@@ -565,9 +558,7 @@ footer {
   color: #68c49f;
 }
 .ubication>div div#yetLocal {
-  width: 95%;
   height: 13rem;
-  margin: 0 auto 0 auto;
   -webkit-border-radius: 0.5rem;
   -moz-border-radius: 0.5rem;
   -ms-border-radius: 0.5rem;
@@ -613,6 +604,7 @@ footer {
 .row {
   width: 100%;
   display: block;
+  padding: 0 0.5rem;
 }
 .row:after {
   content: '';
@@ -880,8 +872,7 @@ footer {
   overflow-x: hidden;
 }
 form {
-  width: 95%;
-  margin: 0 auto;
+  width: 100%;
 }
 form fieldset {
   border: none;
@@ -978,12 +969,8 @@ h4 {
 /* 14px */
   }
   .yetMenber {
-    width: 30%;
-    margin-left: 2.5%;
-    margin-top: 2.5%;
-  }
-  .yetMenber:first-child {
-    margin-left: 2.5%;
+    width: 50%;
+    float: left;
   }
   .us>img,
   .us blockquote {
@@ -1051,14 +1038,6 @@ h4 {
   .row {
     text-align: inherit;
   }
-  .yetMenber {
-    width: 18%;
-    margin-left: 1.6666666666666667%;
-    margin-top: 1.6666666666666667%;
-  }
-  .yetMenber:first-child {
-    margin-left: 1.6666666666666667%;
-  }
   [role="logo"] {
     position: relative;
     background-color: transparent;
@@ -1070,6 +1049,8 @@ h4 {
     z-index: 2;
     width: 3rem;
     top: -4rem;
+    display: inline-block;
+    border: none;
   }
   [role="logo"] img {
     width: 100%;
@@ -1256,13 +1237,5 @@ h4 {
   }
   .row {
     width: 1200px;
-  }
-  .yetMenber {
-    width: 15%;
-    margin-left: 1.4285714285714286%;
-    margin-top: 1.4285714285714286%;
-  }
-  .yetMenber:first-child {
-    margin-left: 1.4285714285714286%;
   }
 }

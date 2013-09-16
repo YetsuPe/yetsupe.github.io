@@ -265,24 +265,22 @@ footer
 
 .yetMenber
 	text-align center
-	padding SPACE 0
-	width 45%
-	float left
-	margin-left SPACE
+	padding 0
+	width 100%
 	margin-top SPACE
 	border-radius SPACE
 	background-color rgba(0, 0, 0, .75)
-	&:first-child
-		margin-left (10/3)%
+	overflow hidden 
 	&>img 
-		border .2rem solid COLOR_WHITE
-		border-radius 50%
-		width SPACE*10
-		height SPACE*10
+		border-radius SPACE
+		width SPACE*8
+		height SPACE*8
+		float left
 	& a,span
 		display block
 		color white
 	& ul
+		display none
 		margin-top SPACE
 		list-style: none
 		& li
@@ -309,11 +307,7 @@ footer
 					background-color COLOR_LINKEDIN
 				&.github
 					background-color COLOR_GITHUB
-			&:first-child
-			&:nth-child(3)
-				margin-left 0
 
-	
 .briefcase
 	padding-bottom 1rem	
 	>span
@@ -331,9 +325,7 @@ footer
 		color COLOR_UBICATION
 	&>div
 		& div#yetLocal
-			width:95%
 			height: 13rem
-			block-center()
 			border-radius SPACE
 			border .4rem solid rgba(0, 0, 0, .75)
 		& address
