@@ -959,9 +959,6 @@ h4 {
     font-size: 81.25%;
 /* 13px */
   }
-  [role="slider"] {
-    background: url("../images/portada-tablet-yetsu.jpg") no-repeat top;
-  }
 }
 @media only screen and (min-width: 480px) {
   html {
@@ -1058,6 +1055,7 @@ h4 {
     top: -4rem;
     display: inline-block;
     border: none;
+    left: -46.8%;
   }
   [role="logo"] img {
     width: 100%;
@@ -1225,8 +1223,14 @@ h4 {
   [role="menu"] a:first-child {
     display: none;
   }
-  [role="services"] {
-    background-color: #319028;
+  [role="slider"] {
+    background: #39c;
+    background: -moz-linear-gradient(top, #39c 0%, #cff 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #39c), color-stop(100%, #cff));
+    background: -webkit-linear-gradient(top, #39c 0%, #cff 100%);
+    background: -o-linear-gradient(top, #39c 0%, #cff 100%);
+    background: -ms-linear-gradient(top, #39c 0%, #cff 100%);
+    background: linear-gradient(to bottom, #39c 0%, #cff 100%);
   }
   .open-menu {
     left: none !important;
