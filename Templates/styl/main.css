@@ -84,7 +84,10 @@ img.responsive {
   background-color: #c83c23;
 }
 .bck.green {
-  background-color: #58b15a;
+  background-color: #34cc67;
+}
+.bck.sky-blue {
+  background-color: #66cbff;
 }
 .bck.PW {
   background-color: #334960;
@@ -231,7 +234,7 @@ footer h3 {
   padding: 0 1rem;
 }
 .service section article p strong {
-  color: #58b15a;
+  color: #34cc67;
 }
 .service section article ul.list-inline {
   list-style: none;
@@ -334,10 +337,10 @@ footer h3 {
   color: #334960;
 }
 .service.PW section article ul li {
-  background-color: #58b15a;
+  background-color: #34cc67;
 }
 .service.PW section article ul li:after {
-  color: #58b15a;
+  color: #34cc67;
 }
 .service.CO h2 {
   background: #32900e;
@@ -351,17 +354,17 @@ footer h3 {
   background-color: #334960;
 }
 .service.CO section article ul.list-items > li > a {
-  background-color: #58b15a;
+  background-color: #34cc67;
 }
 .service.CO section article ul.list-items > li > a:first-of-type:after {
   content: "\f02d";
   background-color: #fff;
-  color: #58b15a;
+  color: #34cc67;
 }
 .service.CO section article ul.list-items > li > a:nth-of-type(2):after {
   content: "\f113";
   background-color: #fff;
-  color: #58b15a;
+  color: #34cc67;
 }
 .service.EM h2 {
   background: #8f3fb0;
@@ -603,6 +606,9 @@ footer {
 .font-sizeO {
   font-size: 0;
 }
+.pos-absolute {
+  position: absolute;
+}
 .row {
   width: 100%;
   display: block;
@@ -741,7 +747,6 @@ footer {
   background: url("../images/portada-mobile-yetsu.jpg") no-repeat center center;
   text-align: center;
   color: #fff;
-  padding-top: 0.5rem;
 }
 [role="logo"] {
   width: 30%;
@@ -1059,6 +1064,9 @@ h4 {
   [role="logo"] img {
     width: 100%;
   }
+  [role="services"] {
+    background-color: #34cc67;
+  }
   [role="ico-menu"] {
     z-index: -1;
   }
@@ -1066,8 +1074,9 @@ h4 {
     z-index: -1;
   }
   [role="slider"] {
-    background-image: url("../images/portada.jpg");
-    min-height: 400px;
+    background-color: #66cbff;
+    padding: 0;
+/*min-height 400px*/
   }
   header {
     position: relative;
@@ -1221,15 +1230,6 @@ h4 {
   }
   [role="menu"] a:first-child {
     display: none;
-  }
-  [role="slider"] {
-    background: #39c;
-    background: -moz-linear-gradient(top, #39c 0%, #cff 100%);
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #39c), color-stop(100%, #cff));
-    background: -webkit-linear-gradient(top, #39c 0%, #cff 100%);
-    background: -o-linear-gradient(top, #39c 0%, #cff 100%);
-    background: -ms-linear-gradient(top, #39c 0%, #cff 100%);
-    background: linear-gradient(to bottom, #39c 0%, #cff 100%);
   }
   .open-menu {
     left: none !important;
