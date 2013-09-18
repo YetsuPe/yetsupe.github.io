@@ -283,30 +283,32 @@ footer
 		display none
 		margin-top SPACE
 		list-style: none
+		margin-bottom SPACE
 		& li
 			display inline-block
 			text-align center
-			margin-bottom SPACE
-			margin-left SPACE
+			margin-bottom SPACE/2
+			margin-left SPACE/2
 			font-size 0
-			width 4rem
-			height 2rem
+			width SPACE*3
+			height SPACE*3
+			background-color COLOR_WHITE
+			border-radius 50%
 			& span
 				//border-radius 50%
-				display block
+				position relative
+				bottom -0.1rem
 				font-size SPACE*2
-				padding SPACE
-				border-radius SPACE
 				//margin-left .3rem
 				//line-height 0
 				&.facebook
-					background-color COLOR_FACEBOOK
+					color COLOR_FACEBOOK
 				&.twitter
-					background-color COLOR_TWITTER
+					color COLOR_TWITTER
 				&.linkedin
-					background-color COLOR_LINKEDIN
+					color COLOR_LINKEDIN
 				&.github
-					background-color COLOR_GITHUB
+					color COLOR_GITHUB
 
 .briefcase
 	padding-bottom 1rem	

@@ -507,37 +507,39 @@ footer {
   display: none;
   margin-top: 0.5rem;
   list-style: none;
+  margin-bottom: 0.5rem;
 }
 .yetMenber ul li {
   display: inline-block;
   text-align: center;
-  margin-bottom: 0.5rem;
-  margin-left: 0.5rem;
+  margin-bottom: 0.5rem/2;
+  margin-left: 0.5rem/2;
   font-size: 0;
-  width: 4rem;
-  height: 2rem;
+  width: 1.5rem;
+  height: 1.5rem;
+  background-color: #fff;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
 }
 .yetMenber ul li span {
-  display: block;
+  position: relative;
+  bottom: -0.1rem;
   font-size: 1rem;
-  padding: 0.5rem;
-  -webkit-border-radius: 0.5rem;
-  -moz-border-radius: 0.5rem;
-  -ms-border-radius: 0.5rem;
-  -o-border-radius: 0.5rem;
-  border-radius: 0.5rem;
 }
 .yetMenber ul li span.facebook {
-  background-color: #45619d;
+  color: #45619d;
 }
 .yetMenber ul li span.twitter {
-  background-color: #29c;
+  color: #29c;
 }
 .yetMenber ul li span.linkedin {
-  background-color: #1582bb;
+  color: #1582bb;
 }
 .yetMenber ul li span.github {
-  background-color: #333;
+  color: #333;
 }
 .briefcase {
   padding-bottom: 1rem;
@@ -999,9 +1001,6 @@ h4 {
   .yetMenber:first-child {
     margin-left: 2%;
   }
-  [role="services"] a {
-    width: 16.666666666666668%;
-  }
   .row {
     margin: 0 auto;
     width: 100%;
@@ -1248,5 +1247,10 @@ h4 {
   }
   .row {
     width: 1200px;
+  }
+  .yetMenber {
+    width: 10rem;
+    margin-left: 0.5rem;
+    margin-top: 0.5rem;
   }
 }
