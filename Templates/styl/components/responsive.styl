@@ -92,7 +92,7 @@ h4
 		border-radius 0 
 		z-index 2
 		width wLogo=3rem
-		top - (wLogo+1)
+		top -3.5rem
 		display inline-block
 		border none
 		left -46.8%
@@ -100,7 +100,7 @@ h4
 			width 100%
 
 	[role="services"]
-		background-color: COLOR_GREEN 
+		border-top SPACE*2 solid COLOR_GREEN 
 	[role="ico-menu"]
 		z-index -1
 	
@@ -108,7 +108,7 @@ h4
 		z-index -1
 
 	[role="slider"]
-		background-color COLOR_SKY_BLUE 
+		background COLOR_SKY_BLUE 
 		padding 0
 		/*min-height 400px*/
 
@@ -220,6 +220,26 @@ h4
 		left:none !important
 	.overflow-x
 		overflow-x visible !important
+	/****  Helpers *******/
+	.pc-titulo
+		position relative
+		width 20%
+		top 2rem
+		margin-left 44rem
+	.flotante
+		position relative
+		height 0
+		z-index 2
+	.quote
+		width 30% !important
+		position relative
+		margin-left 17rem !important
+		top -6rem
+		background-color white
+		color COLOR_DARK !important
+		border-radius SPACE*4
+	.show-pc
+		display block !important
 
 @media only screen and (min-width: 1200px) 
 	html 
