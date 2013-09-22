@@ -65,6 +65,12 @@ img.responsive {
 .text.center {
   text-align: center;
 }
+.text.left {
+  text-align: left;
+}
+.text.right {
+  text-align: right;
+}
 .text.color {
   color: #fff;
 }
@@ -745,7 +751,7 @@ footer {
 [role="slider"] figure {
   margin: 0;
 }
-[role="slider"] figure img {
+[role="logo"] {
   width: 30%;
   display: block;
   margin: 0 auto;
@@ -801,13 +807,6 @@ footer {
 [role="ico-user"] {
   right: 0;
   margin-right: 0.5rem;
-}
-[role="logo"] {
-  position: absolute;
-  right: 0;
-  width: 3rem;
-  height: 3rem;
-  z-index: 2;
 }
 [role="aside"] {
   position: fixed;
@@ -877,6 +876,73 @@ footer {
 }
 .overflow-x {
   overflow-x: hidden;
+}
+form {
+  width: 95%;
+  margin: 0 auto;
+}
+form fieldset {
+  border: none;
+  margin: 0;
+}
+form fieldset label {
+  display: none;
+  width: 25%;
+  float: left;
+  text-align: right;
+  padding-right: 0.25rem;
+  margin-top: 0.25rem;
+}
+form fieldset input {
+  height: 3rem;
+}
+form fieldset input,
+form fieldset textarea {
+  display: block;
+  width: 100%;
+  margin-bottom: 0.5rem;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  -ms-border-radius: 0.5rem;
+  -o-border-radius: 0.5rem;
+  border-radius: 0.5rem;
+  border: 0.2rem solid rgba(0,0,0,0.4);
+}
+form fieldset input::-webkit-input-placeholder,
+form fieldset textarea::-webkit-input-placeholder {
+  color: #000;
+  text-align: center;
+}
+form fieldset input:-moz-placeholder /* Firefox 18- */,
+form fieldset textarea:-moz-placeholder /* Firefox 18- */ {
+  color: #000;
+  text-align: center;
+}
+form fieldset input::-moz-placeholder /* Firefox 19+ */,
+form fieldset textarea::-moz-placeholder /* Firefox 19+ */ {
+  color: #000;
+  text-align: center;
+}
+form fieldset input:-ms-input-placeholder,
+form fieldset textarea:-ms-input-placeholder {
+  color: #000;
+  text-align: center;
+}
+form fieldset textarea {
+  height: 3.5rem;
+}
+form fieldset button {
+  padding: 0.25rem 0.5rem;
+  display: block;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  -ms-border-radius: 0.5rem;
+  -o-border-radius: 0.5rem;
+  border-radius: 0.5rem;
+  margin: 0 auto 0 auto;
+  background-color: #00aed7;
+  color: #fff;
+  border: none;
 }
 html {
   font-size: 75%;
@@ -980,6 +1046,9 @@ h4 {
   html {
     font-size: 100%;
   }
+  .row {
+    text-align: inherit;
+  }
   .yetMenber {
     width: 18%;
     margin-left: 1.6666666666666667%;
@@ -987,6 +1056,21 @@ h4 {
   }
   .yetMenber:first-child {
     margin-left: 1.6666666666666667%;
+  }
+  [role="logo"] {
+    position: relative;
+    background-color: transparent;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+    border-radius: 0;
+    z-index: 2;
+    width: 3rem;
+    top: -4rem;
+  }
+  [role="logo"] img {
+    width: 100%;
   }
   [role="ico-menu"] {
     z-index: -1;
@@ -998,30 +1082,15 @@ h4 {
     background-image: url("../images/portada.jpg");
     min-height: 400px;
   }
-  [role="slider"] figure {
-    padding-top: 7rem;
-  }
-  [role="slider"] figure img {
-    width: 12%;
-  }
   header {
-    position: absolute;
+    position: relative;
     width: 100%;
-    height: 8rem;
+    height: 4rem;
     overflow: visible;
   }
-  header div h1 {
-    padding: 0 0.5rem;
-    position: relative;
-    z-index: 3;
-    left: 0;
-    font-size: 2rem;
-    background-color: #00aed7;
-    -webkit-border-radius: 0 0 1rem 1rem;
-    -moz-border-radius: 0 0 1rem 1rem;
-    -ms-border-radius: 0 0 1rem 1rem;
-    -o-border-radius: 0 0 1rem 1rem;
-    border-radius: 0 0 1rem 1rem;
+  header h1 {
+    margin-left: 3rem;
+    padding-top: 0.5rem;
   }
   [role="user"] {
     display: none;
@@ -1034,21 +1103,15 @@ h4 {
     right: 0;
   }
   [role="aside"] {
-    position: relative;
-    background-color: #54d2f8;
-    bottom: 0 !important;
+    position: absolute;
+    top: 0 !important;
+    background-color: transparent;
+    text-align: right;
+    z-index: 1;
   }
-  [role="aside"] >div >figure {
-    width: 4%;
-  }
-  [role="aside"] >div >figure:first-child {
-    margin-left: 7rem;
-  }
-  [role="aside"] >div >figure span {
-    font-size: 1rem;
-  }
-  [role="aside"] >span {
-    display: none;
+  [role="aside"] span {
+    padding: 0.5rem;
+    color: #fff;
   }
   .csstransforms3d [role="menu"] a span:before {
     position: absolute;
@@ -1056,7 +1119,7 @@ h4 {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0,0,0,0.5);
+    color: #fff;
     content: attr(data-hover);
     -webkit-transition: background 0.2s ease;
     -moz-transition: background 0.2s ease;
@@ -1078,47 +1141,30 @@ h4 {
   .csstransforms3d [role="menu"] a:nth-child(2):hover span:before,
   .csstransforms3d [role="menu"] a:nth-child(2):focus span:before {
     background: #008bac;
-    color: #fff;
-    -webkit-border-radius: 1rem 0 0 1rem;
-    -moz-border-radius: 1rem 0 0 1rem;
-    -ms-border-radius: 1rem 0 0 1rem;
-    -o-border-radius: 1rem 0 0 1rem;
-    border-radius: 1rem 0 0 1rem;
   }
   .csstransforms3d [role="menu"] a:nth-child(3):hover span:before,
   .csstransforms3d [role="menu"] a:nth-child(3):focus span:before {
     background: #367c92;
-    color: #fff;
   }
   .csstransforms3d [role="menu"] a:nth-child(4):hover span:before,
   .csstransforms3d [role="menu"] a:nth-child(4):focus span:before {
     background: #e21a1f;
-    color: #fff;
   }
   .csstransforms3d [role="menu"] a:nth-child(5):hover span:before,
   .csstransforms3d [role="menu"] a:nth-child(5):focus span:before {
     background: #43ad82;
-    color: #fff;
   }
   .csstransforms3d [role="menu"] a:nth-child(6):hover span:before,
   .csstransforms3d [role="menu"] a:nth-child(6):focus span:before {
     background: #269a90;
-    color: #fff;
   }
   .csstransforms3d [role="menu"] a:nth-child(7):hover span:before,
   .csstransforms3d [role="menu"] a:nth-child(7):focus span:before {
     background: #be6515;
-    color: #fff;
   }
   .csstransforms3d [role="menu"] a:nth-child(8):hover span:before,
   .csstransforms3d [role="menu"] a:nth-child(8):focus span:before {
     background: #f1de15;
-    color: #fff;
-    -webkit-border-radius: 0 1rem 1rem 0;
-    -moz-border-radius: 0 1rem 1rem 0;
-    -ms-border-radius: 0 1rem 1rem 0;
-    -o-border-radius: 0 1rem 1rem 0;
-    border-radius: 0 1rem 1rem 0;
   }
   [role="menu"] {
     left: 0;
@@ -1126,8 +1172,9 @@ h4 {
     height: 0;
     position: absolute;
     overflow: visible;
-    top: 4rem;
+    top: 1.2rem;
     margin: 0;
+    text-align: right;
   }
   [role="menu"] a {
 /*********** efect **/
@@ -1140,10 +1187,9 @@ h4 {
     display: inline-block;
     text-align: center;
     padding: 0;
-    color: #fff;
     *width: 11%;
     width: 7rem;
-/*border-bottom: .3rem solid rgba(0,0,0,.5) !important*/
+    border-bottom: none !important;
     position: relative;
     -webkit-transition: top 0.2s ease-in-out;
     -moz-transition: top 0.2s ease-in-out;
@@ -1165,8 +1211,6 @@ h4 {
   }
   [role="menu"] a span:nth-of-type(1) {
     display: none;
-    width: 100%;
-    text-align: center;
   }
   [role="menu"] a span:nth-of-type(2) {
     display: block;
@@ -1190,72 +1234,6 @@ h4 {
   [role="menu"] a:first-child {
     display: none;
   }
-  [role="menu"] a:nth-child(2) {
-    -webkit-border-radius: 1rem 0 0 1rem;
-    -moz-border-radius: 1rem 0 0 1rem;
-    -ms-border-radius: 1rem 0 0 1rem;
-    -o-border-radius: 1rem 0 0 1rem;
-    border-radius: 1rem 0 0 1rem;
-/*border-bottom: .3rem solid COLOR_THEME*/
-    background-color: #00aed7;
-  }
-  [role="menu"] a:nth-child(2) span {
-    color: #fff;
-  }
-  [role="menu"] a:nth-child(3) {
-/*border-bottom: .3rem solid COLOR_US*/
-    background-color: #449bb6;
-  }
-  [role="menu"] a:nth-child(3) span {
-    color: #fff;
-  }
-  [role="menu"] a:nth-child(4) {
-/*border-bottom: .3rem solid COLOR_BRIEFCASE*/
-    background-color: #eb5054;
-  }
-  [role="menu"] a:nth-child(4) span {
-    color: #fff;
-  }
-  [role="menu"] a:nth-child(5) {
-/*border-bottom: .3rem solid COLOR_UBICATION*/
-    background-color: #68c49f;
-  }
-  [role="menu"] a:nth-child(5) span {
-    color: #fff;
-  }
-  [role="menu"] a:nth-child(6) {
-/*border-bottom: .3rem solid COLOR_COURCES */
-    background-color: #2fc1b4;
-  }
-  [role="menu"] a:nth-child(6) span {
-    color: #fff;
-  }
-  [role="menu"] a:nth-child(7) {
-/*border-bottom: .3rem solid COLOR_BLOG*/
-    background-color: #e67f22;
-  }
-  [role="menu"] a:nth-child(7) span {
-    color: #fff;
-  }
-  [role="menu"] a:nth-child(8) {
-    -webkit-border-radius: 0 1rem 1rem 0;
-    -moz-border-radius: 0 1rem 1rem 0;
-    -ms-border-radius: 0 1rem 1rem 0;
-    -o-border-radius: 0 1rem 1rem 0;
-    border-radius: 0 1rem 1rem 0;
-/*border-bottom: .3rem solid COLOR_CONTACT*/
-    background-color: #f5e753;
-  }
-  [role="menu"] a:nth-child(8) span {
-    color: #fff;
-  }
-  [role="menu"] a:nth-child(9) {
-/*border-bottom: .3rem solid COLOR_CONTACT*/
-    background-color: #f5e753;
-  }
-  [role="menu"] a:nth-child(9) span {
-    color: #fff;
-  }
   [role="services"] {
     background-color: #319028;
   }
@@ -1273,6 +1251,9 @@ h4 {
   html {
     font-size: 112.5%;
   }
+  .row {
+    width: 1200px;
+  }
   .yetMenber {
     width: 15%;
     margin-left: 1.4285714285714286%;
@@ -1281,74 +1262,4 @@ h4 {
   .yetMenber:first-child {
     margin-left: 1.4285714285714286%;
   }
-  .row {
-    width: 1200px;
-  }
-}
-form {
-  width: 95%;
-  margin: 0 auto;
-}
-form fieldset {
-  border: none;
-  margin: 0;
-}
-form fieldset label {
-  display: none;
-  width: 25%;
-  float: left;
-  text-align: right;
-  padding-right: 0.25rem;
-  margin-top: 0.25rem;
-}
-form fieldset input {
-  height: 3rem;
-}
-form fieldset input,
-form fieldset textarea {
-  display: block;
-  width: 100%;
-  margin-bottom: 0.5rem;
-  -webkit-border-radius: 0.5rem;
-  -moz-border-radius: 0.5rem;
-  -ms-border-radius: 0.5rem;
-  -o-border-radius: 0.5rem;
-  border-radius: 0.5rem;
-  border: 0.2rem solid rgba(0,0,0,0.4);
-}
-form fieldset input::-webkit-input-placeholder,
-form fieldset textarea::-webkit-input-placeholder {
-  color: #000;
-  text-align: center;
-}
-form fieldset input:-moz-placeholder /* Firefox 18- */,
-form fieldset textarea:-moz-placeholder /* Firefox 18- */ {
-  color: #000;
-  text-align: center;
-}
-form fieldset input::-moz-placeholder /* Firefox 19+ */,
-form fieldset textarea::-moz-placeholder /* Firefox 19+ */ {
-  color: #000;
-  text-align: center;
-}
-form fieldset input:-ms-input-placeholder,
-form fieldset textarea:-ms-input-placeholder {
-  color: #000;
-  text-align: center;
-}
-form fieldset textarea {
-  height: 3.5rem;
-}
-form fieldset button {
-  padding: 0.25rem 0.5rem;
-  display: block;
-  -webkit-border-radius: 0.5rem;
-  -moz-border-radius: 0.5rem;
-  -ms-border-radius: 0.5rem;
-  -o-border-radius: 0.5rem;
-  border-radius: 0.5rem;
-  margin: 0 auto 0 auto;
-  background-color: #00aed7;
-  color: #fff;
-  border: none;
 }

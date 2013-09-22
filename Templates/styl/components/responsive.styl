@@ -82,6 +82,8 @@ h4
 @media only screen and (min-width: 960px) 
 	html 
 		font-size: 100%
+	.row
+		text-align inherit
 	/******* YetMenbers *********/
 	.yetMenber
 		width (90/5)%
@@ -90,6 +92,15 @@ h4
 		&:first-child
 			margin-left (10/6)%
 	
+	[role="logo"]
+		position relative
+		background-color transparent
+		border-radius 0 
+		z-index 2
+		width wLogo=3rem
+		top - (wLogo+1)
+		& img
+			width 100%
 	
 	[role="ico-menu"]
 		z-index -1
@@ -100,25 +111,15 @@ h4
 	[role="slider"]
 		background-image url('../images/portada.jpg')
 		min-height 400px
-		& figure 
-			padding-top 7rem
-			& img
-				width 12%
 
 	header
-		position absolute
+		position relative
 		width 100%
-		height 8rem
+		height 4rem
 		overflow: visible
-		& div
-			& h1
-				padding 0 .5rem 
-				position relative
-				z-index 3
-				left 0
-				font-size 2rem
-				background-color COLOR_THEME
-				border-radius 0 0 1rem 1rem 
+		& h1
+			margin-left 3rem
+			padding-top SPACE
 	[role="user"]
 		display none	
 		z-index:2
@@ -129,18 +130,14 @@ h4
 		overflow-y:scroll
 		right 0
 	[role="aside"]
-		position relative
-		background-color #54D2F8
-		bottom 0 !important
-		>div >figure
-			width 4%
-			&:first-child
-				margin-left 7rem
-			
-			& span 
-				font-size 1rem
-		>span
-			display none
+		position absolute 
+		top 0 !important
+		background-color transparent
+		text-align right
+		z-index 1
+		& span
+			padding SPACE
+			color COLOR_WHITE
 
 	.csstransforms3d [role="menu"] a span:before
 		position: absolute
@@ -148,7 +145,7 @@ h4
 		left: 0
 		width: 100%
 		height: 100%
-		background-color rgba(0, 0, 0, .5)
+		color COLOR_WHITE
 		content: attr(data-hover)
 		transition: background 0.2s ease
 		transform: rotateX(-90deg)
@@ -157,34 +154,24 @@ h4
 	.csstransforms3d [role="menu"] a:nth-child(2):hover span:before,
 	.csstransforms3d [role="menu"] a:nth-child(2):focus span:before 
 		background: darken(COLOR_THEME,20%)
-		color COLOR_WHITE
-		border-radius 1rem 0 0 1rem
 	.csstransforms3d [role="menu"] a:nth-child(3):hover span:before,
 	.csstransforms3d [role="menu"] a:nth-child(3):focus span:before 
 		background: darken(COLOR_US,20%)
-		color COLOR_WHITE
 	.csstransforms3d [role="menu"] a:nth-child(4):hover span:before,
 	.csstransforms3d [role="menu"] a:nth-child(4):focus span:before 
 		background: darken(COLOR_BRIEFCASE,20%)
-		color COLOR_WHITE
 	.csstransforms3d [role="menu"] a:nth-child(5):hover span:before,
 	.csstransforms3d [role="menu"] a:nth-child(5):focus span:before 
 		background: darken(COLOR_UBICATION,20%)
-		color COLOR_WHITE
 	.csstransforms3d [role="menu"] a:nth-child(6):hover span:before,
 	.csstransforms3d [role="menu"] a:nth-child(6):focus span:before 
 		background: darken(COLOR_COURCES,20%)
-		color COLOR_WHITE
 	.csstransforms3d [role="menu"] a:nth-child(7):hover span:before,
 	.csstransforms3d [role="menu"] a:nth-child(7):focus span:before 
 		background: darken(COLOR_BLOG,20%)
-		color COLOR_WHITE
 	.csstransforms3d [role="menu"] a:nth-child(8):hover span:before,
 	.csstransforms3d [role="menu"] a:nth-child(8):focus span:before 
 		background: darken(COLOR_CONTACT,20%)
-		color COLOR_WHITE
-		border-radius 0 1rem 1rem 0
-	
 
 	[role="menu"]
 		left: 0
@@ -192,8 +179,9 @@ h4
 		height 0 
 		position: absolute
 		overflow: visible
-		top 4rem
+		top 1.2rem
 		margin 0 
+		text-align right
 		&  a
 			/*********** efect **/
 			perspective 50rem
@@ -201,10 +189,9 @@ h4
 			display: inline-block
 			text-align center 
 			padding 0
-			color COLOR_WHITE
 			*width 11%
 			width 7rem
-			/*border-bottom: .3rem solid rgba(0,0,0,.5) !important*/
+			border-bottom: none !important
 			position relative
 			transition top .2s ease-in-out
 			&:hover span, :focus span 
@@ -215,62 +202,15 @@ h4
 			& span
 				&:nth-of-type(1)
 					display none
-					width 100%
-					text-align center 
 				&:nth-of-type(2)
 					display block
 					transition transform .4s
 					transform-origin 50% 0
 					transform-style preserve-3d
 					padding .18rem 0
-
 			&:first-child
 				display none
-			&:nth-child(2) 
-				border-radius 1rem 0 0 1rem
-
-				/*border-bottom: .3rem solid COLOR_THEME*/
-				background-color COLOR_THEME
-				& span
-					color COLOR_WHITE
-			&:nth-child(3) 
-				/*border-bottom: .3rem solid COLOR_US*/
-				background-color COLOR_US
-				& span
-					color COLOR_WHITE
-			&:nth-child(4) 
-				/*border-bottom: .3rem solid COLOR_BRIEFCASE*/
-				background-color COLOR_BRIEFCASE
-				& span
-					color COLOR_WHITE
-			&:nth-child(5) 
-				/*border-bottom: .3rem solid COLOR_UBICATION*/
-				background-color : COLOR_UBICATION
-				& span
-					color COLOR_WHITE
-			&:nth-child(6) 
-				/*border-bottom: .3rem solid COLOR_COURCES */
-				background-color COLOR_COURCES 
-				& span
-					color COLOR_WHITE
-			&:nth-child(7) 
-				/*border-bottom: .3rem solid COLOR_BLOG*/
-				background-color COLOR_BLOG
-				& span
-					color COLOR_WHITE
-			&:nth-child(8) 
-				border-radius 0 1rem 1rem 0
-
-				/*border-bottom: .3rem solid COLOR_CONTACT*/
-				background-color : COLOR_CONTACT
-				& span
-					color COLOR_WHITE
-			&:nth-child(9) 
-				/*border-bottom: .3rem solid COLOR_CONTACT*/
-				background-color : COLOR_CONTACT
-				& span
-					color COLOR_WHITE
-
+			
 	[role="services"]
 		background-color #319028
 	
@@ -284,6 +224,8 @@ h4
 @media only screen and (min-width: 1200px) 
 	html 
 		font-size: 112.5%
+	.row
+		width 1200px
 
 	/******* YetMenbers *********/
 	.yetMenber
@@ -300,7 +242,6 @@ h4
 		&:first-child
 			margin-left (10/8)%*/
 			
-	.row
-		width 1200px
+	
 		
 	
