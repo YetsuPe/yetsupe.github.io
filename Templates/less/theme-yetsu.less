@@ -1,0 +1,297 @@
+@import "variables-yetsu.less";
+@import "variables.less";
+/**************** reset ************/
+picture{
+  display: block;
+}
+/*************** backgrounds ******************/
+
+.bck-theme{
+  background-color: @COLOR_THEME  ;
+}
+.bck-white{
+  background-color: @COLOR_WHITE  ;
+}
+.bck-green{
+  background-color: @COLOR_GREEN    ;
+}
+.bck-green-light{
+  background-color: @COLOR_GREEN_LIGHT  ;
+}
+.bck-blue{
+  background-color: @COLOR_BLUE  ;
+}
+.bck-orange{
+  background-color: @COLOR_ORANGE   ;
+}
+.bck-yellow{
+  background-color: @COLOR_YELLOW   ;
+}
+.bck-purple{
+  background-color: @COLOR_PURPLE    ;
+}
+.bck-sky-blue{
+  background-color: @COLOR_SKY_BLUE  ;
+}
+.bck-dark{
+  background-color: @COLOR_DARK   ;
+  color: @COLOR_WHITE;
+}
+.bck-dark-light{
+  background-color: @COLOR_DARK_LIGHT   ;
+  color: @COLOR_WHITE;
+}
+/******** map*************/
+#yetLocal{
+  height: 15rem;
+}
+ 
+
+/************* responsive text ***************/
+html{
+  font-size: 75%; /*12px */
+}
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6{
+  margin: 0 ;
+  text-rendering: optimizeLegibility;
+}
+h1{
+  font-size:1.5rem ;
+}
+h2{
+  font-size:1.25rem;
+} 
+h3{
+  font-size:@BASE-REM;
+} 
+h4{
+  font-size:.8rem;
+}
+h5{
+  font-size:.6rem;
+}
+h6{
+  font-size:.5rem;
+}
+
+@media only screen and (min-width: 320px){ 
+  html{
+    font-size: 81.25% ; /* 13px */
+  }
+}
+@media only screen and (min-width: 480px){ 
+  html{
+    font-size: 87.5%  ; /* 14px */
+  }
+}
+@media only screen and (min-width: 640px){ 
+  html{
+    font-size: 100%   ; /* 16px */
+  }
+}
+@media only screen and (min-width: 960px){ 
+  html{
+    font-size: 112.5% ; /* 18px */
+  }
+}
+@media only screen and (min-width: 1440px){ 
+  html{
+    font-size: 125%   ; /* 20px */
+  }
+}
+
+
+.margin-none{  
+  margin: 0;
+}
+.margin{  
+  margin:  @BASE-REM;
+}
+.margin-left{  
+  margin-left:  @BASE-REM;
+}
+.margin-right{  
+  margin-right:  @BASE-REM;
+}
+.margin-top{  
+  margin-top:  @BASE-REM;
+}
+.margin-bottom{  
+  margin-bottom:  @BASE-REM;
+}
+
+.padding-none{  
+  padding: 0;
+}
+.padding{  
+  padding:  @BASE-REM;
+}
+.padding-left{  
+  padding-left:  @BASE-REM;
+}
+.padding-right{  
+  padding-right:  @BASE-REM;
+}
+.padding-top{  
+  padding-top:  @BASE-REM;
+}
+.padding-bottom{  
+  padding-bottom:  @BASE-REM;
+}
+.radius{
+  border-radius: @BASE-REM;
+}
+
+
+
+/****************** parallax *************/
+.bck-parallax{
+  background-attachment: fixed;
+  background-position: 50% 0;
+  background-repeat: no-repeat;
+  //height: 450px;
+  position: relative;
+}
+.tumbas-reales {
+  background-image: url(../images/parallax/1.jpg);
+}
+.pw {
+  background:@COLOR_THEME no-repeat url(../images/parallax/pw.jpg) bottom center;
+  min-height: 450px;
+}
+
+.container-parallax{
+  display: block;
+}
+.parallax{
+  /*display: block;
+  width: 100%;*/
+}
+.parallax-item-ninja{
+  position: relative;
+  top: 12rem !important;
+}
+.parallax-bg{
+ // width: 100%;
+}
+
+[role="services"]{
+  z-index: 2;
+}
+.para{
+  overflow: hidden;
+}
+
+
+/************** service pictures ***************/
+.service-pic{
+  position: relative;
+  width: 14rem;
+  height: 14rem;
+  background-color: @COLOR_WHITE;
+  padding: 3rem @BASE-REM;
+  .border-radius-yetsu(50%);
+  border: .5rem solid darken(@COLOR_WHITE, 20%);
+  margin: 0 auto;
+  & > img{
+    width: 100%;
+  }
+}
+.service{
+  padding: 2rem 0 0 0;
+  & h2{
+    padding: 2rem 0 4rem 0;
+  }
+  .padding{  
+  padding:  (@BASE-REM *2);
+  }
+  .padding-left{  
+    padding-left:  (@BASE-REM *2);
+  }
+  .padding-right{  
+    padding-right:  (@BASE-REM *2);
+  }
+  .padding-top{  
+    padding-top:  (@BASE-REM *2);
+  }
+  .padding-bottom{  
+    padding-bottom:  (@BASE-REM *2);
+  }
+}
+.text-justify{
+  text-align: justify;
+}
+.text-right{
+  text-align: right;
+}
+.text-left{
+  text-align: left;
+}
+
+
+/******************* positio *********************/
+.relative{
+  position: relative;
+  .top{
+    top: @BASE-REM;
+  }
+  .top-3{
+    top: @BASE-REM*3;
+  }
+}
+
+/******* navigation *****/
+
+
+/************ nav ******************/
+
+
+
+/*
+[role="header"]{
+  height: 4rem;
+}
+
+[role="navigation"]{
+  position: fixed;
+  z-index: 3;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4rem;
+  font-size: 0;
+  & > .menu { 
+    display: inline-block;
+    vertical-align: middle;
+    width: 80%;
+    font-size: 0;
+    & a{
+      color: @COLOR_WHITE;
+      font-size:@BASE-REM;
+      margin-left: @BASE-REM;
+      display: inline-block;
+      & [class^="icon-"],[class*="icon-"]  {
+        display: none;
+      }
+      &:last-child{
+        margin-right: @BASE-REM*7 ;
+      }
+    }
+  }
+  /****** logo *
+  & .logo{
+    width: 20%;
+    font-size: 0;
+    color: @COLOR_WHITE;
+    display: inline-block;
+    & img,h1{
+      display: inline-block;
+      vertical-align: middle;
+    }
+    & img{
+      width: 4rem;
+    }
+  }
+}
+*/
+

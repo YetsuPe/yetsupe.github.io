@@ -6,494 +6,558 @@
 	<meta name="description" content="YETSU S.A.C" />
 	<meta name="author" content="@YetsuPe" />
    	<meta name="viewport" content="width=device-width, initial-scale=1" />
-  	<link rel="stylesheet" href="styl/normalize.css" />
-	<link rel="stylesheet" href="styl/main.css" />
-	<link rel="stylesheet" href="styl/font-awesone.css" />
-	<link rel="shortcut icon" href="images/yetsu-favicon.ico" />
 
-	<link href='http://fonts.googleapis.com/css?family=Nunito:400,700,300' rel='stylesheet'>
+  	<link rel="stylesheet" href="less/bootstrap.css" />
+  	<link rel="stylesheet" href="less/font-awesone.css" />
+  	<link rel="stylesheet" href="less/theme-yetsu.css" />
+  	<link rel="stylesheet" href="less/theme.css" />
+
+  	<link rel="stylesheet" href="css/mmenu.css" />
+  	<link type="text/css" rel="stylesheet" href="css/mmenu-positioning.css" />
+  	
+	<link rel="shortcut icon" href="images/yetsu-favicon.ico" />
 	<!-- IE<9 -->
 	<!--[if lt IE 9]>
 		<script src="js/lib/html5shiv.js" type="text/javascript" ></script>
 	<![endif]-->
 </head>
 <body>
-	<nav role="menu" id="menu">
-		<div class="row">
-		<a href="#">
-			<img src="images/yetsu-logo.png"/><span>YETSU</span></a> <a href="#">
-			<span class="icon-home icon-2x"></span><span data-hover="Inicio" >inicio</span></a><a href="#">
-			<span class="icon-group icon-2x"></span><span data-hover="Nosotros">Nosotros</span></a><a href="#">
-			<span class="icon-briefcase icon-2x"></span><span data-hover="Portafolio">Portafolio</span></a><a href="#Ubicanos">
-			<span class="icon-map-marker icon-2x"></span><span data-hover="Ubicanos">Ubicanos</span></a><a href="#">
-			<span class="icon-book icon-2x"></span><span data-hover="Cursos">Cursos</span></a><a href="#">
-			<span class="icon-archive icon-2x"></span><span data-hover="Blog">Blog</span></a><a href="#">
-			<span class="icon-comments icon-2x"></span><span data-hover="Contactanos">Contactanos</span></a>
-		</div>
+<div id="page">
+	<header role="header" id="header">
+		<a href="#menu-left"><span class="icon-reorder"></span></a>
+			<img src="images/yetsu-logo.png" alt="">
+			<h1>YETSU</h1>
+		<a href="#menu-right" class="friends right"><span class="icon-user"></span></a>
+	</header>
+	<nav role="navigation" id="menu-left">
+		<ul>
+			<li><a href="#Inicio"><span class="icon-home icon-2x"></span><span data-hover="Inicio" >inicio</span></a></li>
+			<li><a href="#Nosotros"><span class="icon-group icon-2x"></span><span data-hover="Nosotros">Nosotros</span></a></a></li>
+			<li><a href="#Portafolio"><span class="icon-briefcase icon-2x"></span><span data-hover="Portafolio">Portafolio</span></a></li>
+			<li><a href="#Ubicanos"><span class="icon-map-marker icon-2x"></span><span data-hover="Ubicanos">Ubicanos</span></a></li>
+			<li><a href="#Cursos"><span class="icon-book icon-2x"></span><span data-hover="Cursos">Cursos</span></a></li>
+			<li><a href="#Blog"><span class="icon-archive icon-2x"></span><span data-hover="Blog">Blog</span></a></li>
+			<li><a href="#Contactanos"><span class="icon-comments icon-2x"></span><span data-hover="Contactanos">Contactanos</span></a></li>
+		</ul>
 	</nav>
-	<nav role="user" id="section-user">
-		<div class="row text center">
-			<h2 class="bck theme head">Login Clientes</h2>
-			<form action="#">
-				<fieldset>
-					<input type="text" id="usuario"  required  placeholder="Usuario" />
-					<input type="password" id="password" required placeholder="Contraseña" title="Debe ingresar un password válido" />
-					<button>Login</button>
-				</fieldset>
-			</form>
-		</div>
-		<div class="row text center">
-			<h2 class="bck theme head">Dejanos tu comentario:</h2>
-			<form action="#">
-				<fieldset>
-					<textarea name="mensaje" id="mensaje" required ></textarea>
-					<button>Enviar</button>
-				</fieldset>
-			</form>
+		<nav id="menu-right">
+				<ul>
+					<li>
+						<span>Friends</span>
+						<ul>
+							<li class="Label">A</li>
+							<li><a href="#ALES">Alexa</a></li>
+							<li><a href="#">Alexander</a></li>
+						</ul>
+					</li>
+					
+					<li>
+						<span>Family</span>
+						<ul>
+							<li class="Label">A</li>
+							<li><a href="#">Adam</a></li>
+						</ul>
+					</li>
+				</ul>
+			</nav>
+
+
+	<!-- Carousel
+    ================================================== -->
+    <div id="Portadas" class="carousel slide">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#Portadas1" data-slide-to="0" class="active"></li>
+        <li data-target="#Portadas2" data-slide-to="1"></li>
+        <li data-target="#Portadas3" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="item active  bck-green">
+          <img src="images/portadas/presentacion.jpg" alt="" class="responsive show-pc" alt="First slide">
+          <div class="container">
+            <div class="carousel-caption">
+              <h2 class=""> @YetsuPe </h2>
+              <address class="">Lambayeque, Perú</address>
+              <p class="">Somos jóvenes amantes de la tecnología, ofrecemos desarrollo de software para la web y aplicaciones móbiles; Brindamos asesoría en marketing digital y adiestramiento en tecnologías web. </p>
+            </div>
+          </div>
+        </div>
+        <div class="item  bck-theme">
+          <img src="images/portadas/II-curso-diseno-desarrollo-FrontEnd.jpg" alt="" class="responsive show-pc" alt="First slide">
+        </div>
+        <div class="item  bck-dark">
+          <img src="images/portadas/webinars-yetsu.jpg" alt="" class="responsive show-pc" alt="First slide">
+        </div>
+
+      </div>
+      <a class="left carousel-control" href="#Portadas" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+      <a class="right carousel-control" href="#Portadas" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+    </div><!-- /.carousel -->
+	<section role="services">
+		<div class="container">
+			<div class="row margin-top">
+				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-6 text-center">
+					<a href="#">
+						<picture alt="Diseño y desarrollo de Páginas web" class="padding-top padding-bottom radius bck-theme">
+							<source src="images/icons/paginas-web-xsmall.png">
+							<source src="images/icons/paginas-web-small.png" media="(min-width: 480px)">
+							<source src="images/icons/paginas-web-medium.png" media="(min-width: 992px)">
+							<source src="images/icons/paginas-web-large.png" media="(min-width: 1400px)">
+							<noscript><img src="images/icons/paginas-web-small.png" alt="Diseño y desarrollo de Páginas web"></noscript>
+						</picture>
+						<h2>Paginas Web</h2>
+					</a>
+				</div>
+				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-6 text-center">
+					<a href="#">
+						<picture alt="icono cursos" class="padding-top padding-bottom radius bck-orange">
+							<source src="images/icons/cursos-xsmall.png">
+							<source src="images/icons/cursos-small.png" media="(min-width: 480px)">
+							<source src="images/icons/cursos-medium.png" media="(min-width: 992px)">
+							<source src="images/icons/cursos-large.png" media="(min-width: 1400px)">
+							<noscript><img src="images/icons/cursos-small.png" alt="icono cursos"></noscript>
+						</picture>
+						<h2>Cursos</h2>
+					</a>
+				</div>
+				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-6  text-center">
+					<a href="#">
+						<picture alt="Icono Emarketing" class="padding-top padding-bottom radius bck-yellow">
+							<source src="images/icons/emarketing-xsmall.png">
+							<source src="images/icons/emarketing-small.png" media="(min-width: 480px)">
+							<source src="images/icons/emarketing-medium.png" media="(min-width: 992px)">
+							<source src="images/icons/emarketing-large.png" media="(min-width: 1400px)">
+							<noscript><img src="images/icons/emarketing-small.png" alt="Icono Emarketing"></noscript>
+						</picture>
+						<h2>Emarketing</h2>
+					</a>
+				</div>
+				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-6  text-center">
+					<a href="#">
+						<picture alt="Icono Consultoria TI" class="padding-top padding-bottom radius bck-purple">
+							<source src="images/icons/consultoria-ti-xsmall.png">
+							<source src="images/icons/consultoria-ti-small.png" media="(min-width: 480px)">
+							<source src="images/icons/consultoria-ti-medium.png" media="(min-width: 992px)">
+							<source src="images/icons/consultoria-ti-large.png" media="(min-width: 1400px)">
+							<noscript><img src="images/icons/consultoria-ti-small.png" alt="Icono Consultoria TI"></noscript>
+						</picture>
+						<h2>Consultoria TI</h2>
+					</a>
+				</div>
+				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-6  text-center">
+					<a href="#">
+						<picture alt="icono Aplicaciones Mobiles" class="padding-top padding-bottom radius bck-green">
+							<source src="images/icons/aplicaciones-mobiles-xsmall.png">
+							<source src="images/icons/aplicaciones-mobiles-small.png" media="(min-width: 480px)">
+							<source src="images/icons/aplicaciones-mobiles-medium.png" media="(min-width: 992px)">
+							<source src="images/icons/aplicaciones-mobiles-large.png" media="(min-width: 1400px)">
+							<noscript><img src="images/icons/aplicaciones-mobiles-small.png" alt="icono Aplicaciones Mobiles"></noscript>
+						</picture>
+						<h2>Aplicaciones Mobiles</h2>
+					</a>
+				</div>
+				
+				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-6  text-center">
+					<a href="#">
+						<picture alt="icono Sistemas Informáticos" class="padding-top padding-bottom radius bck-dark-light">
+							<source src="images/icons/sistemas-informaticos-xsmall.png">
+							<source src="images/icons/sistemas-informaticos-small.png" media="(min-width: 480px)">
+							<source src="images/icons/sistemas-informaticos-medium.png" media="(min-width: 992px)">
+							<source src="images/icons/sistemas-informaticos-large.png" media="(min-width: 1400px)">
+							<noscript><img src="images/icons/sistemas-informaticos-small.png" alt="icono Sistemas Informáticos"></noscript>
+						</picture>
+						<h2>Sistemas Informáticos</h2>
+					</a>
+				</div>
+			</div>
 		</div>
 
-	</nav>
-	<header role="header">
-		<div class="row">
-			<a role="ico-menu" href="#" id="ico-menu"><span class="icon-reorder"></span></a>
-			<h1 class="text left">YETSU</h1>
-			<a role="ico-user" href="#" id="ico-user"><span class="icon-user"></span></a>
+	</section>
+	<section role="service-Paginas-web" class="service bck-theme ">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12 text-center">
+					<h2>Páginas Web</h2>
+				</div>
+			</div>
+			<div class="row">
+				<p class="text-center col-lg-8 col-md-8 col-sm-6 relative top-3"> Contamos con un equipo multidisciplinario de profesionales que aborda cada área del desarrollo web. Garantizamos un correcto desarrollo de sitios web con altos estándares de Cálidad . Garantizamos la optimización de su Website tanto para motores de busqueda <strong>SEO </strong> así como también para todos las resoluciones de pantalla de los diferentes dispositivos <strong>REPONSIVE WEB DESIGN</strong> (Smartphones,Tablets,etc.).
+				</p>
+				<picture alt="Diseño y desarrollo de Páginas web" class="service-pic col-lg-4 col-md-4 col-sm-6 col-xs-6 text-center">
+					<source src="images/icons/paginas-web-xsmall.png">
+					<source src="images/icons/paginas-web-small.png" media="(min-width: 480px)">
+					<source src="images/icons/paginas-web-medium.png" media="(min-width: 992px)">
+					<source src="images/icons/paginas-web-large.png" media="(min-width: 1400px)">
+					<noscript><img src="images/icons/paginas-web-small.png" alt="Diseño y desarrollo de Páginas web"></noscript>
+				</picture>
+			</div>
+			<div class="row padding-top">
+						<picture alt="ninja Yetsu " class="col-lg-6 text-center">
+							<source src="images/ninja/mobile.jpg">
+							<source src="images/ninja/mobile.jpg" media="(min-width: 480px)">
+							<source src="images/ninja/tablet.jpg" media="(min-width: 992px)">
+							<source src="images/ninja/laptop.jpg" media="(min-width: 1400px)">
+							<noscript><img src="images/ninja/tablet.jpg" alt="ninja Yetsu "></noscript>
+						</picture>
+						<p class="col-lg-6">
+							Ante todo primero analizamos sus requirimientos y recibimos todas sus ideas, luego le ayudamos ha estructuralas y asesorarlo en las mejores opciones según sus necesidades, garantizamos siempre estar en contacto con ud y escuchar todas sus propuestas y reslver sus dudas, todos nuestros diseños web son exclusivos, pensados en las necesidades puntuales de cada cliente.
+						</p>
+			</div>
+			<div class="row padding-top">
+				<div class="col-lg-2 col-md-4 text-center">
+					<span class="icon-cogs icon-3x"></span>
+					<h3>Optimización SEO</h3>
+				</div>
+				<div class="col-lg-2 col-md-4 text-center">
+					<span class="icon-gittip icon-3x"></span>
+					<h3>Diseño Atractivo</h3>
+				</div>
+				<div class="col-lg-2 col-md-4 text-center">
+					<span class="icon-thumbs-up icon-3x"></span>
+					<h3>Asesoriamento en Social Medía</h3>
+				</div>
+				<div class="col-lg-2 col-md-4 text-center">
+					<span class="icon-bar-chart icon-3x"></span>
+					<h3>Monitorización de tráfico</h3>
+				</div>
+				<div class="col-lg-2 col-md-4 text-center">
+					<span class="icon-html5 icon-3x"></span>
+					<h3>Adaptable a cualquier dispositivo (RWD)</h3>
+				</div>
+				<div class="col-lg-2 col-md-4 text-center">
+					<span class="icon-smile icon-3x"></span>
+					<h3>Fácil navegación</h3>
+				</div>
+			</div>
+			<div class="row padding-top para bck-parallax pw" >
+				<ul  class="container-parallax" id="parallax-bg-1">
+					<li class="layer col-lg-4 col-lg-offset-4 parallax-item-ninja" data-depth="0.4">
+						<img src="images/ninja/ninja.png" class="parallax-bg">
+					</li>
+				</ul>
+			</div>
+			
 		</div>
-	</header>
-	<aside role="aside" id="yetsuSocial">
-		<span id="ico-social" class="icon-chevron-up  icon-2x"></span>
-		<div class="row ">
-			<a href="#"><span class="icon-linkedin "></span>       </a>
-			<a href="#"><span class="icon-twitter "></span>        </a>
-			<a href="#"><span class="icon-facebook-sign "></span>  </a>
-			<a href="#"><span class="icon-foursquare "></span>     </a>
-			<a href="#"><span class="icon-pinterest "></span>      </a>
-			<a href="#"><span class="icon-youtube "></span>        </a>
-			<a href="#"><span class="icon-google-plus "></span>    </a>
-			<a href="#"><span class="icon-github "></span>         </a>
+	</section>
+	<section role="service-Cursos" class="service bck-orange">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12 text-center">
+					<h2>Cursos</h2>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-6 text-center">
+					<picture alt="icono cursos" class="service-pic">
+						<source src="images/icons/cursos-xsmall.png">
+						<source src="images/icons/cursos-small.png" media="(min-width: 480px)">
+						<source src="images/icons/cursos-medium.png" media="(min-width: 992px)">
+						<source src="images/icons/cursos-large.png" media="(min-width: 1400px)">
+						<noscript><img src="images/icons/cursos-small.png" alt="icono cursos"></noscript>
+					</picture>
+				</div>
+				<div class="col-lg-8">
+					<p class="text-center"> Ofrecemos cursos de formación profesional en Desarrollo de software.
+							Nuestros cursos están pensados para brindarte un aprendizaje integral y de vanguardía en desarrollo de software según los requerimientos cada vez más competitivos del MERCADO ACTUAL.
+							Te damos verdaderas técnicas y recursos profesionales de diseño web que te permiten resolver las diferentes áreas y tareas de la programación de un modo eficaz según programación  con estandartes SEO, creaciones de UI impactantes para brindar UX óptimas.
+							Te brindamos un equipo de docentes especializados con las nuevas tecnologías tanto de fonrtEnd y Backend. en @YetsuPe contamos con personal en constante práctica y mejora continua.
+					</p>
+					<div class="row padding-top">
+						
+						<p class="col-lg-6">
+							Ante todo primero analizamos sus requirimientos y recibimos todas sus ideas, luego le ayudamos ha estructuralas y asesorarlo en las mejores opciones según sus necesidades, garantizamos siempre estar en contacto con ud y escuchar todas sus propuestas y reslver sus dudas, todos nuestros diseños web son exclusivos, pensados en las necesidades puntuales de cada cliente.
+						</p>
+					</div>
+				</div>
+				<picture alt="ninja Yetsu " class="col-lg-12 text-center">
+							<source src="images/parallax/landing-cursos-xsmall.jpg">
+							<source src="images/parallax/landing-cursos-small.jpg" media="(min-width: 480px)">
+							<source src="images/parallax/landing-cursos-medium.jpg" media="(min-width: 992px)">
+							<source src="images/parallax/landing-cursos-large.jpg" media="(min-width: 1400px)">
+							<noscript><img src="images/parallax/landing-cursos-medium.jpg" alt="ninja Yetsu "></noscript>
+				</picture>
+				
+			</div>
+			<div class="row">
+				<div class="col-lg-2 col-md-4 text-center">
+					<span class="icon-cogs icon-3x"></span>
+					<h3>Optimización SEO</h3>
+				</div>
+				<div class="col-lg-2 col-md-4 text-center">
+					<span class="icon-gittip icon-3x"></span>
+					<h3>Diseño Atractivo</h3>
+				</div>
+				<div class="col-lg-2 col-md-4 text-center">
+					<span class="icon-thumbs-up icon-3x"></span>
+					<h3>Asesoriamento en Social Medía</h3>
+				</div>
+				<div class="col-lg-2 col-md-4 text-center">
+					<span class="icon-bar-chart icon-3x"></span>
+					<h3>Monitorización de tráfico</h3>
+				</div>
+				<div class="col-lg-2 col-md-4 text-center">
+					<span class="icon-html5 icon-3x"></span>
+					<h3>Adaptable a cualquier dispositivo (RWD)</h3>
+				</div>
+				<div class="col-lg-2 col-md-4 text-center">
+					<span class="icon-smile icon-3x"></span>
+					<h3>Fácil navegación</h3>
+				</div>
+			</div>
+			<div class="row padding-top para bck-parallax pw" >
+				<ul  class="container-parallax" id="parallax-bg-1">
+					<li class="layer col-lg-4 col-lg-offset-4 parallax-item-ninja" data-depth="0.4">
+						<img src="images/ninja/ninja.png" class="parallax-bg">
+					</li>
+				</ul>
+			</div>
+		</div>
+	</section>
+	<section role="service-Emarketing" class="service bck-yellow ">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12 text-center">
+					<h2>E-Marketing</h2>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-4">
+					<p> Contamos con un equipo multidisciplinario de profesionales que aborda cada área del desarrollo web. Garantizamos un correcto desarrollo de sitios web con altos estándares de Cálidad . Garantizamos la optimización de su Website tanto para motores de busqueda <strong>SEO </strong> así como también para todos las resoluciones de pantalla de los diferentes dispositivos <strong>REPONSIVE WEB DESIGN</strong> (Smartphones,Tablets,etc.).
+					</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section role="service-Consultoria-Ti" class="service bck-purple ">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12 text-center">
+					<h2>Consultoria TI</h2>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-4">
+					<p> Contamos con un equipo multidisciplinario de profesionales que aborda cada área del desarrollo web. Garantizamos un correcto desarrollo de sitios web con altos estándares de Cálidad . Garantizamos la optimización de su Website tanto para motores de busqueda <strong>SEO </strong> así como también para todos las resoluciones de pantalla de los diferentes dispositivos <strong>REPONSIVE WEB DESIGN</strong> (Smartphones,Tablets,etc.).
+					</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section role="service-Aplicaciones-Mobiles" class="service bck-green">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12 text-center">
+					<h2>Aplicaciones Mobiles</h2>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-4">
+					<p> Contamos con un equipo multidisciplinario de profesionales que aborda cada área del desarrollo web. Garantizamos un correcto desarrollo de sitios web con altos estándares de Cálidad . Garantizamos la optimización de su Website tanto para motores de busqueda <strong>SEO </strong> así como también para todos las resoluciones de pantalla de los diferentes dispositivos <strong>REPONSIVE WEB DESIGN</strong> (Smartphones,Tablets,etc.).
+					</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section role="service-Sistemas-informaticos" class="service bck-dark-light">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12 text-center">
+					<h2>Sistemas Informáticos</h2>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-4">
+					<p> Contamos con un equipo multidisciplinario de profesionales que aborda cada área del desarrollo web. Garantizamos un correcto desarrollo de sitios web con altos estándares de Cálidad . Garantizamos la optimización de su Website tanto para motores de busqueda <strong>SEO </strong> así como también para todos las resoluciones de pantalla de los diferentes dispositivos <strong>REPONSIVE WEB DESIGN</strong> (Smartphones,Tablets,etc.).
+					</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="para margin-top bck-parallax tumbas-reales" data-stellar-background-ratio="0.5">
+		<!--<ul  class="container-parallax" id="parallax-bg-1">
+			<li class="layer parallax" data-depth="1.00">
+				<img src="images/backgrounds/museo-tumbas-reales-senor-de-sipan.jpg" class="parallax-bg">
+			</li>
+		</ul>
+		<ul  class="container-parallax" id="parallax-item-1">
+			<li class="layer parallax" data-depth="1.80">
+				<img src="images/backgrounds/manos.png">
+			</li>
+		</ul>-->
+
+		<div class="container margin-top">
+			
+			<div class="row">
+				<div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
+					<div class="row">
+						<div class="col-xs-6 col-sm-3 col-md-3 col-lg-3">
+							<div class="thumbnail">
+								<img src="images/team/foto.jpg" alt="@Skeiter9" />
+								<div class="caption text-center">
+									<h3>Omar Lozada</h3>
+									<h4>@Skeiter9</h4>
+									<h5>CTO</h5>
+								</div>
+							</div>
+						</div>
+						<div class="col-xs-6 col-sm-3 col-md-3 col-lg-3">
+							<div class="thumbnail">
+								<img src="images/team/foto.jpg" alt="@Skeiter9" />
+								<div class="caption text-center">
+									<h3>Fiorella Aquino</h3>
+									<h4>@FioriAs</h4>
+									<h5>CEO</h5>
+								</div>
+							</div>
+						</div>
+						<div class="col-xs-6 col-sm-3 col-md-3 col-lg-3">
+							<div class="thumbnail">
+								<img src="images/team/foto.jpg" alt="@Skeiter9" />
+								<div class="caption text-center">
+									<h3>Cesar Altamirano</h3>
+									<h4>@Altamiranocs</h4>
+									<h5>Senior Developer</h5>
+								</div>
+							</div>
+						</div>
+						<div class="col-xs-6 col-sm-3 col-md-3 col-lg-3">
+							<div class="thumbnail">
+								<img src="images/team/foto.jpg" alt="@Skeiter9" />
+								<div class="caption text-center">
+									<h3>Ivan Uriarte</h3>
+									<h4>@Pilmee</h4>
+									<h5>Backend Developer</h5>
+								</div>
+							</div>
+						</div>
+						<div class="col-xs-6 col-sm-3 col-md-3 col-lg-3">
+							<div class="thumbnail">
+								<img src="images/team/foto.jpg" alt="@Skeiter9" />
+								<div class="caption text-center">
+									<h3>Javier Bancayan</h3>
+									<h4>@JavierBancayan</h4>
+									<h5>Bussiness Advisor</h5>
+								</div>
+							</div>
+						</div>
+						<div class="col-xs-6 col-sm-3 col-md-3 col-lg-3">
+							<div class="thumbnail">
+								<img src="images/team/foto.jpg" alt="@Skeiter9" />
+								<div class="caption text-center">
+									<h3>Fiorella Aquino</h3>
+									<h4>@FioriAs</h4>
+									<h5>CEO</h5>
+								</div>
+							</div>
+						</div>
+						<div class="col-xs-6 col-sm-3 col-md-3 col-lg-3">
+							<div class="thumbnail">
+								<img src="images/team/foto.jpg" alt="@Skeiter9" />
+								<div class="caption text-center">
+									<h3>Cesar Altamirano</h3>
+									<h4>@Altamiranocs</h4>
+									<h5>Senior Developer</h5>
+								</div>
+							</div>
+						</div>
+						<div class="col-xs-6 col-sm-3 col-md-3 col-lg-3">
+							<div class="thumbnail">
+								<img src="images/team/foto.jpg" alt="@Skeiter9" />
+								<div class="caption text-center">
+									<h3>José Coronel</h3>
+									<h4>@Jocar_5</h4>
+									<h5>Design Leader</h5>
+								</div>
+							</div>
+						</div>
+						
+					</div>
+				</div>
+				<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 bck-dark padding radius">
+					<img src="images/I-Curso-Yetsu.jpg" alt="" class="img-responsive">
+				</div>
+			</div>
+		</div>
+	</section>
+	<section>
+		<div class="container">
+			<div class="row">
+				
+			</div>
+		</div>
+	</section>
+
+	<section id="Contactanos">
+		<div class="container">
+			<div class="row">
+				
+				<div class="col-lg-4 text-center">
+					<form role="form">
+						<fieldset class="form-group">
+							<label class="" for="nombre">Nombre: </label>
+							<input type="text" class="form-control" id="nombre" required placeholder="Nombre"  />
+						</fieldset>
+						<fieldset class="form-group">	
+							<label class="" for="email">Email: </label>
+							<input type="email" class="form-control" id="email" required placeholder="Email" title="Debe ingresar un email válido" />
+						</fieldset>
+						<fieldset class="form-group">	
+							<label class="" for="mensaje" required >Mensaje: </label>
+							<textarea name="mensaje" class="form-control" id="mensaje" placeholder="Mensaje" required rows="4"></textarea>
+							<button type="button" class="btn bck-theme margin-top">Enviar</button>
+						</fieldset>
+					</form>
+				</div>
+				<div class="col-lg-8" id="yetLocal"></div>
+
+			</div>
+		</div>
+	</section>
+	<aside class="bck-dark-light">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-3">
+					<h2>@YetsuPe</h2>
+				</div>
+			</div>
 		</div>
 	</aside>
-	<section role="slider">
-		<div class="row flotante">
-			<figure role="logo" >
-			<img src="images/yetsu-logo.png" />
-			</figure>
-			<h2 class="pc-titulo">@YetsuPe</h2>
-			<address class="pc-titulo"><span class="icon-map-marker"></span> Lambayeque, Perú</address>
-			<blockquote class="quote">
-					Somos jóvenes amantes de la tecnología, ofrecemos desarrollo de software para la web y aplicaciones móbiles; Brindamos asesoría en marketing digital y adiestramiento en tecnologías web. 
-			</blockquote>
-			
-		</div>
-		<div class="row">
-			<img src="https://dl.dropboxusercontent.com/u/45341138/Banner.jpg" alt="" class="responsive show-pc "/>
-		</div>
-	</section>
-	<section role="services" id="services" >
-		<div class="row font-sizeO ">
-			<a href="#">
-
-				<figure data-picture data-alt="Icon Paginas Web">
-					<div data-src="images/icons/paginas-web.png" /></div>
-					<div data-src="images/icons/paginas-web.png" data-media="(min-width: 480px)" /></div>
-					<div data-src="images/icons/icon-paginas-web.jpg" data-media="(min-width: 768px)" /></div>
-					<noscript><img src="small.jpg" alt="Icon Paginas Web"></noscript>
-				</figure>
-				Páginas Web 
-			</a>
-			<a href="#">
-				<figure data-picture data-alt="I YetCurso">
-					<div data-src="images/icons/cursos.png" /></div>
-					<div data-src="images/icons/cursos.png" data-media="(min-width: 480px)" /></div>
-					<div data-src="images/icons/prueba2.png" data-media="(min-width: 768px)" /></div>
-					<noscript><img src="small.jpg" alt="I YetCurso"></noscript>
-				</figure>
-			Cursos </a>
-			<a href="#">
-				<figure data-picture data-alt="Icon E Marketing">
-					<div data-src="images/icons/icon-e-marketing.png" /></div>
-					<div data-src="images/icons/icon-e-marketing.png" data-media="(min-width: 480px)" /></div>
-					<div data-src="images/icons/icon-e-marketing.jpg" data-media="(min-width: 768px)" /></div>
-					<noscript><img src="small.jpg" alt="Icon E Marketing"></noscript>
-				</figure>
-				E-Marketing</a> 
-			<a href="#">
-				<figure data-picture data-alt="Icon app mobile">
-					<div data-src="images/icons/icon-app-mobile.png" /></div>
-					<div data-src="images/icons/icon-app-mobile.png" data-media="(min-width: 480px)" /></div>
-					<div data-src="images/icons/icon-app-mobile.jpg" data-media="(min-width: 768px)" /></div>
-					<noscript><img src="icon-app-mobile.jpg" alt="Icon app mobile"></noscript>
-				</figure>
-				Aplicaciones Móbiles</a>
-			<a href="#"><img src="images/icons/icon-consultoria-it.png" alt=""> </span>Consultoría IT</a>
-			<a href="#"><img src="images/icons/desarrollo-sistemas.png" /> 
-				<figure data-picture data-alt="Icon Sistemas Informàticos">
-					<div data-src="images/icons/icon-sistemas-informaticos.png" /></div>
-					<div data-src="images/icons/icon-sistemas-informaticos.png" data-media="(min-width: 480px)" /></div>
-					<div data-src="images/icons/icon-sistemas-informaticos.jpg" data-media="(min-width: 768px)" /></div>
-					<noscript><img src="icon-sistemas-informaticos.jpg" alt="Icon Sistemas Informàticos"></noscript>
-				</figure>
-				Sistemas Informáticos 
-			</a>
-			<!--<img src="images/yetNinja.png" alt="Mascota de Yetsu @yetsupe" />-->
-		</div>
-	</section>
-<!--
-	<section class="services">
-		<div class="row">
-			<div class="service bck PW">
-				<h2>Páginas Web </h2>
-				<span class="icon-globe"></span> 
-				<div class="features">
-					<span class="icon-html5"></span> 
-					<span class="icon-css3"></span> 
-					<span class="icon-cloud"></span>
-					<span class="icon-facebook-sign"></span>
-					<span class="icon-star"></span>
-					<span class="icon-twitter"></span>
-					<span class="icon-mobile-phone"></span>
-					<span class="icon-tablet"></span>
-					<span class="icon-laptop"></span>
-					<span class="icon-picture"></span>
+	<footer class="bck-dark">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-3">
+					<h2>© 2013 @YetsuPe</h2>
 				</div>
-				
-				<section>
-					<article>
-						<p> Contamos con un equipo multidisciplinario de profesionales que aborda cada área del desarrollo web. Garantizamos un correcto desarrollo de sitios web con altos estándares de Cálidad . Garantizamos la optimización de su Website tanto para motores de busqueda <strong>SEO </strong> así como también para todos las resoluciones de pantalla de los diferentes dispositivos <strong>REPONSIVE WEB DESIGN</strong> (Smartphones,Tablets,etc.).
-						</p>
-						<figure data-picture data-alt="Ninjas de la web">
-					     <div data-src="images/mobile-ninja-pw.jpg" /></div>
-					     <div data-src="images/tablet-ninja-pw.jpg" data-media="(min-width: 480px)" /></div>
-					     <div data-src="images/desktop-ninja-pw.jpg" data-media="(min-width: 768px)" /></div>
-					     <noscript><img src="images/mobile-ninja-pw.jp" alt="Ninjas de la web"></noscript>
-					  </figure>
-						<ul class="list">
-							<li>Optimización SEO </li>
-							<li>Diseño Atractivo y Exclusivo</li>
-							<li>Fácil navegación</li>
-							<li>Adaptable a cualquier dispositivo </li>
-							<li>Monitorización de tráfico</li>
-							<li>Desarrollo de vanguardía</li>
-							<li>Asesoriamento en Social Medía</li>
-						</ul>
-						<p>
-						Ante todo primero analizamos sus requirimientos y recibimos todas sus ideas, luego le ayudamos ha estructuralas y asesorarlo en las mejores opciones según sus necesidades, garantizamos siempre estar en contacto con ud y escuchar todas sus propuestas y reslver sus dudas, todos nuestros diseños web son exclusivos, pensados en las necesidades puntuales de cada cliente.
-					</p>
-					</article>
-				</section>
-			</div>
-			<div class="service bck CO">
-				<h2>Cursos  </h2>
-				<span class="icon-code"></span>
-				<div class="features">
-					<span class="icon-html5"></span> 
-					<span class="icon-css3"></span> 
-					<span class="icon-code"></span>
-					<span class="icon-search"></span>
-					<span class="icon-star"></span>
-					<span class="icon-twitter"></span>
-					<span class="icon-mobile-phone"></span>
-					<span class="icon-tablet"></span>
-					<span class="icon-laptop"></span>
-					<span class="icon-picture"></span>
+				<div class="col-lg-3">
+					
 				</div>
-				<section>
-					<article>
-						<p>
-							Ofrecemos cursos de formación profesional en Desarrollo de software.
-							Nuestros cursos están pensados para brindarte un aprendizaje integral y de vanguardía en desarrollo de software según los requerimientos cada vez más competitivos del MERCADO ACTUAL.
-							Te damos verdaderas técnicas y recursos profesionales de diseño web que te permiten resolver las diferentes áreas y tareas de la programación de un modo eficaz según programación  con estandartes SEO, creaciones de UI impactantes para brindar UX óptimass.
-							Te brindamos un equipo de docentes especializados con las nuevas tecnologías tanto de fonrtEnd y Backend. en @YetsuPe contamos con personal en constante práctica y mejora continua.
-						</p>
-						<p>Cursos Finalizados:</p>
-						<ul class="list-items">
-							<li>
-								<h3>I Diplomado de Desarrollo de Aplicaciones Web</h3>
-
-								<figure data-picture data-alt="I YetCurso">
-					        <div data-src="images/mobile-estudiantes-y-docentes-I-YetCurso-Desarrollo-de-Aplicaciones-Web.jpg" /></div>
-					        <div data-src="images/tablet-estudiantes-y-docentes-I-YetCurso-Desarrollo-de-Aplicaciones-Web.jpg" data-media="(min-width: 480px)" /></div>
-					        <div data-src="images/desktop-estudiantes-y-docentes-I-YetCurso-Desarrollo-de-Aplicaciones-Web.jpg" data-media="(min-width: 768px)" /></div>
-					        <noscript><img src="small.jpg" alt="I YetCurso"></noscript>
-					    	</figure>
-			
-						    <address>Lugar: Universidad Nacional Pedro Ruíz Gallo</address>
-						    <time datetime="2013-03-16">Duración : 2 meses</time>
-						    <span>Docentes</span>
-						    <ul class="list-inline">
-						    	<li> <a href="#">@Skeiter9</a> </li>
-						    	<li> <a href="#">@Pilmee</a> </li>
-						    </ul>
-						    <a href="#">Ver Syllabus</a>
-						    <a href="https://github.com/YetsuPe">Ver material del curso</a>
-							</li>
-						</ul>
-					</article>
-				</section>
-			</div>
-			<div class="service bck EM">
-				<h2>E-Marketing  </h2>
-				<span class="icon-tags"></span>
-				<div class="features">
-					<span class="icon-facebook-sign"></span> 
-					<span class="icon-twitter"></span> 
-					<span class="icon-foursquare"></span>
-					<span class="icon-pinterest"></span>
-					<span class="icon-star"></span>
-					<span class="icon-twitter"></span>
-					<span class="icon-youtube"></span>
-					<span class="icon-instagram"></span>
-					<span class="icon-google-plus-sign"></span>
-					<span class="icon-youtube"></span>
+				<div class="col-lg-3">
+					
 				</div>
-				<section>
-					<article>
-						<p>
-								Te ayudamos a conectar con tus clientes en las Redes Sociales, generar más visitas a tu blog/web generando valor de marca, posicionando tu marca entre las mejores en tu rubro, Internet nos da la ventaja de llegar a todo el mundo, nosotros te ayudaremos a realizar una campaña publicitaria digital de una manera efectiva y con resultandos.
-						</p>
-					</article>
-				</section>
-			</div>
-			<div class="service bck AM">
-				<h2>Aplicaciones Móbiles </h2>
-				<span class="icon-tablet"></span>
-				<section>
-					<article>
-						<p>
-							En los últimos años, la llegada de smartphones ha multiplicado exponencialmente la cantidad de tráfico móvil. En un futuro, las aplicaciones móviles irán desbancando las páginas Web en versión tradicional. La proliferación de dispositivos móviles lo ha cambiado todo, no sólo la manera de comunicarnos, sino también nuestra forma de trabajar, comprar, vender y relacionarnos.
-							Está claro que la empresa que antes se suba al carro contará con ventaja en este nuevo mercado. YETSU te ofrece diversos tipos de aplicaciones desarrolladas para todas las plataformas, así como asesoramiento para decidir qué tipo de app funcionará mejor según los objetivos de tu empresa:</p>
-							<ul class="list">
-								<li>Aplicaciones móviles para corporativas</li>
-								<li>Aplicaciones móviles multimedia</li>
-								<li>Juegos corporativos o de ocio</li>
-							</ul>
-					</article>
-				</section>
-			</div>
-			<div class="service bck CT">
-				<h2>Consultoria en TI </h2>
-				<span class="icon-user"></span> 
-				<section>
-					<article>
-						<p>
-							La asesoría permite conocer al detalle las particularidades del entorno TI ante un proyecto.
-Antes de un cambio importante en el departamento de TI debe hacerse un estudio detallado. YETSU brinda servicio de consultoría con el que obtendrás:
-La información necesaria para que diferentes departamentos valoren la viabilidad del proyecto a realizar, desde diferentes puntos de vista: el técnico, el económico, el formativo, etc.
-La posibilidad de conocer la implicación de un cambio en el entorno TI de tu empresa y organizarlo en diferentes fases.
-Las ventajas de saber qué resultados se deben esperar del proyecto a realizar y poder así evaluar la consecución final de los objetivos.
-Un estudio personalizado proporciona unos datos objetivos muy interesantes, con los cuales sabrás:
-Cómo debe realizarse el proyecto de mejora del entorno TI.
-Cuánto tiempo debe invertirse en realizarse el proyecto.
-Qué coste económico supondrá.
-Cómo afectará a las actuales instalaciones.
-El servicio de consultoría es la mejor forma de valorar el grado de urgencia y de efectividad que supondrá la ejecución de un proyecto TI.
-						</p>
-					</article>
-				</section>
-			</div>
-			<div class="service bck DW">
-				<h2>Sistemas Informáticos  </h2>
-				<span class="icon-bar-chart"></span>
-				<section>
-					<article>
-						<p>
-							Una página web puede estar integrada con un sistema web dinámico, por ejemplo un sistema web para una comunidad en línea o el sistema web para una tienda virtual o un sistema web donde las personas puedan realizar un registro en el cual puedan publicar la venta de su casa con imágenes o sistemas web para la organización de eventos etc. una página web integrada con un sistema Web adecuado con el factor mercadotecnia y posicionamiento en buscadores sería inmensamente poderoso para generar ventas y poder generar interés en sus clientes, por ejemplo podemos tener un sistema web donde las personas venden sus autos y usted se dedica a la venta de accesorios mecánicos para autos
-Este sería una gran oportunidad para ofrecer sus servicios ya que la página web tendría un tráfico constante de clientes navegando en su página web, ya sea nuevos usuarios que accedieron a su página web gracias al posicionamiento web y los otros usuarios que se quedaron buscando en su página web navegando en búsqueda de la compra de un auto o vender su auto.
-						</p>
-					</article>
-				</section>
+				<div class="col-lg-3">
+					
+				</div>
 			</div>
 		</div>
-	</section>
--->
-	
-	
-
-	<section class="bck us">
-		<h2>Nosotros</h2>
-		<span class="icon-group icon-2x"></span>
-		<div class="row" id="yetMenbers">
-			<div class="yetMenber">
-				<img alt="Yetsu S.A.C " src="images/skeiter9-omar-lozada-phone2.jpg"/>
-				<a href="https://twitter.com/skeiter9">@Skeiter9</a>
-				<span>Omar Lozada</span>
-				<span>CTO</span>
-				<ul>
-					<li><a href="#"><span class="icon-linkedin linkedin"></span></a></li>
-					<li><a href="#"><span class="icon-twitter twitter "></span></a></li>
-					<li><a href="#"><span class="icon-facebook facebook "></span></a></li>
-					<li><a href="#"><span class="icon-github github "></span></a></li>
-				</ul>
-			</div>
-			<div class="yetMenber">
-				
-				<img alt="Yetsu S.A.C " src="images/skeiter9-omar-lozada-phone.jpg"/>
-				<a href="https://twitter.com/skeiter9">@FioriAs</a>
-				<span>Fiorella Aquino</span>
-				<span>CEO</span>
-				<ul>
-					<li><a href="#"><span class="icon-linkedin linkedin"></span></a></li>
-					<li><a href="#"><span class="icon-twitter twitter "></span></a></li>
-					<li><a href="#"><span class="icon-facebook facebook "></span></a></li>
-					<li><a href="#"><span class="icon-github github "></span></a></li>
-				</ul>
-			</div>
-			<div class="yetMenber">
-				
-				<img alt="Yetsu S.A.C " src="images/skeiter9-omar-lozada-phone.jpg"/>
-				<a href="https://twitter.com/skeiter9">@Altamiranocs</a>
-				<span>Cesar Altamirano</span>
-				<span>Senior Developer</span>
-				<ul>
-					<li><span class="icon-linkedin linkedin"></span></a></li>
-					<li><a href="#"><span class="icon-twitter twitter "></span></a></li>
-					<li><a href="#"><span class="icon-facebook facebook "></span></a></li>
-					<li><a href="#"><span class="icon-github github "></span></a></li>
-				</ul>
-			</div>
-			<div class="yetMenber">
-				
-				<img alt="Yetsu S.A.C " src="images/skeiter9-omar-lozada-phone.jpg"/>
-				<a href="https://twitter.com/skeiter9">@Jocar_5</a>
-				<span>José Coronel</span>
-				<span>Design Leader</span>
-				<ul>
-					<li><span class="icon-linkedin linkedin"></span></a></li>
-					<li><a href="#"><span class="icon-twitter twitter "></span></a></li>
-					<li><a href="#"><span class="icon-facebook facebook "></span></a></li>
-					<li><a href="#"><span class="icon-github github "></span></a></li>
-				</ul>
-			</div>
-			<div class="yetMenber">
-				<img alt="Yetsu S.A.C " src="images/skeiter9-omar-lozada-phone.jpg"/>
-				<a href="https://twitter.com/skeiter9">@Pilmee</a>
-				<span>Wilfredo Uriarte</span>
-				<span>Backend Developer</span>
-				<ul>
-					<li><span class="icon-linkedin linkedin"></span></a></li>
-					<li><a href="#"><span class="icon-twitter twitter "></span></a></li>
-					<li><a href="#"><span class="icon-facebook facebook "></span></a></li>
-					<li><a href="#"><span class="icon-github github "></span></a></li>
-				</ul>
-			</div>
-			<div class="yetMenber">
-				<img alt="Yetsu S.A.C " src="images/skeiter9-omar-lozada-phone.jpg"/>
-				<a href="https://twitter.com/skeiter9">@JavierBancayan</a>
-				<span>Javier Bancayan </span>
-				<span>Bussiness Advisor</span>
-				<ul>
-					<li><span class="icon-linkedin linkedin"></span></a></li>
-					<li><a href="#"><span class="icon-twitter twitter "></span></a></li>
-					<li><a href="#"><span class="icon-facebook facebook "></span></a></li>
-					<li><a href="#"><span class="icon-github github "></span></a></li>
-				</ul>
-			</div>
-			<div class="yetMenber">
-				<img alt="Yetsu S.A.C " src="images/skeiter9-omar-lozada-phone.jpg"/>
-				<a href="https://twitter.com/skeiter9">@MSpERU</a>
-				<span>Anguel Sirlopù</span>
-				<span>Backend Developer</span>
-				<ul>
-					<li><span class="icon-linkedin linkedin"></span></a></li>
-					<li><a href="#"><span class="icon-twitter twitter "></span></a></li>
-					<li><a href="#"><span class="icon-facebook facebook "></span></a></li>
-					<li><a href="#"><span class="icon-github github "></span></a></li>
-				</ul>
-			</div>
-			<div class="yetMenber">
-				<img alt="Yetsu S.A.C " src="images/skeiter9-omar-lozada-phone.jpg"/>
-				<a href="https://twitter.com/skeiter9">@Zio691</a>
-				<span>Yovanny Romero </span>
-				<span>Design Team</span>
-				<ul>
-					<li><span class="icon-linkedin linkedin"></span></a></li>
-					<li><a href="#"><span class="icon-twitter twitter "></span></a></li>
-					<li><a href="#"><span class="icon-facebook facebook "></span></a></li>
-					<li><a href="#"><span class="icon-github github "></span></a></li>
-				</ul>
-			</div>
-			
-			
-		</div>
-
-	</section>
-	<section class="bck briefcase">
-		<h2>Portafolio</h2>
-		<span class="icon-briefcase icon-2x"></span>
-		<div class="row">
-			<figure>
-				<h3>CONSAMA S.A.C</h3>
-				<img src="images/consama.com.pe.jpg" alt="Consama S.A.C" />
-			</figure>
-		</div>
-	</section>
-	
-	<section class="bck ubication">
-		<h2 id="Ubicanos">Ubicanos</h2>
-		<img src="images/icons/icon-map.png" alt="Icono map" />	
-		<div class="row">
-				<address>
-					Av. Pedro Vilchez Buendía #303 - Lambayeque
-				</address>
-				<div id="yetLocal"></div>	
-		</div>
-	</section>
-	<section class="bck contact">
-		<h2>Contactanos</h2>
-		<span class="icon-comments icon-2x"></span>
-		<div class="row text center">
-			<div>
-				<p>Nos puedes llamar al <a href="tel:+51996816752"><span class="icon-phone"></span>(#)996816752 </a></p>
-			</div>
-			<form action="#">
-				<fieldset>
-					<label for="nombre">Nombre: </label>
-					<input type="text" id="nombre" required placeholder="Nombre"  />
-					<label for="email">Email: </label>
-					<input type="email" id="email" required placeholder="Email" title="Debe ingresar un email válido" />
-					<label for="mensaje" required >Mensaje: </label>
-					<textarea name="mensaje" id="mensaje" placeholder="Mensaje" required ></textarea>
-					<button>Enviar</button>
-				</fieldset>
-			</form>
-		</div>
-	</section>
-	
-	<footer>
-		<h2>YETSU S.A.C</h2>
-		<h3>@YetsuPe</h3>
-		<address>
-			Lambayeque-Perú
-		</address>
-		<aside class="row">
-			<h2 class="text color white">Encuentranos también en:</h2>
-			<span class="icon-linkedin icon-2x"></span>
-			<span class="icon-twitter icon-2x"></span>
-			<span class="icon-facebook-sign icon-2x"></span>
-			<span class="icon-foursquare icon-2x"></span>
-			<span class="icon-pinterest icon-2x"></span>
-			<span class="icon-youtube icon-2x"></span>
-			<span class="icon-google-plus icon-2x"></span>
-			<span class="icon-github icon-2x"></span>
-		</aside>
 	</footer>
-	<script>
-	document.write('<script src="js/lib/' +('__proto__' in {} ? 'zepto' : 'jquery-1.10.2') +'.js"><\/script>');
-	</script>
-	<script src="https://maps.googleapis.com/maps/api/js?v=3.10&key=AIzaSyBP3ZaMYVz0M19TaHkskzCYq-dncj2TxjI&sensor=true&language=es"></script>
-	<script src="js/lib/underscore.js"></script>
-	<script src="js/lib/backbone.js"></script>
-	<script src="js/lib/quo.js"></script>
-	<script src="js/lib/picturefill.js"></script>
-	<script src="js/lib/modernizr.css3DTransform.js"></script>
-	<script src="js/lib/modernizr.fontFace.js"></script>
+</div>
 
-	<script src="js/mvc/yetsu.models.js"></script>
-	<script src="js/mvc/yetsu.collections.js"></script>
-	<script src="js/mvc/yetsu.views.js"></script>
-	<script src="js/mvc/yetsu.controllers.js"></script>
-	<script>
-	document.write('<script src="js/' +('__proto__' in {} ? 'yetsu' : 'yetsu-old') +'.js"><\/script>');
-	</script>
+<script src="js/lib/jquery.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?v=3.10&key=AIzaSyBP3ZaMYVz0M19TaHkskzCYq-dncj2TxjI&sensor=true&language=es"></script>
+<script src="js/lib/picturefill.js"></script>
+<script src="js/lib/jquery.parallax.js"></script>
+<script src="js/lib/jquery.stellar.js"></script>
+<script src="js/lib/jquery.scrollTo.js"></script>
+<script src="js/lib/jquery.nav.js"></script>
+<script src="js/lib/waypoints.min.js"></script>
+<script src="js/lib/jquery.mmenu.js"></script>
+<script src="js/bootstrap-yetsu.js"></script>
+    <!--<script src="dist/js/transition.js"></script>
+    <script src="dist/js/alert.js"></script>
+    <script src="dist/js/button.js"></script>
+    <script src="dist/js/carousel.js"></script>-->
+	
+	
 </body>
 </html>
