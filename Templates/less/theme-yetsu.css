@@ -56,10 +56,11 @@ h6{font-size:.5rem}
 .text-left{text-align:left}
 .relative{position:relative}.relative .top{top:1rem}
 .relative .top-3{top:3rem}
-.button{padding:.5rem 1rem;background-color:#66cbff;border-radius:.5rem}
+.button,button{padding:.5rem 1rem;background-color:#66cbff;border-radius:.5rem;border:none;color:#fff}
+button{display:block;margin-left:auto;margin-right:auto;margin-bottom:1rem}
 .float-left{float:left}
 .float-right{float:right}
-input[type="text"],textarea{padding:.5rem 5px .5rem 45px;border-radius:.5rem;border:1px solid #66cbff;background-image:url(../images/icons/form.png);background-repeat:no-repeat}
+input[type="text"],textarea{padding:.5rem 5px .5rem 45px;border-radius:.5rem;border:1px solid #66cbff;background-image:url(../images/icons/form.png);background-repeat:no-repeat;width:100%;margin-bottom:1rem}
 [data-icon="user"]{background-position:0 0}
 [data-icon="email"]{background-position:0 -50px}
 [data-icon="phone"]{background-position:0 -100px}
