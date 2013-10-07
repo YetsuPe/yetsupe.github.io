@@ -12,7 +12,7 @@ picture{display:block}
 .bck-dark-light{background-color:#464646;color:#fff}
 .color-theme{color:#66cbff}
 #map-ficsa{height:10rem;border:2px solid #66cbff}
-#yetLocal{height:15rem;border-bottom:2px solid #66cbff;border-top:2px solid #66cbff;margin-bottom:1rem}
+#yetLocal{height:17rem;border-bottom:2px solid #66cbff;border-top:2px solid #66cbff;margin-bottom:1rem}
 html{font-size:75%;}
 h1,.h1,h2,.h2,h3,.h3,h4,.h4,h5,.h5,h6,.h6{margin:0;text-rendering:optimizeLegibility;font-family:actor,sans-serif}
 h1{font-size:1.5rem}

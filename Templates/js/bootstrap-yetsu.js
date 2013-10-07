@@ -283,27 +283,94 @@
 }(window.jQuery);
 
 $(document).on("ready",function(){
-    google.maps.event.addDomListener(window,'load',function(){
-      var yetMapOptions={
-        center: new google.maps.LatLng(-6.704695,-79.901065) ,
-        zoom:18,
-        mapTypeId : google.maps.MapTypeId.ROADMAP
-      }; 
-      var yetLocal = new google.maps.Map(document.getElementById('yetLocal'),yetMapOptions);
-      var marker = new google.maps.Marker({
-        map :yetLocal,
-        position : yetLocal.getCenter(),
-        title : 'YetLocal'
-      });
+
+    var styles = [
+    {
+      featureType: "landscape.man_made",
+      elementType: "geometry",
+      stylers: [
+        { color: "#e67e22" }
+      ]
+    },{
+      featureType: "landscape.natural.landcover",
+      elementType: "geometry",
+      stylers: [
+        { color: "#ff0000" }
+      ]
+    },{
+      featureType: "poi.business",
+      elementType: "geometry",
+      stylers: [
+        { color: "#66CBFF" }
+      ]
+    },{
+      featureType: "poi.attraction",
+      elementType: "geometry",
+      stylers: [
+        { color: "#fff55b" }
+      ]
+    },{
+      featureType: "poi.park",
+      elementType: "geometry",
+      stylers: [
+        { color: "#1abc9c" }
+      ]
+    },{
+      featureType: "road",
+      elementType: "geometry",
+      stylers: [
+        { color: "#7f8c8d" }
+      ]
+    },{
+      featureType: "road",
+      elementType: "labels.text.fill",
+      stylers: [
+        { color: "#ffffff" }
+      ]
+    },{
+      featureType: "road",
+      elementType: "labels.text.stroke",
+      stylers: [
+        { color: "7f8c8d" }
+      ]
+    }
+
+  ];
+  var styledMap = new google.maps.StyledMapType(styles,{name: "Styled Map"});
+
+  var mapOptions = {
+    zoom: 18,
+    center: new google.maps.LatLng(-6.704695,-79.901065),
+    mapTypeControlOptions: {
+      mapTypeIds: [google.maps.MapTypeId.ROADMAP, 'map_style']
+    }
+  };
+  var map = new google.maps.Map(document.getElementById('yetLocal'), mapOptions);
+  map.mapTypes.set('map_style', styledMap);
+  map.setMapTypeId('map_style');
+   var image = 'beachflag.png';
+    var myLatLng = new google.maps.LatLng(-33.890542, 151.274856);
+    var beachMarker = new google.maps.Marker({
+        position: myLatLng,
+        map: map,
+        icon: image
     });
+
+
+
     /********** map Ficsa *********/
     google.maps.event.addDomListener(window,'load',function(){
       var yetMapOptions={
         center: new google.maps.LatLng(-6.708107,-79.907556) ,
         zoom:17,
-        mapTypeId : google.maps.MapTypeId.ROADMAP
+        mapTypeControlOptions: {
+          mapTypeIds: [google.maps.MapTypeId.ROADMAP, 'map_style']
+        }
       }; 
       var yetLocal = new google.maps.Map(document.getElementById('map-ficsa'),yetMapOptions);
+      map.mapTypes.set('map_style', styledMap);
+      map.setMapTypeId('map_style');
+
       var marker = new google.maps.Marker({
         map :yetLocal,
         position : yetLocal.getCenter(),
