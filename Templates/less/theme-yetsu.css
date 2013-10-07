@@ -40,7 +40,7 @@ h6{font-size:.5rem}
 .radius{border-radius:1rem}
 .bck-parallax{background-attachment:fixed;background-position:50% 0;background-repeat:no-repeat;position:relative}
 .tumbas-reales{background-image:url(../images/parallax/1.jpg)}
-.pw{background:#09c no-repeat url(../images/parallax/pw.jpg) bottom center;min-height:450px}
+.pw{background:no-repeat url(../images/parallax/pw.jpg) bottom center;min-height:450px}
 .container-parallax{display:block}
 .parallax{}
 .parallax-item-ninja{position:relative;top:12rem !important}
@@ -57,7 +57,7 @@ h6{font-size:.5rem}
 .text-right{text-align:right}
 .text-left{text-align:left}
 blockquote{border:none;margin:0}
-dl{width:100%;border:2px solid #09c;border-radius:.5rem;font-size:0}dl dt:first-child{width:100%;background-color:#09c;color:#fff;text-align:center}
+dl{width:100%;border:2px solid #09c;border-radius:.5rem;font-size:0}dl dt:first-child{width:100%;background-color:#09c;color:#fff;text-align:center;border-radius:.3rem .3rem 0 0}
 dl dt,dl dd{display:inline-block;vertical-align:middle;font-size:1rem;width:50%;color:#09c;text-align:center}
 .relative{position:relative}.relative .top{top:1rem}
 .relative .top-3{top:3rem}
@@ -77,3 +77,9 @@ input[type="text"],input[type="email"],input[type="tel"],textarea{padding:.5rem 
 .fix-fb{min-height:350px;border-radius:.2rem}
 aside p{font-size:.8rem}
 .icon-contact{background-color:#09c;border-radius:50%;color:#fff;display:inline-block;width:2rem;height:2rem;text-align:center;padding:.5rem;margin-right:.5rem}
+.border-pw{border-top:2px solid #09c}
+.border-co{border-top:2px solid #f63}
+.border-em{border-top:2px solid #fc0}
+.border-ct{border-top:2px solid #96c}
+.border-am{border-top:2px solid #34cc67}
+.border-si{border-top:2px solid #464646}
