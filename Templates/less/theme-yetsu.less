@@ -23,6 +23,7 @@ picture{
 }
 .bck-orange{
   background-color: @COLOR_ORANGE   ;
+  color: @COLOR_WHITE;
 }
 .bck-yellow{
   background-color: @COLOR_YELLOW   ;
@@ -41,9 +42,13 @@ picture{
   background-color: @COLOR_DARK_LIGHT   ;
   color: @COLOR_WHITE;
 }
-/******** map*************/
-#yetLocal{
+
+/*************************************************  MAPS *****************************************************/
+#map-ficsa{
   height: 15rem;
+}
+#yetLocal{
+  height: 20rem;
 }
  
 
@@ -72,6 +77,9 @@ h5{
 }
 h6{
   font-size:.5rem;
+}
+.text-big{
+  font-size: 2.5rem;
 }
 
 @media only screen and (min-width: 320px){ 
@@ -116,6 +124,13 @@ h6{
 .margin-top{  
   margin-top:  @BASE-REM;
 }
+.margin-top-2{  
+  margin-top:  @BASE-REM*2;
+}
+.margin-top-4{  
+  margin-top:  @BASE-REM*4;
+}
+
 .margin-bottom{  
   margin-bottom:  @BASE-REM;
 }
@@ -295,3 +310,29 @@ h6{
 }
 */
 
+/**************** buttons *********************/
+.button{
+  padding: .5rem 1rem;
+  background-color: @COLOR_THEME;
+  border-radius: .5rem;
+}
+
+
+.list-syllabus  ul {
+  font-size: .7rem;
+}
+
+.float-left{
+  float: left;
+}
+.float-right{
+  float: right;
+}
+
+
+
+/******************* fix **************/
+.fix-fb{
+  min-height: 350px;
+  border-radius: .2rem;
+}

@@ -286,7 +286,7 @@ $(document).on("ready",function(){
     google.maps.event.addDomListener(window,'load',function(){
       var yetMapOptions={
         center: new google.maps.LatLng(-6.704695,-79.901065) ,
-        zoom:17,
+        zoom:18,
         mapTypeId : google.maps.MapTypeId.ROADMAP
       }; 
       var yetLocal = new google.maps.Map(document.getElementById('yetLocal'),yetMapOptions);
@@ -296,6 +296,22 @@ $(document).on("ready",function(){
         title : 'YetLocal'
       });
     });
+    /********** map Ficsa *********/
+    google.maps.event.addDomListener(window,'load',function(){
+      var yetMapOptions={
+        center: new google.maps.LatLng(-6.708107,-79.907556) ,
+        zoom:17,
+        mapTypeId : google.maps.MapTypeId.ROADMAP
+      }; 
+      var yetLocal = new google.maps.Map(document.getElementById('map-ficsa'),yetMapOptions);
+      var marker = new google.maps.Marker({
+        map :yetLocal,
+        position : yetLocal.getCenter(),
+        title : 'Lab º3 | FICSA -UNPRG'
+      });
+    });
+
+
     /***** background parallax ***************/
     $.stellar({
         horizontalScrolling: false,
