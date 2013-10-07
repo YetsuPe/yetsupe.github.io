@@ -348,8 +348,9 @@ $(document).on("ready",function(){
   var map = new google.maps.Map(document.getElementById('yetLocal'), mapOptions);
   map.mapTypes.set('map_style', styledMap);
   map.setMapTypeId('map_style');
-   var image = 'beachflag.png';
-    var myLatLng = new google.maps.LatLng(-33.890542, 151.274856);
+
+   var image = 'images/icons/yetsu-mark-map.png';
+   var myLatLng = new google.maps.LatLng(-6.704695,-79.901065);
     var beachMarker = new google.maps.Marker({
         position: myLatLng,
         map: map,
