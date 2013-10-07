@@ -569,7 +569,7 @@ textarea.input-group-sm>.form-control,textarea.input-group-sm>.input-group-addon
 .navbar-nav.pull-right>li>.dropdown-menu,.navbar-nav>li>.dropdown-menu.pull-right{left:auto;right:0}
 .navbar-btn{margin-top:17.5px;margin-bottom:17.5px}
 .navbar-text{float:left;margin-top:24.5px;margin-bottom:24.5px}@media (min-width:768px){.navbar-text{margin-left:.42rem;margin-right:.42rem}}
-.navbar-default{background-color:#fff}.navbar-default .navbar-brand{color:#fff}.navbar-default .navbar-brand:hover,.navbar-default .navbar-brand:focus{color:#e6e6e6;background-color:#66cbff}
+.navbar-default{background-color:#fff}.navbar-default .navbar-brand{color:#fff}.navbar-default .navbar-brand:hover,.navbar-default .navbar-brand:focus{color:#e6e6e6;background-color:#09c}
 .navbar-default .navbar-text{color:#fff}
 .navbar-default .navbar-nav>li>a{color:#fff}.navbar-default .navbar-nav>li>a:hover,.navbar-default .navbar-nav>li>a:focus{color:#333;background-color:transparent}
 .navbar-default .navbar-nav>.active>a,.navbar-default .navbar-nav>.active>a:hover,.navbar-default .navbar-nav>.active>a:focus{color:#555;background-color:#1b1b1b}

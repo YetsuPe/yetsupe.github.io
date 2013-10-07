@@ -1,5 +1,5 @@
 picture{display:block}
-.bck-theme{background-color:#66cbff}
+.bck-theme{background-color:#09c}
 .bck-white{background-color:#fff}
 .bck-green{background-color:#34cc67}
 .bck-green-light{background-color:#b3d01e}
@@ -10,9 +10,9 @@ picture{display:block}
 .bck-sky-blue{background-color:#449bb6}
 .bck-dark{background-color:#2c2c2c;color:#fff}
 .bck-dark-light{background-color:#464646;color:#fff}
-.color-theme{color:#66cbff}
-#map-ficsa{height:10rem;border:2px solid #66cbff}
-#yetLocal{height:17rem;border-bottom:2px solid #66cbff;border-top:2px solid #66cbff;margin-bottom:1rem}
+.color-theme{color:#09c}
+#map-ficsa{height:10rem;border:2px solid #09c}
+#yetLocal{height:17rem;border-bottom:2px solid #09c;border-top:2px solid #09c;margin-bottom:1rem}
 html{font-size:75%;}
 h1,.h1,h2,.h2,h3,.h3,h4,.h4,h5,.h5,h6,.h6{margin:0;text-rendering:optimizeLegibility;font-family:actor,sans-serif}
 h1{font-size:1.5rem}
@@ -40,7 +40,7 @@ h6{font-size:.5rem}
 .radius{border-radius:1rem}
 .bck-parallax{background-attachment:fixed;background-position:50% 0;background-repeat:no-repeat;position:relative}
 .tumbas-reales{background-image:url(../images/parallax/1.jpg)}
-.pw{background:#66cbff no-repeat url(../images/parallax/pw.jpg) bottom center;min-height:450px}
+.pw{background:#09c no-repeat url(../images/parallax/pw.jpg) bottom center;min-height:450px}
 .container-parallax{display:block}
 .parallax{}
 .parallax-item-ninja{position:relative;top:12rem !important}
@@ -57,23 +57,23 @@ h6{font-size:.5rem}
 .text-right{text-align:right}
 .text-left{text-align:left}
 blockquote{border:none;margin:0}
-dl{width:100%;border:2px solid #66cbff;border-radius:.5rem;font-size:0}dl dt:first-child{width:100%;background-color:#66cbff;color:#fff;text-align:center}
-dl dt,dl dd{display:inline-block;vertical-align:middle;font-size:1rem;width:50%;color:#66cbff;text-align:center}
+dl{width:100%;border:2px solid #09c;border-radius:.5rem;font-size:0}dl dt:first-child{width:100%;background-color:#09c;color:#fff;text-align:center}
+dl dt,dl dd{display:inline-block;vertical-align:middle;font-size:1rem;width:50%;color:#09c;text-align:center}
 .relative{position:relative}.relative .top{top:1rem}
 .relative .top-3{top:3rem}
-.button,button{padding:.5rem 1rem;background-color:#66cbff;border-radius:.5rem;border:none;color:#fff}
+.button,button{padding:.5rem 1rem;background-color:#09c;border-radius:.5rem;border:none;color:#fff}
 button{display:block;margin-left:auto;margin-right:auto;margin-bottom:1rem}
 .float-left{float:left}
 .float-right{float:right}
-input[type="text"],input[type="email"],input[type="tel"],textarea{padding:.5rem 5px .5rem 45px;border-radius:.5rem;border:2px solid #66cbff;background-color:transparent;background-image:url(../images/icons/form.png);background-repeat:no-repeat;width:100%;margin-bottom:1rem}
-::-webkit-input-placeholder{color:#66cbff;font-weight:bold}
-:-moz-placeholder{color:#66cbff;font-weight:bold}
-::-moz-placeholder{color:#66cbff;font-weight:bold}
-:-ms-input-placeholder{font-weight:bold;color:#66cbff}
+input[type="text"],input[type="email"],input[type="tel"],textarea{padding:.5rem 5px .5rem 45px;border-radius:.5rem;border:2px solid #09c;background-color:transparent;background-image:url(../images/icons/form.png);background-repeat:no-repeat;width:100%;margin-bottom:1rem}
+::-webkit-input-placeholder{color:#09c;font-weight:bold}
+:-moz-placeholder{color:#09c;font-weight:bold}
+::-moz-placeholder{color:#09c;font-weight:bold}
+:-ms-input-placeholder{font-weight:bold;color:#09c}
 [data-icon="user"]{background-position:0 0}
 [data-icon="email"]{background-position:0 -50px}
 [data-icon="phone"]{background-position:0 -100px}
 [data-icon="message"]{background-position:0 -150px}
 .fix-fb{min-height:350px;border-radius:.2rem}
 aside p{font-size:.8rem}
-.icon-contact{background-color:#66cbff;border-radius:50%;color:#fff;display:inline-block;width:2rem;height:2rem;text-align:center;padding:.5rem;margin-right:.5rem}
+.icon-contact{background-color:#09c;border-radius:50%;color:#fff;display:inline-block;width:2rem;height:2rem;text-align:center;padding:.5rem;margin-right:.5rem}
