@@ -13,7 +13,7 @@ picture{display:block}
 #map-ficsa{height:15rem}
 #yetLocal{height:20rem}
 html{font-size:75%;}
-h1,.h1,h2,.h2,h3,.h3,h4,.h4,h5,.h5,h6,.h6{margin:0;text-rendering:optimizeLegibility}
+h1,.h1,h2,.h2,h3,.h3,h4,.h4,h5,.h5,h6,.h6{margin:0;text-rendering:optimizeLegibility;font-family:actor,sans-serif}
 h1{font-size:1.5rem}
 h2{font-size:1.25rem}
 h3{font-size:1rem}
@@ -61,3 +61,4 @@ h6{font-size:.5rem}
 .float-left{float:left}
 .float-right{float:right}
 .fix-fb{min-height:350px;border-radius:.2rem}
+aside p{font-size:.8rem}
