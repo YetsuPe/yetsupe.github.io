@@ -42,13 +42,21 @@ picture{
   background-color: @COLOR_DARK_LIGHT   ;
   color: @COLOR_WHITE;
 }
+/*********************************** colors *********************************/
+.color-theme{
+  color: @COLOR_THEME;
+}
 
 /*************************************************  MAPS *****************************************************/
 #map-ficsa{
-  height: 15rem;
+  height: 10rem;
+  border:2px solid @COLOR_THEME;
 }
 #yetLocal{
-  height: 20rem;
+  height: 15rem;
+  border-bottom:2px solid @COLOR_THEME;
+  border-top:2px solid @COLOR_THEME;
+  margin-bottom: 1rem;
 }
  
 
@@ -135,6 +143,10 @@ h6{
 .margin-bottom{  
   margin-bottom:  @BASE-REM;
 }
+.margin-bottom-4{  
+  margin-bottom:  @BASE-REM*4;
+}
+
 
 .padding-none{  
   padding: 0;
@@ -244,7 +256,32 @@ h6{
   text-align: left;
 }
 
-
+/***************  blockquote *******************************/
+blockquote{
+  border: none;
+  margin: 0;
+}
+/***************************** horary *****************************************************/
+dl{
+  width: 100%;
+  border:2px solid @COLOR_THEME;
+  border-radius: .5rem;
+  font-size: 0;
+  & dt:first-child{
+    width: 100%;
+    background-color: @COLOR_THEME;
+    color: white;
+    text-align: center;
+  }
+  & dt,& dd{
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 1rem;
+    width: 50%;
+    color: @COLOR_THEME;
+    text-align: center;
+  }
+}
 /******************* positio *********************/
 .relative{
   position: relative;
@@ -334,15 +371,32 @@ button{
   float: right;
 }
 
-/****************** Forms ****************/
-input[type="text"],textarea{
+/********************************************** Forms *******************************************/
+input[type="text"],input[type="email"],input[type="tel"],textarea{
   padding: .5rem 5px.5rem 45px ;
   border-radius: .5rem;
-  border:1px solid @COLOR_THEME;
+  border:2px solid @COLOR_THEME;
+  background-color: transparent; 
   background-image: url(../images/icons/form.png);
   background-repeat: no-repeat;
   width: 100%;
   margin-bottom: @BASE-REM;
+}
+::-webkit-input-placeholder{
+  color:@COLOR_THEME;
+  font-weight: bold;
+}
+:-moz-placeholder{
+  color:@COLOR_THEME;
+  font-weight: bold;
+}
+::-moz-placeholder{
+  color:@COLOR_THEME;
+  font-weight: bold;
+}
+:-ms-input-placeholder {
+  font-weight: bold;
+  color: @COLOR_THEME;
 }
 [data-icon="user"]{
   background-position: 0 0;
@@ -366,4 +420,17 @@ input[type="text"],textarea{
 }
 aside p{
   font-size: .8rem;
+}
+
+
+.icon-contact{
+  background-color: @COLOR_THEME;
+  border-radius: 50%;
+  color: @COLOR_WHITE;
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  text-align: center;
+  padding: .5rem;
+  margin-right: .5rem;
 }
