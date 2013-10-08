@@ -56,7 +56,7 @@ picture{
   height: 17rem;
   border-bottom:2px solid @COLOR_THEME;
   border-top:2px solid @COLOR_THEME;
-  margin-bottom: 1rem;
+  margin-bottom: @BASE-REM;
 }
  
 
@@ -279,7 +279,7 @@ dl.horary{
   & dt,& dd{
     display: inline-block;
     vertical-align: middle;
-    font-size: 1rem;
+    font-size: @BASE-REM;
     width: 50%;
     color: @COLOR_THEME;
     text-align: center;
@@ -414,7 +414,7 @@ aside p{
     & dt,& dd{
       display: block;
       vertical-align: middle;
-      font-size: 1rem;
+      font-size: @BASE-REM;
       color: @COLOR_SECTION;
       text-align: center;
     }
@@ -452,4 +452,108 @@ aside p{
 }
 .border-si{
   .section(@COLOR_DARK_LIGHT);
+}
+
+
+/************************* NAVIGATION ************************************************************************/
+/* General styles for all menus */
+.menu {
+  background: @COLOR_DARK;
+  position: fixed;
+}
+
+
+/* Orientation-dependent styles for the content of the menu */
+
+.menu-vertical {
+  width: 240px;
+  height: 100%;
+  top: 0;
+  z-index: 3;
+}
+
+
+/* Vertical menu that slides from the left or right */
+
+.menu-left {
+  left: -240px;
+}
+
+.menu-left.menu-open {
+  left: 0px;
+}
+
+
+/* Push classes applied to the body */
+
+.menu-push {
+  overflow-x: hidden;
+  position: relative;
+  left: 0;
+}
+
+.menu-push-toright {
+  left: 240px;
+}
+
+
+/* Transitions */
+
+.menu,
+.menu-push {
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+/* Example media queries */
+
+@media all and (min-width : 768px ){
+  #showMenu{
+    display: none;
+  }
+  header,.menu{
+    height: 3.6rem;
+    position: fixed;
+
+  }
+  .menu {
+    font-size: 0;
+    text-align: right;
+    padding: @BASE-REM 5rem @BASE-REM 0;
+    text-transform: uppercase;
+    background-color: transparent;
+    z-index: 4;
+    & a {
+      display: inline-block;
+      vertical-align: middle;
+      margin-right: @BASE-REM;
+      font-size: @BASE-REM;
+      color: @COLOR_WHITE;
+      & span {
+        display: none;
+      }
+    }
+  }
+  .menu-left{
+    left: auto;
+  }
+  .menu-vertical {
+    width: 100%;
+  }
+  /******* header  **********/
+  header{
+    background-color: @COLOR_DARK;
+    color: @COLOR_WHITE;
+    font-size: @BASE-REM;
+    padding-left: 5rem;
+    width: 100%;
+    z-index: 3;
+    & * {
+      display: inline-block;
+      vertical-align: middle;
+    }
+  }
 }

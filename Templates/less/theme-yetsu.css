@@ -116,3 +116,11 @@ aside p{font-size:.8rem}
 .border-si dl{width:20%;border-bottom:2px solid #464646;border-top:2px solid #464646;display:inline-block;vertical-align:top}.border-si dl dt,.border-si dl dd{display:block;vertical-align:middle;font-size:1rem;color:#464646;text-align:center}
 .border-si dl dd{min-height:3rem;vertical-align:middle}
 .border-si dl dt{background-color:#464646;color:#ebedee;color:#fff}
+.menu{background:#2c2c2c;position:fixed}
+.menu-vertical{width:240px;height:100%;top:0;z-index:3}
+.menu-left{left:-240px}
+.menu-left.menu-open{left:0}
+.menu-push{overflow-x:hidden;position:relative;left:0}
+.menu-push-toright{left:240px}
+.menu,.menu-push{-webkit-transition:all .3s ease;-moz-transition:all .3s ease;-ms-transition:all .3s ease;-o-transition:all .3s ease;transition:all .3s ease}
+@media all and (min-width:768px){#showMenu{display:none} header,.menu{height:3.6rem;position:fixed} .menu{font-size:0;text-align:right;padding:1rem 5rem 1rem 0;text-transform:uppercase;background-color:transparent;z-index:4}.menu a{display:inline-block;vertical-align:middle;margin-right:1rem;font-size:1rem;color:#ebedee}.menu a span{display:none} .menu-left{left:auto} .menu-vertical{width:100%} header{background-color:#2c2c2c;color:#ebedee;font-size:1rem;padding-left:5rem;width:100%;z-index:3}header *{display:inline-block;vertical-align:middle}}

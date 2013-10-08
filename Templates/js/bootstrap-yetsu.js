@@ -283,7 +283,25 @@
 }(window.jQuery);
 
 $(document).on("ready",function(){
+  /********** map Ficsa *********/
+    google.maps.event.addDomListener(window,'load',function(){
+      var yetMapOptions={
+        center: new google.maps.LatLng(-6.708107,-79.907556) ,
+        zoom:17,
+        mapTypeControlOptions: {
+          mapTypeIds: [google.maps.MapTypeId.ROADMAP, 'map_style']
+        }
+      }; 
+      var yetLocal = new google.maps.Map(document.getElementById('map-ficsa'),yetMapOptions);
+      map.mapTypes.set('map_style', styledMap);
+      map.setMapTypeId('map_style');
 
+      var marker = new google.maps.Marker({
+        map :yetLocal,
+        position : yetLocal.getCenter(),
+        title : 'Lab º3 | FICSA -UNPRG'
+      });
+    });
     
 
   google.maps.event.addDomListener(window,'load',function(){
@@ -374,52 +392,14 @@ $(document).on("ready",function(){
 
   });
 
-    /********** map Ficsa *********/
-    google.maps.event.addDomListener(window,'load',function(){
-      var yetMapOptions={
-        center: new google.maps.LatLng(-6.708107,-79.907556) ,
-        zoom:17,
-        mapTypeControlOptions: {
-          mapTypeIds: [google.maps.MapTypeId.ROADMAP, 'map_style']
-        }
-      }; 
-      var yetLocal = new google.maps.Map(document.getElementById('map-ficsa'),yetMapOptions);
-      map.mapTypes.set('map_style', styledMap);
-      map.setMapTypeId('map_style');
-
-      var marker = new google.maps.Marker({
-        map :yetLocal,
-        position : yetLocal.getCenter(),
-        title : 'Lab º3 | FICSA -UNPRG'
-      });
-    });
-
-
-    /***** background parallax ***************/
-    $.stellar({
-        horizontalScrolling: false,
-        responsive: true,
-        verticalOffset: 0
-
-      });
-    $('#parallax-bg-1').parallax();/*
-    $('#parallax-item-1').parallax();*/
-
     /************** navigation ************/
-    $('nav#menu-left').mmenu();
-    $('nav#menu-right').mmenu({
-          position  : 'right',
-          counters  : true
-        });
-    //  Click a menu-item
-        var $confirm = $('#confirmation');
-        $('#menu-right a').not( '.mm-subopen' ).not( '.mm-subclose' ).bind(
-          'click.example',
-          function( e )
-          {
-            e.preventDefault();
-            $confirm.show().text( 'You clicked "' + $(this).text() + '"' );
-            $('#menu-right').trigger( 'close' );
-          }
-        );
+    var menuLeft = document.getElementById( 'nav' ),
+        buttonNav=document.getElementById('showMenu'),
+        body = document.body;
+      
+    buttonNav.onclick = function() {
+      classie.toggle( this, 'active' );
+      classie.toggle( body, 'menu-push-toright' );
+      classie.toggle( menuLeft, 'menu-open' );
+    };
 });
