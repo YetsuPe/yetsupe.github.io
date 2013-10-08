@@ -3,9 +3,10 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Yetsu | Tecnología para tu empresa</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />   
 	<meta name="description" content="YETSU S.A.C" />
-	<meta name="author" content="@YetsuPe" />
-   	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta name="author" content="@YetsuPe, @Skeiter9" />
 
    	<link href='http://fonts.googleapis.com/css?family=Quattrocento+Sans' rel='stylesheet' type='text/css'>
 	<script src="http://use.edgefonts.net/actor.js"></script>
@@ -17,12 +18,18 @@
   	<link rel="stylesheet" href="less/theme.css" />
 
 	<link rel="shortcut icon" href="images/yetsu-favicon.ico" />
+
+</head>
+<script type="text/javascript" src="js/lib/html5shiv.js"></script>
+		<script type="text/javascript" src="js/lib/rem.min.js"></script>
+		<script type="text/javascript" src="js/lib/respond.min.js"></script>
+<body class="menu-push">
 	<!-- IE<9 -->
 	<!--[if lt IE 9]>
-		<script src="js/lib/html5shiv.js" type="text/javascript" ></script>
+		<script type="text/javascript" src="js/lib/html5shiv.js"></script>
+		<script type="text/javascript" src="js/lib/rem.min.js"></script>
+		<script type="text/javascript" src="js/lib/respond.min.js"></script>
 	<![endif]-->
-</head>
-<body class="menu-push">
 	<nav role="navigation" class="menu menu-vertical menu-left" id="nav">
 		<a href="#Inicio"><span class="icon-home icon-2x"></span> inicio </a>
 		<a href="#Nosotros"><span class="icon-group icon-2x"></span> Nosotros </a></a>
@@ -42,10 +49,26 @@
 		<h1>YETSU</h1>
 	</header>
 	
+	<!-- SLIDER -->
+	<div id='yetSlider' class='swipe'>
+		 <div class='swipe-wrap'>
+			<div>
+				<div class="col-lg-4">
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat, eaque, facilis dicta totam vel rem iure officia quisquam magnam nulla deleniti iusto inventore doloremque quia ipsum saepe esse amet hic.
+				</div>
+			</div>
+			<div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, sint, porro, dolore fugit accusantium natus exercitationem cumque aperiam reiciendis sed labore eius quia enim fuga nisi minus tempora itaque voluptatibus.</div>
+			<div><b>3</b></div>
+		</div>
+		<span class="icon-chevron-left" id="yetSlider-arrow-left" onclick='mySwipe.prev()'></span>
+	  	<span class="icon-chevron-right" id="yetSlider-arrow-right" onclick='mySwipe.next()'></span>
+	</div>
+
+
 	<!-- Carousel
-    ================================================== -->
+    ================================================== --
     <div id="Portadas" class="carousel slide">
-      <!-- Indicators -->
+       Indicators --
       <ol class="carousel-indicators">
         <li data-target="#Portadas1" data-slide-to="0" class="active"></li>
         <li data-target="#Portadas2" data-slide-to="1"></li>
@@ -72,7 +95,10 @@
       </div>
       <a class="left carousel-control" href="#Portadas" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
       <a class="right carousel-control" href="#Portadas" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
-    </div><!-- /.carousel -->
+    </div>/.carousel -->
+
+
+
 	<section role="services">
 		<div class="container">
 			<div class="row margin-top">
@@ -551,7 +577,7 @@ Este sería una gran oportunidad para ofrecer sus servicios ya que la página we
 		</div>
 	</section>
 
-	<section class="para margin-top bck-parallax tumbas-reales" data-stellar-background-ratio="0.5">
+	<section class="para margin-top bck-parallax tumbas-reales" >
 		<!--<ul  class="container-parallax" id="parallax-bg-1">
 			<li class="layer parallax" data-depth="1.00">
 				<img src="images/backgrounds/museo-tumbas-reales-senor-de-sipan.jpg" class="parallax-bg">
@@ -570,7 +596,7 @@ Este sería una gran oportunidad para ofrecer sus servicios ya que la página we
 					<div class="row">
 						<div class="col-xs-6 col-sm-3 col-md-3 col-lg-3">
 							<div class="thumbnail">
-								<img src="images/team/foto.jpg" alt="@Skeiter9" />
+								<img src="images/team/omar-lozada-Skeiter9.jpg" alt="@Skeiter9" />
 								<div class="caption text-center">
 									<h3>Omar Lozada</h3>
 									<h4>@Skeiter9</h4>
@@ -580,7 +606,7 @@ Este sería una gran oportunidad para ofrecer sus servicios ya que la página we
 						</div>
 						<div class="col-xs-6 col-sm-3 col-md-3 col-lg-3">
 							<div class="thumbnail">
-								<img src="images/team/foto.jpg" alt="@Skeiter9" />
+								<img src="images/team/omar-lozada-FioriAs.jpg" alt="@Skeiter9" />
 								<div class="caption text-center">
 									<h3>Fiorella Aquino</h3>
 									<h4>@FioriAs</h4>
@@ -748,12 +774,10 @@ Este sería una gran oportunidad para ofrecer sus servicios ya que la página we
 		</div>
 	</footer>
 
-<script src="js/lib/jquery.js"></script>
 <script src="https://maps.googleapis.com/maps/api/js?v=3.10&key=AIzaSyBP3ZaMYVz0M19TaHkskzCYq-dncj2TxjI&sensor=true&language=es"></script>
+<script src="js/lib/swipe.js"></script>
 <script src="js/lib/picturefill.js"></script>
 <script src="js/lib/classie.js"></script>
-<script src="js/bootstrap-yetsu.js"></script>
-	
-	
+<script src="js/yetsu.js"></script>
 </body>
 </html>
