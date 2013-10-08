@@ -39,7 +39,7 @@ textarea{overflow:auto;vertical-align:top}
 table{border-collapse:collapse;border-spacing:0}
 @media print{*{text-shadow:none !important;color:#000 !important;background:transparent !important;box-shadow:none !important} a,a:visited{text-decoration:underline} a[href]:after{content:" (" attr(href) ")"} abbr[title]:after{content:" (" attr(title) ")"} .ir a:after,a[href^="javascript:"]:after,a[href^="#"]:after{content:""} pre,blockquote{border:1px solid #999;page-break-inside:avoid} thead{display:table-header-group} tr,img{page-break-inside:avoid} img{max-width:100% !important} @page {margin:2cm .5cm}p,h2,h3{orphans:3;widows:3} h2,h3{page-break-after:avoid} .navbar{display:none} .table td,.table th{background-color:#fff !important} .btn>.caret,.dropup>.btn>.caret{border-top-color:#000 !important} .label{border:1px solid #000} .table{border-collapse:collapse !important} .table-bordered th,.table-bordered td{border:1px solid #ddd !important}}*,*:before,*:after{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}
 html{font-size:62.5%;-webkit-tap-highlight-color:rgba(0,0,0,0)}
-body{font-family:'Quattrocento Sans',sans-serif;font-size:1rem;line-height:1.428571429;color:#333;background-color:#fff}
+body{font-family:'Quattrocento Sans',sans-serif;font-size:1rem;line-height:1.428571429;color:#464646;background-color:#ebedee}
 input,button,select,textarea{font-family:inherit;font-size:inherit;line-height:inherit}
 a{color:#428bca;text-decoration:none}a:hover,a:focus{color:#2a6496}
 a:focus{outline:thin dotted #333;outline:5px auto -webkit-focus-ring-color;outline-offset:-2px}
@@ -63,15 +63,6 @@ cite{font-style:normal}
 .text-left{text-align:left}
 .text-right{text-align:right}
 .text-center{text-align:center}
-h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-weight:500;line-height:1.1;color:inherit}h1 small,h2 small,h3 small,h4 small,h5 small,h6 small,.h1 small,.h2 small,.h3 small,.h4 small,.h5 small,.h6 small{font-weight:normal;line-height:1;color:#999}
-h1,h2,h3{margin-top:1rem;margin-bottom:.5rem}h1 small,h2 small,h3 small{font-size:65%}
-h4,h5,h6{margin-top:.5rem;margin-bottom:.5rem}h4 small,h5 small,h6 small{font-size:75%}
-h1,.h1{font-size:2rem}
-h2,.h2{font-size:2rem}
-h3,.h3{font-size:2rem}
-h4,.h4{font-size:2rem}
-h5,.h5{font-size:1rem}
-h6,.h6{font-size:1rem}
 .page-header{padding-bottom:-0.5rem;margin:2rem 0 1rem;border-bottom:1px solid #eee}
 ul,ol{margin-top:0;margin-bottom:.5rem;padding:0}ul ul,ol ul,ul ol,ol ol{margin-bottom:0;padding:0}
 .list-unstyled{padding-left:0;list-style:none}
@@ -569,8 +560,8 @@ textarea.input-group-sm>.form-control,textarea.input-group-sm>.input-group-addon
 .navbar-nav.pull-right>li>.dropdown-menu,.navbar-nav>li>.dropdown-menu.pull-right{left:auto;right:0}
 .navbar-btn{margin-top:17.5px;margin-bottom:17.5px}
 .navbar-text{float:left;margin-top:24.5px;margin-bottom:24.5px}@media (min-width:768px){.navbar-text{margin-left:.42rem;margin-right:.42rem}}
-.navbar-default{background-color:#fff}.navbar-default .navbar-brand{color:#fff}.navbar-default .navbar-brand:hover,.navbar-default .navbar-brand:focus{color:#e6e6e6;background-color:#09c}
-.navbar-default .navbar-text{color:#fff}
+.navbar-default{background-color:#ebedee}.navbar-default .navbar-brand{color:#fff}.navbar-default .navbar-brand:hover,.navbar-default .navbar-brand:focus{color:#cfd4d7;background-color:#09c}
+.navbar-default .navbar-text{color:#ebedee}
 .navbar-default .navbar-nav>li>a{color:#fff}.navbar-default .navbar-nav>li>a:hover,.navbar-default .navbar-nav>li>a:focus{color:#333;background-color:transparent}
 .navbar-default .navbar-nav>.active>a,.navbar-default .navbar-nav>.active>a:hover,.navbar-default .navbar-nav>.active>a:focus{color:#555;background-color:#1b1b1b}
 .navbar-default .navbar-nav>.disabled>a,.navbar-default .navbar-nav>.disabled>a:hover,.navbar-default .navbar-nav>.disabled>a:focus{color:#ccc;background-color:transparent}
@@ -636,7 +627,7 @@ a.list-group-item.active>.badge,.nav-pills>.active>a>.badge{color:#428bca;backgr
 .jumbotron p{line-height:1.4}
 .container .jumbotron{border-radius:6px}
 @media screen and (min-width:768px){.jumbotron{padding-top:48px;padding-bottom:48px}.container .jumbotron{padding-left:60px;padding-right:60px} .jumbotron h1{font-size:4.5rem}}
-.thumbnail{display:block;margin-bottom:1rem;min-height:11rem;background-color:#fff}.thumbnail>img{display:block;width:100%}
+.thumbnail{display:block;margin-bottom:1rem;min-height:11rem;background-color:#ebedee}.thumbnail>img{display:block;width:100%}
 a.thumbnail:hover,a.thumbnail:focus{border-color:#428bca}
 .thumbnail>img{margin-left:auto;margin-right:auto}
 .thumbnail .caption{color:#333}

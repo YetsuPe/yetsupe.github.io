@@ -70,10 +70,10 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6{
   font-family: actor, sans-serif;
 }
 h1{
-  font-size:1.5rem ;
+  font-size:2rem ;
 }
 h2{
-  font-size:1.25rem;
+  font-size:1.7rem;
 } 
 h3{
   font-size:@BASE-REM;
@@ -143,6 +143,9 @@ h6{
 .margin-bottom{  
   margin-bottom:  @BASE-REM;
 }
+.margin-bottom-2{  
+  margin-bottom:  @BASE-REM*2;
+}
 .margin-bottom-4{  
   margin-bottom:  @BASE-REM*4;
 }
@@ -172,7 +175,7 @@ h6{
 
 
 
-/****************** parallax *************/
+/************************************* parallax ********************************/
 .bck-parallax{
   background-attachment: fixed;
   background-position: 50% 0;
@@ -219,7 +222,6 @@ h6{
   background-color: @COLOR_WHITE;
   padding: 3rem @BASE-REM;
   .border-radius-yetsu(50%);
-  border: .5rem solid darken(@COLOR_WHITE, 20%);
   margin: 0 auto;
   & > img{
     width: 100%;
@@ -227,8 +229,8 @@ h6{
 }
 .service{
   padding: 2rem 0 0 0;
-  & h2{
-    padding: 2rem 0 4rem 0;
+  & h2:first-child{
+    padding: 2rem 0 2rem 0;
   }
   .padding{  
   padding:  (@BASE-REM *2);
@@ -262,7 +264,7 @@ blockquote{
   margin: 0;
 }
 /***************************** horary *****************************************************/
-dl{
+dl.horary{
   width: 100%;
   border:2px solid @COLOR_THEME;
   border-radius: .5rem;
@@ -286,12 +288,12 @@ dl{
 /******************* positio *********************/
 .relative{
   position: relative;
-  .top{
-    top: @BASE-REM;
-  }
-  .top-3{
-    top: @BASE-REM*3;
-  }
+}
+.relative-top{
+  top: @BASE-REM;
+}
+.relative-top-3{
+  top: @BASE-REM*3;
 }
 
 /******* navigation *****/
@@ -386,22 +388,68 @@ aside p{
   margin-right: .5rem;
 }
 
+/*************************************** SECTIONS ******************************************************/
+
+/****** mixin ******/
+.section( @COLOR_SECTION : @COLOR_THEME){
+  
+  border-top: (@BASE-REM / 5 ) solid @COLOR_SECTION ;
+  & a,& strong,& h1,& h2, & h3,& h4, & h5, & h6, & span{
+    color: @COLOR_SECTION ;
+  }
+  & .service-pic{
+    border: (@BASE-REM / 3 ) solid @COLOR_SECTION;
+  }
+  .button{
+    background-color: @COLOR_SECTION;
+    color: @COLOR_WHITE;
+  }
+
+  dl{
+    width: 20%;
+    border-bottom:2px solid @COLOR_SECTION;
+    border-top:2px solid @COLOR_SECTION;
+    display: inline-block;
+    vertical-align: top;
+    & dt,& dd{
+      display: block;
+      vertical-align: middle;
+      font-size: 1rem;
+      color: @COLOR_SECTION;
+      text-align: center;
+    }
+    & dd{
+      min-height: 3rem;
+      vertical-align: middle;
+    }
+    & dt{
+      background-color: @COLOR_SECTION;
+      color: @COLOR_WHITE;
+      color: white;
+    }
+  }
+
+}
+
+.font-0{
+  font-size: 0;
+}
 
 .border-pw{
-  border-top: 2px solid @COLOR_THEME;
+  .section(@COLOR_THEME);
 }
 .border-co{
-  border-top: 2px solid @COLOR_ORANGE;
+  .section(@COLOR_ORANGE);
 }
 .border-em{
-  border-top: 2px solid @COLOR_YELLOW;
+  .section(@COLOR_YELLOW);
 }
 .border-ct{
-  border-top: 2px solid @COLOR_PURPLE;
+  .section(@COLOR_PURPLE);
 }
 .border-am{
-  border-top: 2px solid @COLOR_GREEN;
+  .section(@COLOR_GREEN);
 }
 .border-si{
-  border-top: 2px solid @COLOR_DARK_LIGHT;
+  .section(@COLOR_DARK_LIGHT);
 }
