@@ -81,10 +81,10 @@ aside p{font-size:.8rem}
 .icon-contact{background-color:#09c;border-radius:50%;color:#ebedee;display:inline-block;width:2rem;height:2rem;text-align:center;padding:.5rem;margin-right:.5rem}
 .swipe{overflow:hidden;visibility:hidden;position:relative}
 .swipe-wrap{overflow:hidden;position:relative}
-.swipe-wrap>div{float:left;width:100%;position:relative;padding:0 5rem}
+.swipe-wrap>div{float:left;min-height:18rem;position:relative;padding:0 5rem}
 #yetSlider{padding:3.6rem 0 0 0;width:100%}#yetSlider .arrows{display:block}
-#yetSlider span{font-size:3rem;cursor:pointer;position:absolute;top:8rem}#yetSlider span#yetSlider-arrow-left{left:2rem}
-#yetSlider span#yetSlider-arrow-right{right:2rem}
+#yetSlider>span{font-size:3rem;cursor:pointer;position:absolute;top:11rem}#yetSlider>span#yetSlider-arrow-left{left:2rem}
+#yetSlider>span#yetSlider-arrow-right{right:2rem}
 #yetSlider div b{display:block;font-weight:bold;color:#14ade5;font-size:20px;text-align:center;margin:0;padding:100px 10px;box-shadow:0 1px #ebebeb;background:#fff;border-radius:3px;border:1px solid;border-color:#e5e5e5 #d3d3d3 #b9c1c6}
 .font-0{font-size:0}
 .border-pw{border-top:.2rem solid #09c}.border-pw a,.border-pw strong,.border-pw h1,.border-pw h2,.border-pw h3,.border-pw h4,.border-pw h5,.border-pw h6,.border-pw span{color:#09c}
