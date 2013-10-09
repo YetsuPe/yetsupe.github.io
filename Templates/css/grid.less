@@ -1,4 +1,8 @@
 //
+// Core variables and mixins
+@import "variables-yetsu.less";
+@import "variables.less";
+@import "mixins.less";
 // Grid system
 // --------------------------------------------------
 
@@ -103,6 +107,13 @@
 .col-xs-10 { width: percentage((10/ @grid-columns)); }
 .col-xs-11 { width: percentage((11/ @grid-columns)); }
 .col-xs-12 { width: 100%; }
+
+@media (max-width: @screen-sm-min) {
+  .hide-xs{
+    display: none;
+  }
+}
+
 
 
 /************ nav *****************
