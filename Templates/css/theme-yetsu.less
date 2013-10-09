@@ -61,7 +61,7 @@ picture{
   font-size: 0;
   & > dl {
     display: inline-block;
-    font-size: 1rem;
+    font-size: @BASE-REM;
     margin-left: 2rem;
     text-align: center;
     & > dt {
@@ -116,10 +116,10 @@ h4{
   font-size:1.2rem;
 }
 h5{
-  font-size:1.1rem;
-}
-h6{
   font-size:1rem;
+}
+h6,.h6{
+  font-size:@BASE-REM;
 }
 .text-big{
   font-size: 2.5rem;
@@ -255,7 +255,17 @@ h6{
 }
 
 
-/************** service pictures ***************/
+/************************************** service pictures ***************************************/
+.service-item{
+  color: @COLOR_DARK;
+  font-family: 'Quattrocento Sans', sans-serif;
+}
+.button-service{
+  padding: (@BASE-REM/ 2) 0;
+  color:  @COLOR_THEME ;
+  border: 2px solid @COLOR_THEME;
+  .border-radius-yetsu( (@BASE-REM/2) );
+}
 .service-pic{
   position: relative;
   width: 14rem;
@@ -271,22 +281,10 @@ h6{
 .service{
   padding: 2rem 0 0 0;
   & h2:first-child{
-    padding: 2rem 0 2rem 0;
+    padding: @BASE-REM 0;
   }
-  .padding{  
-  padding:  (@BASE-REM *2);
-  }
-  .padding-left{  
-    padding-left:  (@BASE-REM *2);
-  }
-  .padding-right{  
-    padding-right:  (@BASE-REM *2);
-  }
-  .padding-top{  
-    padding-top:  (@BASE-REM *2);
-  }
-  .padding-bottom{  
-    padding-bottom:  (@BASE-REM *2);
+  & p {
+    text-align: justify;
   }
 }
 .text-justify{
@@ -333,12 +331,12 @@ dl.horary{
 .relative-top{
   top: @BASE-REM;
 }
+.relative-top-2{
+  top: @BASE-REM*2;
+}
 .relative-top-3{
   top: @BASE-REM*3;
 }
-
-/******* navigation *****/
-
 
 
 
@@ -416,7 +414,7 @@ input[type="text"],input[type="email"],input[type="tel"],textarea{
   border-radius: .2rem;
 }
 aside p{
-  font-size: .8rem;
+  font-size: @BASE-REM;
 }
 
 
@@ -433,52 +431,9 @@ aside p{
 }
 
 /*************************************** SECTIONS ******************************************************/
-
-/****** mixin ******/
-.section( @COLOR_SECTION : @COLOR_THEME){
-  
-  border-top: (@BASE-REM / 5 ) solid @COLOR_SECTION ;
-  & a,& strong,& h1,& h2, & h3,& h4, & h5, & h6, & span{
-    color: @COLOR_SECTION ;
-  }
-  & .service-pic{
-    border: (@BASE-REM / 3 ) solid @COLOR_SECTION;
-  }
-  .button{
-    background-color: @COLOR_SECTION;
-    color: @COLOR_WHITE;
-  }
-
-  dl{
-    width: 20%;
-    border-bottom:2px solid @COLOR_SECTION;
-    border-top:2px solid @COLOR_SECTION;
-    display: inline-block;
-    vertical-align: top;
-    & dt,& dd{
-      display: block;
-      vertical-align: middle;
-      font-size: @BASE-REM;
-      color: @COLOR_SECTION;
-      text-align: center;
-    }
-    & dd{
-      min-height: 3rem;
-      vertical-align: middle;
-    }
-    & dt{
-      background-color: @COLOR_SECTION;
-      color: @COLOR_WHITE;
-      color: white;
-    }
-  }
-
-}
-
 .font-0{
   font-size: 0;
 }
-
 .border-pw{
   .section(@COLOR_THEME);
 }

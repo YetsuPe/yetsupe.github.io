@@ -1,6 +1,4 @@
-
-//fLAT DESIGN COLOR
-
+//FLAT DESIGN COLOR
 @COLOR_THEME       :#0099cc ;
 @COLOR_WHITE       :#ebedee ;
 @COLOR_GREEN       :#34CC67 ;
@@ -15,7 +13,7 @@
 @COLOR_DARK_LIGHT  :lighten(@COLOR_DARK, 10%) ;
 
 /********** Mobile first text responsive ************/
-@BASE-REM : 1rem;
+@BASE-REM : .8rem;
 
 /*************** MIXIMS **********/
 .border-radius-yetsu(@radius:@BASE-REM){
@@ -24,4 +22,45 @@
 	-webkit-border-radius: @radius;
 	-ms-border-radius: @radius;
 	border-radius: @radius;
+}
+
+/****** mixin ******/
+.section( @COLOR_SECTION : @COLOR_THEME){
+  border-top: (@BASE-REM / 5 ) solid @COLOR_SECTION ;
+  & a,& strong,& h1,& h2, & h3,& h4, & h5, & h6, & span{
+    color: @COLOR_SECTION ;
+  }
+  & .service-pic{
+    border: (@BASE-REM / 3 ) solid @COLOR_SECTION;
+  }
+  .button-service{
+    padding: (@BASE-REM/ 2) 0;
+	color:  @COLOR_THEME ;
+	border: 2px solid @COLOR_THEME;
+	.border-radius-yetsu( (@BASE-REM/2) );
+  }
+
+  dl{
+    width: 20%;
+    border-bottom:2px solid @COLOR_SECTION;
+    border-top:2px solid @COLOR_SECTION;
+    display: inline-block;
+    vertical-align: top;
+    & dt,& dd{
+      display: block;
+      vertical-align: middle;
+      font-size: @BASE-REM;
+      color: @COLOR_SECTION;
+      text-align: center;
+    }
+    & dd{
+      min-height: 3rem;
+      vertical-align: middle;
+    }
+    & dt{
+      background-color: @COLOR_SECTION;
+      color: @COLOR_WHITE;
+      color: white;
+    }
+  }
 }
