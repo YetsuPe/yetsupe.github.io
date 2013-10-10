@@ -218,43 +218,8 @@ h6,.h6{
 }
 
 
-
-/************************************* parallax ********************************/
-.bck-parallax{
-  background-attachment: fixed;
-  background-position: 50% 0;
-  background-repeat: no-repeat;
-  //height: 450px;
-  position: relative;
-}
-.tumbas-reales {
-  background-image: url(../images/parallax/1.jpg);
-}
-.pw {
-  background: no-repeat url(../images/parallax/pw.jpg) bottom center;
-  min-height: 450px;
-}
-
-.container-parallax{
-  display: block;
-}
-.parallax{
-  /*display: block;
-  width: 100%;*/
-}
-.parallax-item-ninja{
-  position: relative;
-  top: 12rem !important;
-}
-.parallax-bg{
- // width: 100%;
-}
-
 [role="services"]{
   z-index: 2;
-}
-.para{
-  overflow: hidden;
 }
 
 
@@ -578,6 +543,7 @@ aside p{
 
 header{
   text-align: center;
+  border-top: 2px solid @COLOR_THEME;
   & img{
     display: none;
   }
@@ -613,6 +579,8 @@ header{
       display: none;
     }
     & > a {
+      overflow: hidden;
+
       display: inline-block;
       vertical-align: middle;
       margin-right: (@BASE-REM/5);
@@ -623,8 +591,33 @@ header{
       border-right: 1px solid darken(@COLOR_WHITE , 70%);
       border-bottom: none;
       line-height: 2;
-      & span {
+      & span:first-child {
         display: none;
+      }
+      & span:last-child{
+        font-size: @BASE-REM;
+
+        position: relative;
+        display: inline-block;
+        -webkit-transition: -webkit-transform 0.3s;
+        -moz-transition: -moz-transform 0.3s;
+        transition: transform 0.3s;
+        &:before{
+          position: absolute;
+          top: 100%;
+          content: attr(data-hover);
+          font-weight: 700;
+          -webkit-transform: translate3d(0,0,0);
+          -moz-transform: translate3d(0,0,0);
+          transform: translate3d(0,0,0);
+        }
+      }
+      &:hover,&:focus{
+        & span:last-child{
+          -webkit-transform: translateY(-100%);
+          -moz-transform: translateY(-100%);
+          transform: translateY(-100%);
+        }
       }
       &:last-child{
         border-right:none;
