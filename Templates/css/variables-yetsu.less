@@ -39,6 +39,29 @@
 	text-align: center;
 	border: 2px solid @COLOR_SECTION;
 	.border-radius-yetsu( (@BASE-REM/2) );
+	-webkit-transition: all 0.15s;
+	-moz-transition: all 0.15s;
+	transition: all 0.15s;
+	&:after{
+		content: '';
+		position: absolute;
+		z-index: -1;
+		-webkit-transition: all 0.15s;
+		-moz-transition: all 0.15s;
+		transition: all 0.15s;
+
+		width: 100%;
+		height: 0;
+		top: 0;
+		left: 0;
+		background-color: @COLOR_SECTION;
+	}
+	&:hover,&:active{
+		color: @COLOR_WHITE;
+		&:after{
+			height: 100%;
+		}
+	}
   }
 
   dl{
