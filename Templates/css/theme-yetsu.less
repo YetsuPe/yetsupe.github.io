@@ -170,6 +170,9 @@ h6,.h6{
 .margin-top-2{  
   margin-top:  @BASE-REM*2;
 }
+.margin-top-3{  
+  margin-top:  @BASE-REM*3;
+}
 .margin-top-4{  
   margin-top:  @BASE-REM*4;
 }
@@ -268,8 +271,8 @@ h6,.h6{
 }
 .service-pic{
   position: relative;
-  width: 14rem;
-  height: 14rem;
+  width: 12rem;
+  height: 12rem;
   background-color: @COLOR_WHITE;
   padding: 3rem @BASE-REM;
   .border-radius-yetsu(50%);
@@ -605,6 +608,7 @@ header{
     text-transform: uppercase;
     background-color: transparent;
     z-index: 4;
+    overflow: hidden;
     & > img {
       display: none;
     }
@@ -678,6 +682,16 @@ header{
   & > img {
     width: 100%;
   }
+  & h3{
+    font-size: @BASE-REM;
+  }
+  & h4{
+    font-size: 0.7rem;
+  }
+  & h5{
+    font-size: .6rem;
+  }
+
 }
 
 
