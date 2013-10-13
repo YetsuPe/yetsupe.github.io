@@ -537,6 +537,29 @@ aside p{
     font-size:1.2rem;
     & > span {
       font-size: 1.5rem;
+      text-align: center;
+      margin-right: @BASE-REM;
+    }
+  }
+  & > ul {
+    display: block;
+    margin-top: @BASE-REM*3; 
+    font-size: 0;
+    color: darken(@COLOR_WHITE, 20%);
+    &:before{
+      content: "Encuentranos en:";
+      display: block;
+      text-align: center;
+      font-size: 1.5rem;
+    }
+    & > li {
+      display: inline-block;
+      font-size: 1.5rem;
+      text-align: center;
+      width: 12.5%;
+      & a {
+        color: @COLOR_WHITE;
+      }
     }
   }
 }
@@ -570,7 +593,7 @@ header{
   .menu {
     font-size: 0;
     text-align: right;
-    padding: @BASE-REM @BASE-REM @BASE-REM 0;
+    padding: (@BASE-REM/3) 0 ;
     text-transform: uppercase;
     background-color: transparent;
     z-index: 4;
@@ -580,11 +603,10 @@ header{
     }
     & > a {
       overflow: hidden;
-
       display: inline-block;
       vertical-align: middle;
-      margin-right: (@BASE-REM/5);
-      padding-right: (@BASE-REM/5);
+      margin-right: (@BASE-REM/3);
+      text-align: center;
       padding-left: 0;
       font-size: @BASE-REM;
       color: @COLOR_WHITE;
@@ -621,6 +643,18 @@ header{
       }
       &:last-child{
         border-right:none;
+      }
+    }
+    & ul {
+      margin: 0;
+      width: 25%;
+      position: absolute;
+      right: @BASE-REM;
+      & li {
+        font-size: @BASE-REM*1.2 ;
+      }
+      &:before{
+        content: "";
       }
     }
   }
