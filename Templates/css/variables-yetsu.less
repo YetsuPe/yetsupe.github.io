@@ -1,6 +1,6 @@
 //FLAT DESIGN COLOR
 @COLOR_THEME       :#0099cc ;
-@COLOR_WHITE       :#ebedee ;
+@COLOR_WHITE       :#E3E3E3 ;
 @COLOR_GREEN       :#34CC67 ;
 @COLOR_GREEN_LIGHT :#B3D01E ;
 @COLOR_BLUE        :#00AED7 ;
@@ -17,11 +17,14 @@
 
 /*************** MIXIMS **********/
 .border-radius-yetsu(@radius:@BASE-REM){
-	-moz-border-radius: @radius;
-	-o-border-radius: @radius;
-	-webkit-border-radius: @radius;
-	-ms-border-radius: @radius;
-	border-radius: @radius;
+	-moz-border-radius: @radius @radius @radius @radius;
+	-o-border-radius: @radius @radius @radius @radius;
+	-webkit-border-radius: @radius @radius @radius @radius;
+	-ms-border-radius: @radius @radius @radius @radius;
+	border-radius: @radius @radius @radius @radius;
+}
+.selected-yetsu(){
+  color: @COLOR_THEME;
 }
 
 /****** mixin ******/

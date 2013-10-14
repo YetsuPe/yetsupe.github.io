@@ -1,0 +1,30 @@
+// Core variables and mixins
+@import "variables-yetsu.less";
+@import "variables.less";
+@import "mixins.less";
+@import "font.less";
+
+.yetsu{
+	& .service{
+		text-align: center;
+		& h2,img,a{
+			display: block;
+		}
+		& h2{
+
+		}
+		& img{
+			.center-block();
+		}
+		& a {
+
+		}
+		&:nth-of-type(1){
+			background-color: @COLOR_SKY_BLUE ;
+		}
+		&:nth-of-type(2){
+			background-color: @COLOR_GREEN ;
+		}
+
+	}
+}

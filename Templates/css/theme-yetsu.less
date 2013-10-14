@@ -11,6 +11,7 @@ picture{
 
 .bck-theme{
   background-color: @COLOR_THEME  ;
+  color: @COLOR_WHITE;
 }
 .bck-white{
   background-color: @COLOR_WHITE  ;
@@ -47,6 +48,9 @@ picture{
 .bck-dark-light{
   background-color: @COLOR_DARK_LIGHT   ;
   color: @COLOR_WHITE;
+}
+.bck-pat-1{
+  background-image: url("../images/patterns/arrows-blue.png");
 }
 /*********************************** colors *********************************/
 .color-theme{
@@ -104,16 +108,16 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6{
   font-family: actor, sans-serif;
 }
 h1{
-  font-size:2rem ;
+  font-size:1.6rem ;
 }
 h2{
-  font-size:1.7rem;
+  font-size:1.35rem;
 } 
 h3{
-  font-size:1.5rem;
+  font-size:1.2rem;
 } 
 h4{
-  font-size:1.2rem;
+  font-size:1.1rem;
 }
 h5{
   font-size:1rem;
@@ -213,6 +217,19 @@ h6,.h6{
 .padding-bottom{  
   padding-bottom:  @BASE-REM;
 }
+.padding-top-2{  
+  padding-top:  @BASE-REM*2;
+}
+.padding-bottom-2{  
+  padding-bottom:  @BASE-REM*2;
+}
+.padding-top-4{  
+  padding-top:  @BASE-REM*4;
+}
+.padding-bottom-4{  
+  padding-bottom:  @BASE-REM*4;
+}
+
 .radius{
   border-radius: @BASE-REM;
 }
@@ -220,6 +237,17 @@ h6,.h6{
 
 [role="services"]{
   z-index: 2;
+  & h2{
+    border-radius: @BASE-REM/4 @BASE-REM/4 0 0;
+  }
+  /*& picture{
+    border: 2px solid @COLOR_THEME;
+    border-radius: 0 0 @BASE-REM/4 @BASE-REM/4;
+  }
+  & a {
+    position: relative;
+    top: -(@BASE-REM/1.5);
+  }*/
 }
 
 
@@ -227,6 +255,7 @@ h6,.h6{
 .service-item{
   color: @COLOR_DARK;
   font-family: 'Quattrocento Sans', sans-serif;
+  position: relative;
 }
 .button-service{
   padding: (@BASE-REM/ 2) 0;
@@ -310,9 +339,9 @@ dl.horary{
 
 /************************************************* buttons ******************************************************/
 .button,button{
-  padding: .5rem @BASE-REM;
+  padding: @BASE-REM/3 @BASE-REM/2;
   background-color: @COLOR_THEME;
-  border-radius: .5rem;
+  border-radius: @BASE-REM/3;
   border: none;
   color: @COLOR_WHITE;
 }
@@ -593,7 +622,7 @@ header{
   .menu {
     font-size: 0;
     text-align: right;
-    padding: (@BASE-REM/3) 0 ;
+    padding: 0 ;
     text-transform: uppercase;
     background-color: transparent;
     z-index: 4;
@@ -605,22 +634,25 @@ header{
       overflow: hidden;
       display: inline-block;
       vertical-align: middle;
-      margin-right: (@BASE-REM/3);
       text-align: center;
-      padding-left: 0;
       font-size: @BASE-REM;
       color: @COLOR_WHITE;
-      border-right: 1px solid darken(@COLOR_WHITE , 70%);
       border-bottom: none;
       line-height: 2;
+      padding: 0 (@BASE-REM/2);
+
       & span:first-child {
         display: none;
       }
+      &.selected{
+        .selected-yetsu();
+      }
       & span:last-child{
         font-size: @BASE-REM;
-
+        padding: 0 (@BASE-REM/2);
         position: relative;
         display: inline-block;
+        margin: 0;
         -webkit-transition: -webkit-transform 0.3s;
         -moz-transition: -moz-transform 0.3s;
         transition: transform 0.3s;
@@ -680,7 +712,7 @@ header{
     }
     & img{
       display: inline-block;
-      width: 3.5rem;
+      width: 2.5rem;
       height: auto;
     }
   }
@@ -690,7 +722,7 @@ header{
     padding-left: 5rem;
   }
   .menu {
-    padding: @BASE-REM/3 5rem @BASE-REM/3 0;
+    padding: 0 5rem 0 0;
     & ul {
       right: 5rem;
     }
@@ -724,4 +756,97 @@ header{
 
 
 
-/**************************** breakpoints ******************************/
+/**************************** ******************************/
+.shape {
+  width: 200px;
+  height: 200px;
+  background-color: @COLOR_THEME;
+  position: relative;
+}
+    
+  .shape .overlay {
+    display:block;
+    width: 210px;
+    height: 210px;
+    position: absolute;
+    top:-5px;
+    left:-5px;
+    -webkit-transform: scale(1,1);
+    -webkit-transition-timing-function: ease-out;
+    -webkit-transition-duration: 0.6s;
+    -moz-transform: scale(1,1);
+    -moz-transition-timing-function: ease-out;
+    -moz-transition-duration: 0.6s;
+    transform: scale(1,1);
+    transition-timing-function: ease-out;
+    transition-duration: 0.6s;        
+    z-index:2;
+    /* allow user to actually perform actions underneath this layer */
+    pointer-events:none; 
+    background-repeat: no-repeat;
+    outline:0;    
+  }
+
+/* different shapes */
+.shape .overlay.round {
+  background: url(../images/icons/round.png);   
+}
+
+.shape .overlay.hexagon {
+  background: url(../images/icons/hexagon.png);
+}
+
+.shape .overlay.pentagon {
+  background: url(../images/icons/pentagon.png);
+}     
+
+/* hover effect */
+.shape:hover .overlay {
+  -webkit-transform: scale(1,1);
+  -webkit-transition-timing-function: ease-out;
+  -webkit-transition-duration: 0.3s;
+  -moz-transform: scale(1,1);
+  -moz-transition-timing-function: ease-out;
+  -moz-transition-duration: 0.3s;
+}
+
+
+.shape:hover .bg {
+  -moz-opacity: 0.8;
+  -khtml-opacity: 0.8;
+  opacity: 0.8;
+  display:block;
+}
+
+.shape:hover .details {
+  -moz-opacity: 1;
+  -khtml-opacity: 1;
+  opacity: 1;
+  z-index:1;
+  display:block;  
+} 
+    
+    
+
+/* content styles */
+.shape .bg, 
+.shape .details {
+  position: absolute;
+  width: 200px;
+  height:200px;
+  display:table-cell;
+  vertical-align:middle;
+  text-align:center;
+  top:0;
+  left:0;
+  opacity:0;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;        
+  display:none;  
+}   
+
+.shape .details {
+  background: #4b5a78;    
+}
